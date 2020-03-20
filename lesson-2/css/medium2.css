@@ -1,0 +1,13 @@
+@media only screen and (min-width: 37.5em) {
+  main {
+		grid-template-columns: 1fr 1fr;
+	}
+	main picture {
+		display: block;
+	}
+	main picture img {
+		width: 100%;
+		border: 1px solid #bbb;
+		border-radius: 9px;
+	}
+}
