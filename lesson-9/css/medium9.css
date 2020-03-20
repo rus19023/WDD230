@@ -22,7 +22,6 @@
 	.right-column figure img {
 		border-radius: 9px;
 	}
-
 	main picture img {
 		border-radius: 9px;
 		width: 400px;
@@ -32,9 +31,9 @@
 		flex-direction: row;
 		border-radius: 9px;
 		justify-content: space-evenly;
-		width: 100%;
+		max-width: 100%;
 	}
-	.towns section:nth-child(odd) {
+	.towns section div section:nth-child(odd) {
 		flex-direction: row-reverse;
 		align-items: center;
 	}

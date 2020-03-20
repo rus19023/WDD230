@@ -24,7 +24,7 @@
                 padding: 1.5em .5em 1.5em .5em ;
             }
             .gallery figure:hover {
-                box-shadow: 0 0  50px #CEE7E6);
+                box-shadow: 0 0  50px #CEE7E6;
                 border-radius: 9px;
             }
             .icon {
