@@ -74,19 +74,8 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-            }
+            }            
             
-            nav, #banner1 {
-                font-weight: bold;
-                font-family: "Comfortaa", "Questrial", sans-serif;
-                background: #faa916;
-                /* Old browsers */
-                background: -moz-linear-gradient(top, #faa916 0%, #faa916 0%, #22007c 100%);
-                /* FF3.6-15 */
-                background: -webkit-linear-gradient(top, #faa916 0%, #faa916 0%, #22007c 100%);
-                /* Chrome10-25,Safari5.1-6 */
-                background: linear-gradient(to bottom, #faa916 0%, #22007c 100%); 
-            }
             nav button {
                 display: none;
             }

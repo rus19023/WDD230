@@ -54,8 +54,8 @@ console.table(sortedbyValueJSONArray);
         p3.textContent =rainfall;
         
         //  build the html code for the cards
-        div1.appendChild(h2);  //  add the town name heading to the text div
-        div1.appendChild(a);
+        h2.appendChild(town_a);  //  add the town name heading to the text div
+        div1.appendChild(h2);
         div1.appendChild(h6);  //  add the motto heading to the text div
         div1.appendChild(p1);  //  add the founding year to the text div
         div1.appendChild(p2);  //  add the population to the text div
@@ -70,13 +70,11 @@ console.table(sortedbyValueJSONArray);
 
           document.querySelector('#preston').appendChild(card);  //  set the Preston div into the html page
 
-        }
-
-        else if (town_name == "Soda Springs")
+        } else if (town_name == "Soda Springs") {
         document.querySelector('#sodasprings').appendChild(card);  //  set the card div into the html page
-        else if (town_name == "Fish Haven")
+        }else if (town_name == "Fish Haven") {
         document.querySelector('#fishhaven').appendChild(card);  //  set the card div into the html page
-        
+        }
     }
     });
   });
