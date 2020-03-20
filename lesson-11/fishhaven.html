@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Fish Haven Page | CIT 230 Weather Site Project - Week 11</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Home page for website project for Doris Rush-Lopez for CIT 230: Web Frontend Development at Brigham Young University, Idaho, Winter 2020 semester">
+        
+        <link rel="shortcut icon" href="../favicon.ico">
+
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="css/style11.css" />
+        <link rel="stylesheet" href="css/medium11.css" />
+        <link rel="stylesheet" href="css/large11.css" />
+
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    </head>
+
+    <body onLoad="getDate();">  
+        
+        <p id="banner">Saturday = Preston Pancakes in the Park!<br>9:00 a.m. Saturday at the city park pavilion.</p>       
+    
+        <header id="header">
+            <div>
+                <picture class="logo">
+                    <img src="images/edgelogo75.png" alt="Edge of the Cloud logo, grey cloud and white cloud with yellow/orange thunderbolt on light blue background">
+                </picture>
+            </div>                
+            <div>
+                <h1>Edge of the Cloud</h1>
+                <h3>Your weather, from sunrise to sunrise!</h3>
+            </div>           
+        </header>
+
+        <nav class="clearfix">
+            <button onClick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li> <a class="current" href="fishhaven.html">Fish Haven</a></li>
+                <li> <a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="currently">
+                <h2>Fish Haven</h2>
+                <div id="hero">
+                    <picture>
+                        <source srcset="images/SMALL.jpg" media="(max-width: 400px)">
+                            <source srcset="images/MEDIUM.jpg" media="(min-width: 401px) and (max-width: 959px)">
+                            <source srcset="images/LARGE.jpg" media="(min-width: 960px)">
+                            <img src="images/weather-background-hero.jpg" alt="lightning in purple night sky over trees and houses">
+                    </picture>                
+                </div>
+                <div class="stats"> 
+                    <div class="lined-up">
+                        <p>Currently</p> 
+                        <p class="icon"></p> 
+                    </div>                                    
+                                                    
+                    <div class="grid2col">
+                        <div class="right-column">
+                            <span class="right-align">Temperature:</span><br><br>
+                            <span class="right-align">Wind Chill:</span> <br><br>
+                            <span class="right-align">Today's High:</span> <br> <br>
+                            <span class="right-align">Humidity:</span><br><br>
+                            <span class="right-align">Conditions:</span><br><br>
+                            <span class="right-align">Wind Speed:</span> <br> <br>
+                        </div>
+                        <div class="left-column">
+                            <span class="left-align" id="current-temp"></span> <span> &deg;F</span> <br><br>
+                            <span class="left-align" id="windchill">   </span> <span>       </span> <br><br>
+                            <span class="left-align" id="high">        </span> <span> &deg;F</span> <br><br>
+                            <span class="left-align" id="humidity">    </span> <span>%      </span> <br><br>
+                            <span class="left-align" id="conditions">  </span> <span>       </span> <br><br>
+                            <span class="left-align" id="windspeed">   </span> <span id="wind-direction"> </span><br> <br>
+                                                    
+                        </div>
+                    </div>
+                </div>                
+            </section>
+
+            <section class="noshow">
+                <h2>5 Day Forecast</h2>        
+                            
+
+            </section>
+            <h2>Article Title</h2>
+            <article class="grid1col">
+                <div class="left-column">
+                    <h5>March 16, 2020</h5>
+                        <br><br>
+                   article text here
+                </div>
+                <div class="right-column">
+                    <figure>
+                        <img src=" images/man-fishing.jpg" alt="Photo of man fishing by Greysen Johnson on Unsplash">
+                        <figcaption>Man fishing at body of water</figcaption>
+                    </figure>
+                </div>
+            </article>
+        </main>
+
+        <footer>
+            <h2> Contact Information</h2>
+            <article class="grid1col grey">
+    
+                <div class="noshow left-column">
+                    <a href="https://www.google.com/maps?ll=42.107723,-111.911652&z=16&t=m&hl=en&gl=US&mapclient=embed&cid=9251099430688056481"><img src="images/preston-map.png" alt="map of Preston area"></a>
+                </div>
+                <div class="right-column"> <br><br><br><br>Edge of the Cloud Weather <br><br>(555) 555-5555 <br><br>more@edgeofthecloud.info <br><br></div>
+            </article> 
+            <div id="footer-top">
+                Source of live weather information on this site is <a href="https://openweathermap.org">Open Weather Map API</a>
+            </div>    
+            &copy;2020 &nbsp; | &nbsp; Doris Rush-Lopez &nbsp;| &nbsp;New Jersey &nbsp; | &nbsp; <a href="https://www.byui.edu/online" >BYU-Idaho Online Learning</a> 
+               
+            <div id="updated"></div>
+        </footer>
+        
+        <script src="js/fishhaven.js"></script> 
+        <script src="js/my_js.js"></script> 
+    </body> 
+</html>
