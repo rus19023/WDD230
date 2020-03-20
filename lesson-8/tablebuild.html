@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Table Builder Page | CS 230 Assignment Weather Gallery Week 08</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Table Builder page for website project for Doris Rush-Lopez for CS 230: Web Frontend Development at Brigham Young University, Idaho, Winter 2020 semester">
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="css/tablebuild.css" />
+</head>
+
+<body onLoad="getDate();">
+    <div class="white">
+      <h2>Table Building Assignment</h2>
+      <table>
+        <thead><tr><th colspan="3">ACME Wildwest</th></tr></thead></th>
+        <tr>
+          <th>Period</th>
+          <th>Sales</th>
+          <th>Sales Goal</th>
+        </tr>
+        <tr>
+          <td>August</td>
+          <td>$3,590</td>
+          <td>$4,000</td>
+        </tr>
+        <tr>
+          <td>September</td>
+          <td>$4,420</td>
+          <td>$5,000</td>
+        </tr>
+        <tr>
+            <td>October</td>
+            <td>$4,870</td>
+            <td>$5,000</td>
+        </tr>
+        <tr>
+            <td>November</td>
+            <td>$8,610</td>
+            <td class="emphasis" >$7,500</td>
+        </tr>
+        <tr>
+            <td class="italic">Black Friday</td>
+            <td colspan="2">$3,200</td>
+        </tr>
+        <tr>
+            <td>December</td>
+            <td>$6,820</td>
+            <td>$7,500</td>
+        </tr>
+        <tfoot><td class="foot" colspan="3"> Compiled 12.20.2020 by bRauls </td></tfoot>
+      </table>
+    </div>
+  <footer class="white">
+    &copy;2020 &nbsp; | &nbsp; Doris Rush-Lopez &nbsp; | &nbsp; Brigham Young University-Idaho
+    <div id="updated"></div>
+  </footer>
+  <script src="js/my_js.js"></script>
+  <script src="js/lazyload.js" defer></script>
+  <script src="js/web-fonts.js" defer></script>
+  <script src="js/friday-banner.js" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</body>
+</html>
