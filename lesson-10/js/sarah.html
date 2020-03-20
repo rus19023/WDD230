@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <title>It's Idaho Weather</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Preston Town Page"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles-small.css">
+    <link rel="stylesheet" href="css/styles-medium.css">
+    <link rel="stylesheet" href="css/styles-large.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Life+Savers&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    
+</head>
+
+<body>
+    <div id="pancake" class= "contentBox"><h4>Saturday = Preston Pancakes in the Park!<br>9:00 a.m. Saturday at the city park!</h4></div>
+    
+  <header>
+     <div id="menu"> <img id="logo" src="images/weather-icon-reduced.png" alt="it's idaho weather's logo"></div>
+     <div id="headerWords">
+   <h1>It's Idaho Weather</h1>
+   <div class ="motto">The Sun Will Shine</div></div>
+   
+       
+    </header>
+  <main>
+   <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">&#9776; Menu</a></li>
+                <li> <a href="https://reed-sarah.github.io/lesson9/index.html">Home</a></li>
+                <li> <a href="preston-5.html" class="active">Preston</a></li>
+                <li> <a href="">Soda Springs</a></li>
+                <li> <a href="">Fish Haven</a></li>
+                <li> <a href="https://reed-sarah.github.io/lesson8/stormcenter.html">Storm Center</a></li>
+                <li> <a href="https://reed-sarah.github.io/lesson7/weatherGallery/gallery.html">Gallery</a></li>
+            </ul>
+        </nav> 
+        <div class ="content">
+        <h2>Preston Idaho</h2>
+        <div>
+            <div id="weatherSum">
+                <h3>Weather Summary</h3>
+                <div id="line"></div>
+                <div id="list">
+                <div id="sumFirst">Currently:<br>Temperature:<br>Wind Chill:<br>Humidity:<br>Wind Speed:</div>
+                <div id= "sumSec"><span id="current"></span><br><span id="temp"></span>&#00176;F<br><span id="windChill"></span><br><span id="humidity"></span>%<br><span id="windSpeed"></span>mph</div>
+            </div></div>
+            
+            <img id="summaryPic" src="images/preston.jpg" alt="Green field near hills">
+        </div>
+
+        <div class="contentBox" id="forecast">
+            <h3>5 Day Forecast</h3>
+            <table style="width:100%">
+                <tr>
+                  <th id="day0"></th>
+                  <th id="day1"></th>
+                  <th id="day2"></th>
+                  <th id="day3"></th>
+                  <th id="day4"></th>
+                </tr>
+                <tr>
+                    <td><img class="icon" id="icon0" src="" alt=""></td>
+                    <td><img class="icon" id="icon1" src="" alt=""></td>
+                    <td><img class="icon" id="icon2" src="" alt=""></td>
+                    <td><img class="icon" id="icon3"  src="" alt=""></td>
+                    <td><img class="icon" id="icon4" src="" alt=""></td>
+                </tr>
+                <tr>
+                  <td id="temp0">&#0176; </td>
+                  <td id="temp1">&#0176;</td>
+                  <td id="temp2">&#0176;</td>
+                  <td id="temp3">&#0176; </td>
+                  <td id="temp4">&#0176;</td>
+                </tr>
+              </table>
+        </div>
+
+        <div class="contentBox" > 
+            <h3>This Year's Harvest</h3>
+            <h4>Source: U.S Wheat Associates</h4>
+            <div id="articleBox">
+                 <p id="articleWords">The 2019 hard red winter (HRW) wheat crop received abundant moisture during the planting and 
+                     growing season throughout the Great Plains, while swings in temperature and severe weather occurred in the 
+                     Pacific Northwest (PNW) and Montana. Unexpectedly high yields resulted in lower wheat and flour protein, 
+                     but the crop exhibits good milling and end-product characteristics. Even though mixing times and tolerances 
+                     are shorter than the 5-year averages, the loaf volumes achieved indicate there is adequate protein quality 
+                     to make quality bread. This crop meets or exceeds typical HRW contract specifications and should provide 
+                     value to the customer. The 2019 HRW crop can be characterized as clean and sound with good milling properties 
+                     and end-product qualities but with below average protein. </p>  
+                <img id="articlePic" src="images/wheat.jpg" alt="person holding handful of wheat">
+        </div></div>
+
+        <div class="contentBox">
+            <h3>Contact Information</h3> 
+            <div id="contact">
+                <img id="map" src="images/map.jpg" alt="map of idaho">
+                <div id="contactWords"> 
+                    <h4>It's Idaho Weather Home Office</h4>
+                365 Windy Way<br>
+                Preston ID, 83456<br><br> 208-523-5643<br>itsidahoweather@gmail.com </div>
+            </div>
+        </div>
+   </div>     
+  </main>
+  <footer>
+     <p>&copy; 2020 | Sarah Reed | Arizonia | <a href="https://www.byui.edu/online">BYUI Online Learning </a>
+        <br>Weather information Provided by: <a href="https://openweathermap.org/">Open Weather</a> <br>Last Updated:&nbsp; <span id=update></span></p>   
+  </footer>
+
+  <script src="js/menu.js"></script>
+<script src="js/modified.js"></script>
+<script src="js/pancake.js"></script>
+<script src="js/weather.js"></script>
+
+
+</body>
+
+</html>
