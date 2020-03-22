@@ -1,14 +1,16 @@
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
 
+
 fetch(requestURL)
   .then(function (response) {
     return response.json();
   })
   .then(function (jsonObject) { 
     const towns = jsonObject['towns'];
+
     towns.forEach(town => {
-     
+      if (town.name=="Preston"||town.name=="Soda Springs"||town.name=="Fish Haven") {
         let card = document.createElement('section'); 
         let div1 = document.createElement('div')
         let div2 = document.createElement('div')
@@ -43,16 +45,8 @@ fetch(requestURL)
         card.appendChild(div1);  // add the text div to the card div
         card.appendChild(div2);  //  add the image div to the card div
 
-        if (town_name == "Preston") { 
-          document.querySelector('.preston').appendChild(card);  //  set the card div into the html page
-        }
-        if (town_name == "Soda Springs") { 
-          document.querySelector('.sodasprings').appendChild(card);  //  set the card div into the html page
-        }
-        if (town_name == "Fish Haven") { 
-          document.querySelector('.fishhaven').appendChild(card);  //  set the card div into the html page
-        }
-
-    
+        
+        document.querySelector('.towns').appendChild(card);  //  set the card div into the html page
+    }
     });
   });

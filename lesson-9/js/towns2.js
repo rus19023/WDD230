@@ -57,15 +57,7 @@ console.table(sortedbyValueJSONArray);
         card.appendChild(div2);  //  add the image div to the card div
 
         
-        // set up cards for each town in order of menu
-
-        if (town.name == "Preston") 
-        document.querySelector('#preston').appendChild(card);  //  set the Preston div into the html page
-        else if (town_name == "Soda Springs")
-        document.querySelector('#sodasprings').appendChild(card);  //  set the card div into the html page
-        else if (town_name == "Fish Haven")
-        document.querySelector('#fishhaven').appendChild(card);  //  set the card div into the html page
+        document.querySelector('.towns').appendChild(card);  //  set the card div into the html page
     }
     });
   });
-  
