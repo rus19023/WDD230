@@ -1,4 +1,3 @@
-function show_modified() {
-    let modified = new Date(document.lastModified); // get modified date/time;
-    document.getElementById("modified").innerHTML = modified;
-}
+let modified = "Last updated: ";
+modified += document.lastModified;
+document.getElementById("updated").innerHTML = modified;
