@@ -37,7 +37,6 @@
 	.sodasprings section {
 		flex-direction: row-reverse;
 		align-items: center;
-		border: 2px solid ;
 	}
 	.towns section div {
 		width: 50%;

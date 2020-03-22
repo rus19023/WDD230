@@ -1,7 +1,7 @@
 // shows banner for pancakes in the park on Saturdays, shown on Fridays only
 var newDate = new Date();
 var today = newDate.getDay();
-if (today == 4) {
+if (today == 5) {
     $('#banner').show();
 }
 
