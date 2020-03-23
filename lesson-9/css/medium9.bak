@@ -1,13 +1,11 @@
 @media only screen and (min-width: 37.5em) {
 	main {
-		max-width: 95%;
-	}
-	.stats {
-		font-size: .7em;
+		max-width: 75%;
 	}
 	.gallery {
 	  display: grid;
 	  grid-template-columns: 1fr 1fr;
+	  background-color: transparent;
 	  justify-content: center;
 	  align-items: center;
 	  border-radius: 9px;
@@ -23,29 +21,41 @@
 		border-radius: 9px;
 	}
 
+	main picture {
+		display: block;
+	}
+
 	main picture img {
+		width: 100%;
+		border: 1px solid #bbb;
 		border-radius: 9px;
-		width: 400px;
+	}
+
+	.towns {
+		width: 1000px;
+	  	margin: .5rem auto;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		padding: 1rem;
+	}
+	.towns p {
+		width: 15rem;
+	}
+	.towns img {
+		max-width: 20rem;
+	}
+	.towns h2 {
+		color: var(--whitish);
 	}
 	.towns section {
 		display: flex;
 		flex-direction: row;
-		border-radius: 9px;
-		justify-content: space-evenly;
-		width: 100%;
+		max-width: 100%;
 	}
 	.towns section:nth-child(odd) {
 		flex-direction: row-reverse;
-		align-items: center;
-	}
-	.towns section div {
-		width: 50%;
-	}
-	.towns p {
-		text-align: center;
-	}
-	.towns section div img {
-		width: 400px;
+
 	}
 
 }
