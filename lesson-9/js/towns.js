@@ -19,7 +19,7 @@ fetch(requestURL)
 
 
 var sortedbyValueJSONArray = sortByValue(towns);
-console.table(sortedbyValueJSONArray);
+
     towns.forEach(town => {
       if (town.name=="Preston"||town.name=="Soda Springs"||town.name=="Fish Haven") {
         let card = document.createElement('section'); 
