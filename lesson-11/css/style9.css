@@ -4,17 +4,17 @@ html {
     -ms-text-size-adjust: 100%;
 }
 body {
-    background-color: #CEE7E6;
+    background-color: #B7B6C2;
     color: #F5FBEF;
-    font-family: "Poppins", "Questrial", sans-serif; 
+    font-family: "Poppins", "Questrial", sans-serif;
+    border-radius: 9px;
     max-width: 100%;
     text-align: center;
-}
-.rounded {
-    border-radius: 9px;
+
 }
 .grey {
     background-color: #B7B6C2;
+    border-radius: 0px;
     max-width: 100%;
     padding: 0;
     color: #22007C;
@@ -39,6 +39,9 @@ h5 {    font-size: .9em;}
 h6 {    font-size: .7em;}
 
 .stats,
+header,
+footer,
+main,
 article,
 .item2,
 .item,
@@ -47,27 +50,43 @@ nav,
 nav button,
 nav ul li a,
 article img,
-.simple {
-    text-align: center;
+.simple { 
+    border-radius: 9px;
 }
 #banner {
     display: none;
+    background: #22007C;
+    border: 9px double #FAA916;
+    border-radius: 25px;
+    font-size: 1.2em;
+    padding: .75em;
+    text-align: center;
+    margin: 0;
 }
 #header {
-    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+#banner1 {
+    margin: .25em;
+    text-align: center;
+    border-radius: 9px;
+    display: inline-block;
+    width: 100%;
+}
+footer div {
+    line-height: 1.25rem;
+}
 header,
 footer,
-main,
-#banner1 {
-    background: linear-gradient(to left, rgba(250, 169, 22, .7), rgba(217, 3, 104, .5), rgba(99, 29, 118, .5), rgba(34, 0, 124, .7));
-    display:flex;
-    flex-wrap: wrap;
-    font-size: 1.2em;
-    font-weight: bold;
+main {
+    background: linear-gradient(to left, rgba(250, 169, 22, .5), rgba(217, 3, 104, .5), rgba(99, 29, 118, .5), rgba(34, 0, 124, .5));
+    text-align: center;
+    border-radius: 9px;
+    display: inline-block;
+    max-width: 100%;
+    padding: .5rem;
 }
 ul, li {
     text-align: left;
@@ -77,18 +96,15 @@ ul, li {
     position: relative;
     padding: .5em;
 }
-.icon {
-    align-items: center;
-}
 #hero img {
     width: 100%;
-    min-height: 50vh;
+    min-height: 50vh; 
     margin: auto;
 }
 .lined-up {
     display: flex;
-    flex-direction: column;
-    line-height: .7rem;
+    flex-direction: row;
+    padding: .25rem;
 }
 .stats {
     position: absolute;
@@ -100,20 +116,18 @@ ul, li {
     opacity: .89;
     font-size: .7em;
     font-weight: bolder;
-    line-height: .7rem;
 }
-.noshow,.noshow1 {
+.noshow, .noshow1 {
     display: none;
     margin-top: 1rem;
 }
+
 .grid2col {
     display: grid;
     grid-template-columns: 4fr 4fr;
     margin:0;
 }
 .grid1col {
-    display: grid;
-    grid-template-columns: 4fr;
     text-align: center;
     padding: 1rem;
     max-width: 100%;
@@ -122,21 +136,16 @@ ul, li {
     display: grid;
     grid-template-rows: auto;
 }
-span.right-align {
+.right-align {
     text-align: right;
 }
-span.left-align {
+.left-align {
     text-align: left;
 }
-.left-column {
-    max-width: 100%;
-    padding: 1rem; 
-    text-align: left;   
-}
+.left-column,
 .right-column {
     max-width: 100%;
-    padding: 1rem;
-    text-align: center;
+    padding: 1rem;    
 }
 figcaption {
     text-align: center;
@@ -145,54 +154,26 @@ figure {
     align-items: center;
     justify-items: center;
 }
-.grid1col iframe {
-    max-width: 800px;
-    max-height: 450px;
-}
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
+    border-radius: 9px;
     align-items: center;
 }
 .gallery a {
     color: #F5FBEF;
 }
-
-nav, #banner, #banner1 {
+nav, #banner1 {
     font-weight: bold;
-    text-align: center;
     font-family: "Comfortaa", "Questrial", sans-serif;
+    text-align: center;
     background: #faa916;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #faa916 0%, #faa916 0%, #22007c 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #faa916 0%, #faa916 0%, #22007c 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #faa916 0%, #22007c 100%); 
+    background: #faa916; /* Old browsers */
+    background: -moz-linear-gradient(top, #faa916 0%, #faa916 0%, #22007c 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #faa916 0%,#faa916 0%,#22007c 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(250, 169, 22) ,rgba(34, 0, 124) ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#faa916', endColorstr='#22007c',GradientType=0 );
 }
-nav input[type=text], nav .search-container button {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 50%;
-    margin: 0;
-  }
-nav .search-container button {
-    float: right;
-    padding: 6px 10px;
-    margin-top: 8px;
-    margin-right: 16px;
-    background: #22007C;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-  }
-nav .search-container button:hover {
-    background: rgba(217, 3, 104, .5);
-  }
-nav .search-container {
-    float: none;
-  }
 .button {
     display: inline;
 }
@@ -236,21 +217,17 @@ nav ul.hide {
 footer,
 #updated {
     text-align: center;
-    color: #22007C;
-    width: 100%;
-    padding-top: rem;
-    padding-bottom: .5rem;
+    color: #F5FBEF;
 }
-#updated, #footer-top {
+#updated {
     font-size: .9em;
-    color: #22007C;
-
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+    margin: .5em;
+    padding: .5rem;
 }
 form fieldset {
     border: 2px solid #F5FBEF;
     margin: 2rem .25rem;
+    border-radius: 10px;
     padding: .75rem 2%;
 }
 form legend {
@@ -275,7 +252,6 @@ form label.top input,
 form label.sbs select,
 textarea {
     display: block;
-    text-align: left;
     font-size: 1rem;
     border: 1px solid #F5FBEF;
     border-radius: 4px;
@@ -302,6 +278,7 @@ form label.sbs {
     color: #F5FBEF;
 }
 form h4 {
+    text-align: left;
     padding-left: 4%;
     padding-top: .4rem;
 }
@@ -310,6 +287,7 @@ form input.submitBtn {
     margin-top: .75rem;
     background-color: #FAA916;
     color: #22007C;
+    border-radius: 1rem;
     padding: .75rem ;
     margin: 0 0 4rem 4%;
     width: 96%;
@@ -338,12 +316,19 @@ textarea {
 .dangerlevel {
     max-width: 20rem;
     padding: .75rem;
+    border-radius: 4px;
     margin-left: 4%;
     margin-top: .75rem;
     border: 1px solid #F5FBEF;
 }
+.towns section, p, h2, div img {
+    text-align: center;
+    align-content: center;
+    max-width: 100%;    
+    padding-bottom: .25rem;
+}
 .towns h6 {
-    font-size: .8rem;
+    font-size: .85rem;
     text-align: center;
 }
 .wireframe {

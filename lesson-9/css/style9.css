@@ -81,7 +81,7 @@ footer div {
 header,
 footer,
 main {
-    background: linear-gradient(to left, rgba(250, 169, 22, .5), rgba(34, 0, 124, .5));
+    background: linear-gradient(to left, rgba(250, 169, 22, .5),  rgba(217, 3, 104, .5), rgba(99, 29, 118, .5),rgba(34, 0, 124, .5));
     text-align: center;
     border-radius: 9px;
     display: inline-block;

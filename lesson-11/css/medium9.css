@@ -1,13 +1,16 @@
 @media only screen and (min-width: 37.5em) {
 	main {
-		max-width: 96%;
+		max-width: 95%;
 	}
 	.stats {
-		font-size: .85em;
+		font-size: .7em;
+	}
+	.noshow1 {
+		display: block;
 	}
 	.gallery {
 	  display: grid;
-	  grid-template-columns: 1fr 1fr;  
+	  grid-template-columns: 1fr 1fr;
 	  justify-content: center;
 	  align-items: center;
 	  border-radius: 9px;
@@ -16,15 +19,11 @@
 	}
 	figcaption {
 	  font-size: 1em;
-	  color: #F5FBEF;
+	  color: var(--whitish);
 	  text-align: center;
 	} 
 	.right-column figure img {
 		border-radius: 9px;
-	}
-	article.grid1col.grey div.right-column {
-		align-items: center;
-		text-align: center;
 	}
 
 	main picture img {
@@ -34,23 +33,22 @@
 	.towns section {
 		display: flex;
 		flex-direction: row;
+		border-radius: 9px;
 		justify-content: space-evenly;
 		width: 100%;
-		padding: 1rem;
 	}
-	#sodasprings section {
+	.towns section:nth-child(odd) {
 		flex-direction: row-reverse;
 		align-items: center;
 	}
 	.towns section div {
-		max-width: 50%;
-		padding: 1rem;
+		width: 50%;
 	}
 	.towns p {
 		text-align: center;
 	}
-	.noshow1 {
-		display: block;
+	.towns section div img {
+		width: 400px;
 	}
 
 }

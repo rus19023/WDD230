@@ -3,10 +3,11 @@
                 max-width: 90%;
                 justify-content: center;
             }
-            #banner1 {
+            #banner, #banner1 {
+                color: #F5FBEF;
                 display: block;
                 font-size: 1.5em;
-                justify-content: center; 
+                justify-content: center;
                 text-align: center;
             }
             .stats {
@@ -23,12 +24,16 @@
                 padding: 1.5em .5em 1.5em .5em ;
             }
             .gallery figure:hover {
-                box-shadow: 0 0  50px #B7B6C2;
+                box-shadow: 0 0  50px var(--ltblue);
                 border-radius: 9px;
             }
+            .icon {
+                width: 5em;
+                height: 5em;
+            }
             .grid1col {
-                display: flex;
-                flex-direction: row;
+                display: grid;
+                grid-template-columns: 4fr 4fr;
             }
             .left-column,
             .right-column {
@@ -39,31 +44,18 @@
             .right-column figure img {
                 border-radius: 9px;
             }
-            .noshow {                
-                display: block;
-                justify-content: space-between;
-            }
             .gridforecast {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                text-align: center;
+                background: var(--x11grey);
+                color: var(--dkblue);
+                border-radius: 9px;
+            }
+            .noshow {                
+                display: block;
                 justify-content: space-between;
-                text-align: center;
-                align-items: center;
-                background: #CEE7E6;
-                color: #22007C;
-            }
-            .forecast-item {                
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                padding: 1rem;
-            }
-            .forecast-item img {
-                padding: .5rem;
-            }
-            h4.forecast-item {
-                color: #22007C;
+                margin: .5rem;
             }
             iframe {
                 width: 20em;
@@ -74,8 +66,20 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-            }    
+            }
             
+            nav, #banner1 {
+                font-weight: bold;
+                color: #F5FBEF;
+                font-family: "Comfortaa", "Questrial", sans-serif;
+                background: #faa916;
+                /* Old browsers */
+                background: -moz-linear-gradient(top, #faa916 0%, #faa916 0%, #22007c 100%);
+                /* FF3.6-15 */
+                background: -webkit-linear-gradient(top, #faa916 0%, #faa916 0%, #22007c 100%);
+                /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to bottom, #faa916 0%, #22007c 100%); 
+            }
             nav button {
                 display: none;
             }
@@ -107,9 +111,6 @@
                 grid-template-columns: 1fr;
                 justify-items: center;                
                 text-align: center;          
-            }
-            footer {
-                
             }
         }
         
