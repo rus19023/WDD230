@@ -1,6 +1,6 @@
 @media only screen and (min-width: 37.5em) {
 	main {
-		max-width: 95%;
+		max-width: 96%;
 	}
 	.stats {
 		font-size: .85em;
@@ -34,28 +34,26 @@
 	.towns section {
 		display: flex;
 		flex-direction: row;
-		border-radius: 9px;
 		justify-content: space-evenly;
 		width: 100%;
+		padding: 1rem;
 	}
 	#sodasprings section {
 		flex-direction: row-reverse;
 		align-items: center;
-		padding: .5rem;
 	}
 	.towns section div {
-		width: 50%;
+		max-width: 50%;
+		padding: 1rem;
 	}
 	.towns p {
 		text-align: center;
 	}
-	.towns section div img {
-		width: 400px;
-		border-radius: 9px;
-		padding: .25rem;
-	}
 	.noshow1 {
 		display: block;
+	}
+	footer {
+		width: 100%;
 	}
 
 }

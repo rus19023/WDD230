@@ -37,7 +37,7 @@
 		justify-content: space-evenly;
 		width: 100%;
 	}
-	.towns section:nth-child(odd) {
+	div#sodasprings {
 		flex-direction: row-reverse;
 		align-items: center;
 	}

@@ -12,6 +12,10 @@
             .stats {
                 font-size: 1em;
             }
+            .grey {
+                display: flex;
+                flex-direction: row;
+            }
             .gallery {
                 grid-template-columns: 1fr 1fr 1fr;
                 text-align: center;
@@ -93,32 +97,23 @@
             }
             .towns  {
                 display: grid;
-                display: grid;
-                grid-template-columns: repeat(3, auto); /* totally works! */
-                
-                grid-gap: 10px;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 1em;
                 padding: 1em;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
             }
             .towns section div {
                 width: 95%;
                 margin-bottom: 0;
-            }
-            .towns section div img {
-                width: 300px;
-                border-radius: 9px;
-                margin-top: 1rem;
-                margin-right: 1rem;
             }
             .towns section {
                 border: 1px solid #F5FBEF;
                 display: grid;
                 grid-template-columns: 1fr;
                 justify-items: center;                
-                text-align: center;   
-                max-width: 333px;       
+                text-align: center;          
+            }
+            footer {
+                width: 100%;
             }
         }
         

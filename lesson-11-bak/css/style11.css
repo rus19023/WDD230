@@ -13,17 +13,21 @@ body {
 .rounded {
     border-radius: 9px;    
 }
+iframe {
+    max-width: 85%;
+}
 .four00 {
-    width: 4vw;
-    height: 3vw;
+    width: 40vw;
+    height: 30vw;
 }
 .grey {
     background-color: #B7B6C2;
-    width: 80%;
+    width: 100%;
     padding: 0;
     color: #22007C;
     font-weight: bold;
     font-size: 1rem;
+    text-align: center;
 }
 a:hover {color: #B7B6C2;}
 a {color: #F5FBEF;}
@@ -39,15 +43,13 @@ h2 {    font-size: 1.5em;}
 h3 {    font-size: 1.3em;}
 h4 {    font-size: 1.1em;}
 h5 {    font-size: .9em;}
-h6 {    font-size: .7em;}
+h6 {    font-size: .7em;} 
 .flex {
     display: flex;
     justify-content: space-evenly;
     padding: .5em;
 }
 .stats,
-footer,
-main,
 article,
 .item2,
 .item,
@@ -57,7 +59,7 @@ nav button,
 nav ul li a,
 article img,
 .simple {
-    max-width: 100%;
+    display: inline-block;
     text-align: center;
 }
 #banner {
@@ -75,11 +77,12 @@ article img,
 }
 header,
 footer,
-main,
-#banner1 {
+main {
     background: linear-gradient(to left, rgba(250, 169, 22, .7), rgba(217, 3, 104, .5), rgba(99, 29, 118, .5), rgba(34, 0, 124, .7));
     display: inline-block;
-    width: 100%;
+}
+main {
+    width: 90%;
 }
 ul, li {
     text-align: left;
@@ -113,9 +116,10 @@ ul, li {
     font-size: .7em;
     font-weight: bolder;
 }
-.noshow {
+.noshow, .noshow1 {
     display: none;
     margin-top: 1rem;
+    text-align: center;
 }
 .grid2col {
     display: grid;
@@ -139,13 +143,11 @@ span.left-align {
 }
 .left-column {
     max-width: 100%;
-    padding: 1rem; 
-    text-align: left;   
+    padding: 1rem;   
 }
 .right-column {
     max-width: 100%;
     padding: 1rem;
-    text-align: right;
 }
 figcaption {
     text-align: center;
@@ -165,6 +167,7 @@ figure {
 }
 nav, #banner1, #banner {
     font-weight: bold;
+    width: 100%;
     font-family: "Comfortaa", "Questrial", sans-serif;
     text-align: center;
     background: #faa916;
@@ -214,14 +217,12 @@ nav ul.hide {
     display: table;
     clear: both;
 }
-footer,
-#updated {
-    text-align: center;
-    color: #F5FBEF;
-}
-#updated, #footer-top {
+#updated, #footer-top, footer {
     font-size: .9em;
-    margin: .5em;
+    text-align: center;
+    color: #22007C;
+    width: 100%;
+    font-weight: bold;
     padding: .5rem;
 }
 form fieldset {
