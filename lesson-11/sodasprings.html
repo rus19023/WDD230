@@ -17,9 +17,6 @@
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
-        
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     </head>
 
     <body onLoad="getDate();">  
@@ -37,14 +34,16 @@
         </header>
 
         <nav class="clearfix">
-            <button onClick="toggleMenu()">&#9776; Menu</button>
+            <div class="button">
+                <button onClick="toggleMenu()">&#9776; Menu</button>
+            </div>
             <ul id="primaryNav" class="hide">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="preston.html">Preston</a></li>
-                <li><a class="current" href="sodasprings.html">Soda Springs</a></li>
-                <li> <a href="fishhaven.html">Fish Haven</a></li>
-                <li> <a href="stormcenter.html">Storm Center</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
+                <li><a class="rounded"          href="index.html">      Home        </a></li>
+                <li><a class="rounded"          href="preston.html">    Preston     </a></li>
+                <li><a class="rounded current"  href="sodasprings.html">Soda Springs</a></li>
+                <li><a class="rounded "         href="fishhaven.html">  Fish Haven  </a></li>
+                <li><a class="rounded"          href="stormcenter.html">Storm Center</a></li>
+                <li><a class="rounded"          href="gallery.html">    Gallery     </a></li>
             </ul>
         </nav>
 
@@ -91,17 +90,21 @@
                 <h2>5 Day Forecast</h2> 
             </section>
             
-            <h2>Article Title</h2>
+            <h2>Soda Springs Geyser</h2>
             <article class="grid1col">
                 <div class="left-column">
                     <h5>March 16, 2020</h5>
                         <br><br>
-                   article text here
+                        
+                        Did you know there is only 1 man-made "captive" geyser in the whole world? It's located right here in Soda Springs! Back in 1937, someone wanted a natural source of hot water for their swimming pool, so they started drilling. Just over 300 feet deep, they hit the vein of naturally carbonated (soda) water. This naturally bubbling fountain was discovered in the 1800's when the Oregon Trail became well used.
+                        
+                        The geyser has been capped and is now activated by a timer, which allows it to burst upwards every hour on the hour. We have a nice park here now for visitors, too. Nearby is also an active lava flow left over from Monsanto's phosphate mining.
                 </div>
                 <div class="right-column">
                     <figure>
-                        <img src="" alt="Photo of man fishing by Greysen Johnson on Unsplash">
-                        <figcaption>Man fishing at body of water</figcaption>
+                        <img src="images/geyser.jpg" alt="Photo of the Soda Springs geyser">
+                        <figcaption>Photo of Soda Springs geyser erupting by <a href="https://unsplash.com/@dgrizzle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Danny Grizzle on Unsplash</a>
+                            </figcaption>
                     </figure>
                 </div>
             </article>

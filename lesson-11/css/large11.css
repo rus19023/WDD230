@@ -93,23 +93,32 @@
             }
             .towns  {
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-gap: 1em;
+                display: grid;
+                grid-template-columns: repeat(3, auto); /* totally works! */
+                
+                grid-gap: 10px;
                 padding: 1em;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
             }
             .towns section div {
                 width: 95%;
                 margin-bottom: 0;
+            }
+            .towns section div img {
+                width: 300px;
+                border-radius: 9px;
+                margin-top: 1rem;
+                margin-right: 1rem;
             }
             .towns section {
                 border: 1px solid #F5FBEF;
                 display: grid;
                 grid-template-columns: 1fr;
                 justify-items: center;                
-                text-align: center;          
-            }
-            footer {
-                
+                text-align: center;   
+                max-width: 333px;       
             }
         }
         
