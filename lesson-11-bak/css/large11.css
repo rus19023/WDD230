@@ -1,0 +1,122 @@
+        @media only screen and (min-width: 60em) {
+            main {
+                max-width: 90%;
+                justify-content: center;
+            }
+            #banner1 {
+                display: block;
+                font-size: 1.5em;
+                justify-content: center; 
+                text-align: center;
+            }
+            .stats {
+                font-size: 1em;
+            }
+            .gallery {
+                grid-template-columns: 1fr 1fr 1fr;
+                text-align: center;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+            .gallery figure {
+                align-items: center;
+                padding: 1.5em .5em 1.5em .5em ;
+            }
+            .gallery figure:hover {
+                box-shadow: 0 0  50px #B7B6C2;
+                border-radius: 9px;
+            }
+            .grid1col {
+                display: flex;
+                flex-direction: row;
+            }
+            .left-column,
+            .right-column {
+                max-width: 100%;
+                padding: 1em;
+                align-items: center;     
+            }
+            .right-column figure img {
+                border-radius: 9px;
+            }
+            .noshow {                
+                display: block;
+                justify-content: space-between;
+            }
+            .gridforecast {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                justify-content: space-between;
+                text-align: center;
+                align-items: center;
+                background: #CEE7E6;
+                color: #22007C;
+            }
+            .forecast-item {                
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 1rem;
+            }
+            .forecast-item img {
+                padding: .5rem;
+            }
+            h4.forecast-item {
+                color: #22007C;
+            }
+            iframe {
+                width: 20em;
+                height: 15em;
+                border-radius: 9px;
+            }
+            .header {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }    
+            
+            nav button {
+                display: none;
+            }
+            nav ul {
+                margin: 0 auto;
+            }
+            #primaryNav {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            nav ul li a {
+                border: none;
+                padding: .6rem 1rem;
+            }
+            .towns  {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 1em;
+                padding: 1em;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            .towns section div {
+                width: 95%;
+                margin-bottom: 0;
+            }
+            .towns section div img {
+                max-width: 300px;
+                border-radius: 9px;
+                margin-top: 1rem;
+                margin-right: 1rem;
+            }
+            .towns section {
+                border: 1px solid #F5FBEF;
+                display: grid;
+                grid-template-columns: 1fr;
+                justify-items: center;                
+                text-align: center;   
+                max-width: 333px;       
+            }
+        }
+        
