@@ -4,13 +4,16 @@ html {
     -ms-text-size-adjust: 100%;
 }
 body {
-    background-color: #B7B6C2;
+    background-color: #CEE7E6;
     color: #F5FBEF;
     font-family: "Poppins", "Questrial", sans-serif;
     border-radius: 9px;
     max-width: 100%;
     text-align: center;
 
+}
+.rounded {
+    border-radius: 9px;
 }
 .grey {
     background-color: #B7B6C2;
@@ -50,14 +53,11 @@ nav,
 nav button,
 nav ul li a,
 article img,
-.simple { 
-    border-radius: 9px;
+.simple {
+    text-align: center;
 }
 #banner {
     display: none;
-    background: #22007C;
-    border: 9px double #FAA916;
-    border-radius: 25px;
     font-size: 1.2em;
     padding: .75em;
     text-align: center;
@@ -75,18 +75,12 @@ article img,
     display: inline-block;
     width: 100%;
 }
-footer div {
-    line-height: 1.25rem;
-}
 header,
 footer,
 main {
     background: linear-gradient(to left, rgba(250, 169, 22, .5), rgba(217, 3, 104, .5), rgba(99, 29, 118, .5), rgba(34, 0, 124, .5));
     text-align: center;
-    border-radius: 9px;
     display: inline-block;
-    max-width: 100%;
-    padding: .5rem;
 }
 ul, li {
     text-align: left;
@@ -103,8 +97,7 @@ ul, li {
 }
 .lined-up {
     display: flex;
-    flex-direction: row;
-    padding: .25rem;
+    flex-direction: column;
 }
 .stats {
     position: absolute;
@@ -116,6 +109,7 @@ ul, li {
     opacity: .89;
     font-size: .7em;
     font-weight: bolder;
+    line-height: .7rem;
 }
 .noshow, .noshow1 {
     display: none;
@@ -136,16 +130,22 @@ ul, li {
     display: grid;
     grid-template-rows: auto;
 }
-.right-align {
+span.right-align {
     text-align: right;
 }
-.left-align {
+span.left-align {
     text-align: left;
 }
-.left-column,
+.left-column{
+    max-width: 100%;
+    padding: 1rem;  
+    text-align: left;   
+}
+
 .right-column {
     max-width: 100%;
-    padding: 1rem;    
+    padding: 1rem;  
+    text-align: right; 
 }
 figcaption {
     text-align: center;
@@ -163,7 +163,10 @@ figure {
 .gallery a {
     color: #F5FBEF;
 }
-nav, #banner1 {
+.icon {
+    align-items: center;
+}
+nav, #banner, #banner1 {
     font-weight: bold;
     font-family: "Comfortaa", "Questrial", sans-serif;
     text-align: center;
@@ -215,16 +218,18 @@ nav ul.hide {
     display: table;
     clear: both;
 }
+.footer-top {
+    margin: .25rem;
+}
 footer,
 #updated {
     text-align: center;
     color: #22007C;
-    font-size: .9em;
+    font-size: 1em;
     margin: .5em;
     padding: .5rem;
     font-weight: bold;
-}
-#updated {
+    line-height: 1.5rem;
 }
 form fieldset {
     border: 2px solid #F5FBEF;
