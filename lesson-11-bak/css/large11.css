@@ -48,11 +48,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         text-align: center;
-        background: var(--x11grey);
-        color: var(--dkblue);
-        border-radius: 9px;
+        background: #CEE7E6;
+        color: #22007C;
     }
-    .noshow {                
+    .noshow, noshow1 {                
         display: block;
         justify-content: space-between;
         margin: .5rem;
@@ -65,7 +64,7 @@
     .header {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
     
     nav, #banner1 {

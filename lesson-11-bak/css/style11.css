@@ -16,9 +16,11 @@ body {
     border-radius: 9px;
 }
 .grey {
+    display: flex;
+    flex-direction: row;
     background-color: #B7B6C2;
     border-radius: 0px;
-    max-width: 100%;
+    width: 100%;
     padding: 0;
     color: #22007C;
     justify-content: space-around;
@@ -69,7 +71,6 @@ article img,
     justify-content: space-around;
 }
 #banner1 {
-    margin: .25em;
     text-align: center;
     border-radius: 9px;
     display: inline-block;
@@ -141,11 +142,15 @@ span.left-align {
     padding: 1rem;  
     text-align: left;   
 }
-
 .right-column {
     max-width: 100%;
     padding: 1rem;  
     text-align: right; 
+}
+.center-column {
+    max-width: 100%;
+    padding: 1rem;  
+    text-align: center; 
 }
 figcaption {
     text-align: center;
@@ -165,6 +170,13 @@ figure {
 }
 .icon {
     align-items: center;
+}
+.four00 {
+    max-width: 30vw;
+    max-height: 30vh;
+}
+.realign {
+    margin-top: 2rem;
 }
 nav, #banner, #banner1 {
     font-weight: bold;
@@ -219,15 +231,15 @@ nav ul.hide {
     clear: both;
 }
 .footer-top {
-    margin: .25rem;
+    margin-top: .25rem;
 }
 footer,
 #updated {
     text-align: center;
     color: #22007C;
     font-size: 1em;
-    margin: .5em;
-    padding: .5rem;
+    padding-top: .5em;
+    padding-bottom: .5rem;
     font-weight: bold;
     line-height: 1.5rem;
 }

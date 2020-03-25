@@ -23,7 +23,6 @@ console.table(sortedbyValueJSONArray);
     towns.forEach(town => {
       if (town.name=="Preston"||town.name=="Soda Springs"||town.name=="Fish Haven") {
         
-        let container = document.createElement('article');
         let card = document.createElement('section'); 
         let div1 = document.createElement('div')
         let div2 = document.createElement('div')

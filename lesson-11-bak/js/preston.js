@@ -7,3 +7,4 @@ if (today == 5) {
 }
 
 const cityId = "5604473"
+const townName = "Preston"
