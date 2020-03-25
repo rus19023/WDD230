@@ -1,7 +1,7 @@
 @media only screen and (min-width: 60em) {
     main {
-        max-width: 90%;
         justify-content: center;
+        text-align: center;
     }
     #banner, #banner1 {
         color: #F5FBEF;

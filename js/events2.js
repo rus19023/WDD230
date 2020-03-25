@@ -1,25 +1,26 @@
-const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-fetch(requestURL)
+const eventsURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+fetch(eventsURL)
   .then(function (response) {
     return response.json();
   })
   .then(function (jsonObject) { 
     const towns = jsonObject['towns'];
-    const events = towns[0].events;
-    events.forEach(event => {
-      if (town.name=="Preston"||town.name=="Soda Springs"||town.name=="Fish Haven") {
-        
-            let div1 = document.createElement('div');
-            let h4 = document.createElement('h4');
-            let town_name = `${town.name}`;
-
-            h4.textContent = event;
-            image.setAttribute('src', imgURL);  
-            image.setAttribute('alt', town_name);
-            image.setAttribute('class', 'rounded');
+    console.log(towns);
+    towns.forEach(town => {
+        if (town.name=="Preston"||town.name=="Soda Springs"||town.name=="Fish Haven") {
             
-            //  build the html code for the cards
-            div1.appendChild(h4);
+            let div1 = document.createElement('div');
+
+            for (let i=0, i<towns.events.length(), i++) {
+                let h4 = document.createElement('h4');
+                let event = `${town.events[i]}`;
+
+                h4.textContent = event;
+                
+                //  build the html code for the cards
+                div1.appendChild(h4);
+            }
+               
 
         // set up cards for each town in order of menu
 
