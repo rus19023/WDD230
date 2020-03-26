@@ -3,13 +3,6 @@
         justify-content: center;
         text-align: center;
     }
-    #banner, #banner1 {
-        color: #F5FBEF;
-        display: block;
-        font-size: 1.5em;
-        justify-content: center;
-        text-align: center;
-    }
     .stats {
         font-size: 1em;
     }
@@ -28,8 +21,8 @@
         border-radius: 9px;
     }
     .icon {
-        width: 5em;
-        height: 5em;
+        width: 4em;
+        height: 4em;
     }
     .grid1col {
         display: grid;
@@ -41,15 +34,28 @@
         padding: 1em;
         align-items: center;     
     }
-    .right-column figure img {
+    .forecast-item {                
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: .5rem;
+    }
+    h4.forecast-item, h4.forecast-item2 {
+        color: #22007C;
+    }
+    iframe {
+        width: 20em;
+        height: 15em;
         border-radius: 9px;
     }
     .gridforecast {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        text-align: center;
         background: #CEE7E6;
+        width: 75%;
         color: #22007C;
+        border: 1px solid #22007C;
     }
     .noshow, noshow1 {                
         display: block;
@@ -65,10 +71,8 @@
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-    }
-    
-    nav, #banner1 {
-        font-weight: bold;
+    }   
+    nav {
         color: #F5FBEF;
         font-family: "Comfortaa", "Questrial", sans-serif;
         background: #faa916;

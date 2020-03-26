@@ -13,6 +13,9 @@ body {
 .rounded {
     border-radius: 9px;
 }
+#preston-events, #sodasprings-events, #fishhaven-events {
+    color: #22007C;
+}
 .grey {
     text-align: center;
     display: flex;
@@ -57,6 +60,21 @@ article img,
 .simple {
     text-align: center;
 }
+.bordered {
+    border: 2px solid #F5FBEF;
+    background-color: #22007C;
+    width: 33%;
+    margin: 0 33%;
+}
+.container {
+    display: inline;
+}
+.centered {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
 #banner {
     display: none;
     font-size: 1.2em;
@@ -68,12 +86,16 @@ article img,
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-top: .25rem;
+}
+.logo {
+    padding-top: .5rem;
 }
 #banner1 {
     text-align: center;
-    border-radius: 9px;
     display: inline-block;
     width: 100%;
+    margin: 0;
 }
 header,
 footer,
@@ -177,8 +199,17 @@ figure {
 .realign {
     margin-top: 2rem;
 }
-nav, #banner, #banner1 {
+#banner {
     font-weight: bold;
+    font-size: 1.5em;
+    font-family: "Comfortaa", "Questrial", sans-serif;
+    background: #CEE7E6;
+    color: #22007C;
+}
+nav, #banner1 {
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: .25rem;
     font-family: "Comfortaa", "Questrial", sans-serif;
     text-align: center;
     background: #faa916;
@@ -211,7 +242,7 @@ nav ul li a {
     text-align:center;
 }
 nav ul .current {
-    background-color: #B7B6C2;
+    background-color: #CEE7E6;
     color: #22007c;
 }
 nav ul li a:hover {

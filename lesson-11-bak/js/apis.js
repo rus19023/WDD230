@@ -92,7 +92,7 @@ fetch(apiURL)
   icon1.setAttribute('width', '80px');
   icon1.setAttribute('height', '65px');
 
-  document.querySelector('.icon').appendChild(icon1);  
+  //document.querySelector('.icon').appendChild(icon1);  
 
   document.getElementById('current-temp').textContent = temperature.toFixed(0);
 
@@ -121,7 +121,7 @@ function getForecast() {const requestURL = "https://api.openweathermap.org/data/
     let i = 0;
 
     let card = document.createElement('div');  
-    card.setAttribute('class', 'gridforecast');
+    card.setAttribute('class', 'gridforecast rounded');
 
     jsObject.list.forEach(item => {
         let datetime = jsObject.list[i].dt_txt;
@@ -177,11 +177,11 @@ function getEvents() {
                     var div1 = document.createElement('div');
                     eventNo = town.events.length;
                     for (var i = 0; i < eventNo; i++) {
-                        let h5 = document.createElement('h5');
+                        let h5 = document.createElement('h4');
                         h5.textContent = `${town.events[i]}`;
                         //  build the html code for the cards
                         div1.appendChild(h5);
-                        div1.setAttribute('class', 'grey rounded');
+                        div1.setAttribute('class', 'rounded');
                     }
                     // set up cards for each town in order of menu
                     if (town.name == "Preston") {
