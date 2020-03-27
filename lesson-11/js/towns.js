@@ -46,7 +46,7 @@ console.table(sortedbyValueJSONArray);
         image.setAttribute('src', "images/placeholder.jpg");  
         image.setAttribute('alt', town_name);
         image.setAttribute('class', 'rounded');
-        image.setAttribute('data-src', 'imgURL')
+        image.setAttribute('data-src', 'imgURL');
         h6.textContent = motto;
         p1.textContent = year;
         p2.textContent =population;
