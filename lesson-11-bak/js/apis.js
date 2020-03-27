@@ -7,6 +7,28 @@ function calcWindChill(temperature, windspeed) {
     return "N/A";
     }
 }
+
+getAlerts();
+
+function getAlerts() {
+    const zone=`IDZ061`;
+    const alertsURL = `https://api.weather.gov/alerts/active/zone/${zone}`;
+    fetch(alertsURL)
+        .then(function (response) { return response.json(); })
+        .then(function (jsonObject) {
+            const features = jsonObject['features'];
+            console.log(features);
+            let alertSpan = document.createElement('span');      
+            if (features.length == 0) {          
+                alertSpan.textContent = "No severe weather alerts for the Bear Lake Valley area at this time"; 
+                document.querySelector('#alerts').appendChild(alertSpan);
+            } else {
+                alertSpan.textContent = `Weather alert: ${features[0].properties.headline} ${features[0].properties.description}`; // ${features[0].properties.instructions}`;
+                
+                document.querySelector('#alerts').appendChild(alertSpan);
+            }     
+    });
+}
   
 function windDirection(data) {
 
@@ -68,49 +90,49 @@ function windDirection(data) {
 
 getCurrentWeather();
 
-function getCurrentWeather() {const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=" + cityId + "&appid=5013c3a4f5ead239b175bb0335026653&units=imperial";
+function getCurrentWeather() {
+  const apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&appid=5013c3a4f5ead239b175bb0335026653&units=imperial`;
 
-fetch(apiURL)
-.then((response) => response.json())
-.then((jsObject) => 
-{
-  console.log(apiURL);
-  console.log(jsObject);
-  var imagesrc = 'images/' + jsObject.weather[0].icon + '.png';  
-  var desc = jsObject.weather[0].description;  
-  var windspeed = jsObject.wind.speed.toFixed(0); 
-  var windDegree = jsObject.wind.deg;
-  var temperature = jsObject.main.temp;  
-  var windchill = calcWindChill(temperature, windspeed); 
-  windDegree = 'MPH ' + windDirection(windDegree);
+  fetch(apiURL)
+  .then((response) => response.json())
+  .then((jsObject) => 
+  {
+    var imagesrc = 'images/' + jsObject.weather[0].icon + '.png';
+    var desc = jsObject.weather[0].description;  
+    var windspeed = jsObject.wind.speed.toFixed(0); 
+    var windDegree = jsObject.wind.deg;
+    var temperature = jsObject.main.temp;  
+    var windchill = calcWindChill(temperature, windspeed); 
+    windDegree = 'MPH ' + windDirection(windDegree);
 
-  
-  let icon1 = document.createElement('img');
+    
+    let icon1 = document.createElement('img');
 
-  icon1.setAttribute('src', imagesrc);
-  icon1.setAttribute('alt', desc);
-  icon1.setAttribute('width', '80px');
-  icon1.setAttribute('height', '65px');
+    icon1.setAttribute('src', imagesrc);
+    icon1.setAttribute('alt', desc);
+    icon1.setAttribute('width', '80px');
+    icon1.setAttribute('height', '65px');
 
-  //document.querySelector('.icon').appendChild(icon1);  
+    //document.querySelector('.icon').appendChild(icon1);  
 
-  document.getElementById('current-temp').textContent = temperature.toFixed(0);
+    document.getElementById('current-temp').textContent = temperature.toFixed(0);
 
-  document.getElementById('high').textContent = jsObject.main.temp_max.toFixed(0);
+    document.getElementById('high').textContent = jsObject.main.temp_max.toFixed(0);
 
-  document.getElementById('humidity').textContent = jsObject.main.humidity;
-  document.getElementById('conditions').textContent = desc;
-  document.getElementById('windspeed').textContent = windspeed;
-  document.getElementById('wind-direction').textContent = windDegree;
-  document.getElementById('windchill').textContent = windchill;
+    document.getElementById('humidity').textContent = jsObject.main.humidity;
+    document.getElementById('conditions').textContent = desc;
+    document.getElementById('windspeed').textContent = windspeed;
+    document.getElementById('wind-direction').textContent = windDegree;
+    document.getElementById('windchill').textContent = windchill;
 
-});
+  });
 
 }
 
 getForecast();
 
-function getForecast() {const requestURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + cityId + "&appid=5013c3a4f5ead239b175bb0335026653&units=imperial"
+function getForecast() {
+  const requestURL = `https://api.openweathermap.org/data/2.5/forecast?id=${cityId}&appid=5013c3a4f5ead239b175bb0335026653&units=imperial`;
 
     fetch(requestURL)
     .then(function (response) {
@@ -156,15 +178,11 @@ function getForecast() {const requestURL = "https://api.openweathermap.org/data/
         } else {
         i++;
         }    
+    });
   });
-});
-
 }
 
-
-
-getEvents();
-  
+getEvents();  
 
 function getEvents() {
     const eventsURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
@@ -181,19 +199,14 @@ function getEvents() {
                         h5.textContent = `${town.events[i]}`;
                         //  build the html code for the cards
                         div1.appendChild(h5);
-                        div1.setAttribute('class', 'rounded');
-                    }
+                        //div1.setAttribute('class', 'rounded');
+                    townDivSelect = `#${townDiv}-events`;
                     // set up cards for each town in order of menu
-                    if (town.name == "Preston") {
-                        document.querySelector('#preston-events').appendChild(div1); //  set the Preston div into the html page
-                    }
-                    else if (town.name == "Soda Springs") {
-                        document.querySelector('#sodasprings-events').appendChild(div1); //  set the card div into the html page
-                    }
-                    else if (town.name == "Fish Haven") {
-                        document.querySelector('#fishhaven-events').appendChild(div1);
+                    if(town.name==townName) {
+                      document.querySelector(`${townDivSelect}`).appendChild(div1); //  set the Preston div into the html page
                     }
                 }
+              }
             });
         });
 }

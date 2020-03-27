@@ -10,5 +10,6 @@ function setBanner() {
     }
 }
 
-const cityId = "5604473"
-const townName = "Preston"
+const cityId = "5604473";
+const townName = "Preston";
+const townDiv = "preston";

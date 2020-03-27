@@ -17,7 +17,7 @@
         padding: 1.5em .5em 1.5em .5em ;
     }
     .gallery figure:hover {
-        box-shadow: 0 0  50px var(--ltblue);
+        box-shadow: 0 0  50px #CEE7E6;
         border-radius: 9px;
     }
     .icon {
@@ -55,12 +55,12 @@
         background: #CEE7E6;
         width: 75%;
         color: #22007C;
-        border: 1px solid #22007C;
+        border: 2px solid #22007C;
     }
     .noshow, noshow1 {                
         display: block;
-        justify-content: space-between;
         margin: .5rem;
+        padding-left: 20%;
     }
     iframe {
         width: 20em;

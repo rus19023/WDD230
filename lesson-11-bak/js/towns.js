@@ -41,11 +41,12 @@ console.table(sortedbyValueJSONArray);
         let population = `Population: ${town.currentPopulation}`;
         let rainfall = `Annual Rainfall: ${town.averageRainfall}`;
 
-        h2.textContent = town_name;
+        h2.textContent = town_name;   
         town_a.setAttribute('href', town_link);
-        image.setAttribute('src', imgURL);  
+        image.setAttribute('src', "images/placeholder.jpg");  
         image.setAttribute('alt', town_name);
         image.setAttribute('class', 'rounded');
+        image.setAttribute('data-src', 'imgURL')
         h6.textContent = motto;
         p1.textContent = year;
         p2.textContent =population;
