@@ -22,7 +22,7 @@ fetch(requestURL)
         let p3 = document.createElement('p');
         let image = document.createElement('img');
         let town_name = `${town.name}`;
-        //let town_link = `https://rus19023.github.io/lesson-11/${town.name}.html`;
+        let town_link = `https://rus19023.github.io/lesson-11/${town.name}.html`;
         let imgURL = `images/${town.photo}`;
         let motto = `${town.motto}` ;
         let year = `Year founded: ${town.yearFounded}`;
@@ -40,7 +40,7 @@ fetch(requestURL)
         p3.textContent =rainfall;
         
         //  build the html code for the cards
-        h2.appendChild(town_a);  //  add the town name heading to the text div
+        //h2.appendChild(town_a);  //  add the town name heading to the text div
         div1.appendChild(h2);
         div1.appendChild(h6);  //  add the motto heading to the text div
         div1.appendChild(p1);  //  add the founding year to the text div

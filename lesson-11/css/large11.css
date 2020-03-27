@@ -1,10 +1,17 @@
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 59em) {
     main {
         justify-content: center;
         text-align: center;
     }
     .stats {
         font-size: 1em;
+    }
+    form fieldset {
+        border: 2px solid #F5FBEF;
+        margin: 2rem .25rem;
+        border-radius: 10px;
+        margin: 2% 30%;
+        padding: 1% 4%;
     }
     .gallery {
         grid-template-columns: 1fr 1fr 1fr;
