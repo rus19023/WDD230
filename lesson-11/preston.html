@@ -20,19 +20,30 @@
         
     </head>
 
-    <body onLoad="getDate();">  
+    <body onLoad="getDate();"> 
          
-        <div id="banner" class="marquee">            
+        <div id="banner" >            
             <div>
-                <span>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</span>
+                <span>Saturday = Preston Pancakes in the Park!  &nbsp; &nbsp; 9:00 a.m. Saturday at the city park pavilion.</span>
             </div>            
-        </div>     
+        </div>
+        
+        <div id="banner1">
+
+            <div class="marquee marquee2">
+            <div id="alerts">
+              
+            </div>
+          </div>
+        </div>      
     
-        <header id="header">
+        <header class="header">
             <div>
-                <picture class="logo">
-                   <a href="index.html"> <img src="images/edgelogo75.png" alt="Edge of the Cloud logo, grey cloud and white cloud with yellow/orange thunderbolt on light blue background"></a>
-                </picture>
+                <a href="index.html">
+                    <picture>
+                        <img class="logo" src="images/edgelogo75.png" loading="lazy" alt="Edge of the Cloud logo, grey cloud and white cloud with yellow/orange thunderbolt on light blue background">
+                    </picture>
+                </a>
             </div>                
             <div>
                 <h1>Edge of the Cloud</h1>
@@ -54,20 +65,20 @@
             </ul>
         </nav>
 
-        <main><section class="currently">
+        <main>
+            <section class="currently">
             <h2>Preston</h2>
             <div id="hero">
                 <picture>
-                    <source srcset="images/SMALL.jpg" media="(max-width: 400px)">
+                    <source srcset="images/SMALL.jpg" media="(max-width: 400px)" >
                         <source srcset="images/MEDIUM.jpg" media="(min-width: 401px) and (max-width: 959px)">
                         <source srcset="images/LARGE.jpg" media="(min-width: 960px)">
-                        <img src="images/weather-background-hero.jpg" alt="lightning in purple night sky over trees and houses">
+                        <img src="images/weather-background-hero.jpg" loading="lazy" alt="lightning in purple night sky over trees and houses">
                 </picture>                
             </div>
             <div class="stats rounded"> 
                 <div class="lined-up">
-                    <p>Currently</p> 
-                    <p class="icon"></p> 
+                    <p>Currently</p>
                 </div>                                    
                                                 
                 <div class="grid2col">
@@ -92,10 +103,18 @@
             </div>                
         </section>
 
-        <section class="noshow">
+        <section>
             <h2>5 Day Forecast</h2> 
-        </section>
-        
+                    <div class="noshow"></div>
+        </section>        
+
+        <h2>Upcoming Town Events</h2> 
+            <section class="bordered rounded centered">
+                <div id="preston-events" class=" container ">
+
+                </div> 
+            </section>
+
             <h2>It's Ice Fishing Weather!</h2>
             <article class="grid1col">
                 <div class="left-column">
@@ -111,38 +130,47 @@
                         <li> <a href="https://idfg.idaho.gov/ifwis/fishingplanner/water/1118157421078"> Lamont Reservoir  </a></li>
                         <li> <a href="https://idahohighcountry.org/item/treasureton-reservoir/"> Treasureton Reservoir  </a></li>
                         <li> <a href="https://idahohighcountry.org/item/condie-reservoir/">  Condie Reservoir </a></li>
+                        <li> <a href="https://idahohighcountry.org/item/condie-reservoir/">  Bear Lake </a></li>
                     </ul>
                 </div>
-                <div class="right-column">
-                    <figure>
-                        <img src=" images/man-fishing.jpg" alt="Photo of man fishing by Greysen Johnson on Unsplash">
-                        <figcaption>Man fishing at body of water</figcaption>
-                    </figure>
+
+                <div id="right-column">
+                    <picture>
+                        <source srcset="images/ice-fishing-SM.jpg" media="(max-width: 400px)">
+                        <source srcset="images/ice-fishing-MD.jpg" media="(min-width: 401px) and (max-width: 959px)">
+                        <source srcset="images/ice-fishing-LG.jpg" media="(min-width: 960px)">
+                        <img class="realign2" src="images/placeholder.jpg" data-src="images/ice-fishing.jpg" loading="lazy" alt="Photo of personal watercraft on Bear Lake"> 
+                    </picture>                    
+                    <p>Photo of Soda Springs geyser erupting by <a href="https://creativecommons.org/licences/by/3.0/">Creative Commons Licence</a>- Photo by  <a href="https://idfg.idaho.gov/files/ice-fishing">Roger Phillips/Idaho Fish and Game </a>
+                    </p>               
                 </div>
+
             </article>
+            <section>
+                
+            <h2 class="dkblue"> Contact Information</h2>
+            <article class="grey">
+                
+                <div class="noshow1 rounded">                    
+                    <a href="https://www.google.com/maps?ll=42.107723,-111.911652&z=16&t=m&hl=en&gl=US&mapclient=embed&cid=9251099430688056481"><img class="four00 rounded" src="images/placeholder.jpg" data-src="images/preston-map.png" loading="lazy" alt="map of Preston area"></a>
+                </div>
+
+                <div class="center-column realign">Edge of the Cloud Weather <br><br>(555) 555-5555 <br><br>fake-email@edgeofthecloud.info <br><br></div>
+            </article> 
+            </section>
         </main>
 
         <footer>
-            <h2> Contact Information</h2>
-            <article class="grid1col grey">
-    
-                <div class="noshow left-column">                    
-                    <a href="https://www.google.com/maps?ll=42.107723,-111.911652&z=16&t=m&hl=en&gl=US&mapclient=embed&cid=9251099430688056481"><img src="images/preston-map.png" alt="map of Preston area"></a>
-                </div>
-                
-                <div class="right-column"> <br><br><br><br>Edge of the Cloud Weather <br><br>(555) 555-5555 <br><br>more@edgeofthecloud.info <br><br></div>
-            </article> 
-            <div id="footer-top">
+            <div id="footer-top">&copy;2020 &nbsp; | &nbsp; Doris Rush-Lopez &nbsp;| &nbsp;New Jersey &nbsp; | &nbsp; <a href="https://www.byui.edu/online" >BYU-Idaho Online Learning</a> <br><br>
                 Source of live weather information on this site is <a href="https://openweathermap.org">Open Weather Map API</a>
-            </div>    
-            &copy;2020 &nbsp; | &nbsp; Doris Rush-Lopez &nbsp;| &nbsp;New Jersey &nbsp; | &nbsp; <a href="https://www.byui.edu/online" >BYU-Idaho Online Learning</a> 
-               
+            </div> 
             <div id="updated"></div>
         </footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script src="js/preston.js"></script> 
-        <script src="js/my_js.js"></script> 
-        <script src="js/functions.js"></script> 
+        <script src="js/apis.js"></script> 
+        <script src="js/functions.js"></script>
+        <script src="js/lazyload.js" defer></script> 
     </body> 
 </html>

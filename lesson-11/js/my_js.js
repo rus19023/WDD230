@@ -10,60 +10,60 @@ function calcWindChill(temperature, windspeed) {
   
 function windDirection(data) {
 
-var deg = Math.floor(data);
-switch (true) {
-  case deg >= 360 && deg <= 21:
-  deg = "N";
-  break;
-  case deg >= 22 && deg <= 44:
-  deg = "NNE";
-  break;
-  case deg >= 45 && deg <= 66:
-  deg = "NE";
-  break;
-  case deg >= 67 && deg <= 89:
-  deg = "ENE";
-  break;
-  case deg >= 90 && deg <= 111:
-  deg = "E";
-  break;
-  case deg >= 112 && deg <= 134:
-  deg = "ESE";
-  break;
-  case deg >= 135 && deg <= 156:
-  deg = "SE";
-  break;
-  case deg >= 157 && deg <= 179:
-  deg = "SSE";
-  break;
-  case deg >= 180 && deg <= 201:
-  deg = "S";
-  break;
-  case deg >= 202 && deg <= 224:
-  deg = "SSW";
-  break;
-  case deg >= 225 && deg <= 246:
-  deg = "SW";
-  break;
-  case deg >= 247 && deg <= 269:
-  var deg = "WSW";
-  break;
-  case deg >= 270 && deg <= 291:
-  deg = "W";
-  break;
-  case deg >= 292 && deg <= 314:
-  deg = "WNW";
-  break;
-  case deg >= 315 && deg <= 336:
-  deg = "NW";
-  break;
-  case deg >= 337 && deg <= 359:
-  deg = "NNW";
-  break;
-  default:
-  deg = "no data";
-}
-return deg;
+  var deg = Math.floor(data);
+  switch (true) {
+    case deg >= 360 && deg <= 21:
+    deg = "N";
+    break;
+    case deg >= 22 && deg <= 44:
+    deg = "NNE";
+    break;
+    case deg >= 45 && deg <= 66:
+    deg = "NE";
+    break;
+    case deg >= 67 && deg <= 89:
+    deg = "ENE";
+    break;
+    case deg >= 90 && deg <= 111:
+    deg = "E";
+    break;
+    case deg >= 112 && deg <= 134:
+    deg = "ESE";
+    break;
+    case deg >= 135 && deg <= 156:
+    deg = "SE";
+    break;
+    case deg >= 157 && deg <= 179:
+    deg = "SSE";
+    break;
+    case deg >= 180 && deg <= 201:
+    deg = "S";
+    break;
+    case deg >= 202 && deg <= 224:
+    deg = "SSW";
+    break;
+    case deg >= 225 && deg <= 246:
+    deg = "SW";
+    break;
+    case deg >= 247 && deg <= 269:
+    var deg = "WSW";
+    break;
+    case deg >= 270 && deg <= 291:
+    deg = "W";
+    break;
+    case deg >= 292 && deg <= 314:
+    deg = "WNW";
+    break;
+    case deg >= 315 && deg <= 336:
+    deg = "NW";
+    break;
+    case deg >= 337 && deg <= 359:
+    deg = "NNW";
+    break;
+    default:
+    deg = "no data";
+  }
+  return deg;
 }
 
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=" + cityId + "&appid=5013c3a4f5ead239b175bb0335026653&units=imperial";
@@ -155,4 +155,33 @@ fetch(requestURL)
     
   });
 });
+
+const eventsURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+fetch(eventsURL)
+  .then(function (response) { return response.json(); })
+  .then(function (jsonObject) {  
+    const towns = jsonObject['towns'];    
+    towns.forEach(town => {
+      if (town.name=="Preston"||town.name=="Soda Springs"||town.name=="Fish Haven") {  
+        var div1 = document.createElement('div');
+        eventNo = town.events.length;
+        for (var i = 0; i<eventNo; i++) { 
+          let h5 = document.createElement('h5');
+          h5.textContent = `${town.events[i]}`;          
+          //  build the html code for the cards
+          div1.appendChild(h5);
+          div1.setAttribute('class','grey rounded');
+        }  
+        // set up cards for each town in order of menu
+        if (town.name == "Preston") {
+          document.querySelector('#preston-events').appendChild(div1);  //  set the Preston div into the html page
+        } else if (town.name == "Soda Springs") {
+        document.querySelector('#sodasprings-events').appendChild(div1);  //  set the card div into the html page
+        }else if (town.name == "Fish Haven") {
+        document.querySelector('#fishhaven-events').appendChild(div1);  //  set the card div into the html page
+        }
+      }        
+    })
+  });
+  
     

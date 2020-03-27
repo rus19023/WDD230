@@ -9,10 +9,9 @@ WebFont.load({
     google: { families: ['Comfortaa', 'Poppins', 'Questrial'] }
   });
 
-  function adjustRating(rating) {
-      document.getElementById("ratingvalue").innerHTML = rating;
-  }
-
+function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}
 
 // gets date for footer
 function getDate() {

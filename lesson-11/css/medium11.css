@@ -3,11 +3,14 @@
 		max-width: 95%;
 	}
 	.stats {
-		font-size: .85em;
+		font-size: .7em;
+	}
+	.noshow1 {
+		display: block;
 	}
 	.gallery {
 	  display: grid;
-	  grid-template-columns: 1fr 1fr;  
+	  grid-template-columns: 1fr 1fr;
 	  justify-content: center;
 	  align-items: center;
 	  border-radius: 9px;
@@ -21,10 +24,6 @@
 	} 
 	.right-column figure img {
 		border-radius: 9px;
-	}
-	article.grid1col.grey div.right-column {
-		align-items: center;
-		text-align: center;
 	}
 
 	main picture img {
@@ -41,7 +40,6 @@
 	#sodasprings section {
 		flex-direction: row-reverse;
 		align-items: center;
-		padding: .5rem;
 	}
 	.towns section div {
 		width: 50%;
@@ -51,11 +49,9 @@
 	}
 	.towns section div img {
 		width: 400px;
-		border-radius: 9px;
-		padding: .25rem;
 	}
-	.noshow1 {
-		display: block;
+	footer {
+		width: 100%;
 	}
 
 }
