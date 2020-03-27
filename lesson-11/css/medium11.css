@@ -8,6 +8,10 @@
 	.noshow1 {
 		display: block;
 	}
+	.town-image {
+		width: 40vw;
+		height: 50vh;
+	}
 	.gallery {
 	  display: grid;
 	  grid-template-columns: 1fr 1fr;

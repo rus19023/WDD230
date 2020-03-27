@@ -30,9 +30,9 @@ fetch(requestURL)
         let rainfall = `Annual Rainfall: ${town.averageRainfall}`;
 
         h2.textContent = town_name;
-        image.setAttribute('class', 'rounded');
-        image.setAttribute('src', "images/placeholder.jpg"); 
-        image.setAttribute('data-src', imgURL); 
+        image.setAttribute('class', 'rounded town-image realign');
+        image.setAttribute('src', imgURL); 
+        //image.setAttribute('src', 'images/placeholder.jpg'); 
         image.setAttribute('alt', town_name);
         h6.textContent = motto;
         p1.textContent = year;
@@ -53,14 +53,14 @@ fetch(requestURL)
         // set up cards for each town in order of menu
 
         if (town.name == "Preston") {
-
           document.querySelector('#preston').appendChild(card);  //  set the Preston div into the html page
 
         } else if (town_name == "Soda Springs") {
         document.querySelector('#sodasprings').appendChild(card);  //  set the card div into the html page
-        }else if (town_name == "Fish Haven") {
+
+        } else if (town_name == "Fish Haven") {
         document.querySelector('#fishhaven').appendChild(card);  //  set the card div into the html page
         }
-    }
+      }
     });
   });

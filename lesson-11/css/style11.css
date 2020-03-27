@@ -10,14 +10,16 @@ body {
     max-width: 100%;
     text-align: center;
 }
-.rounded img {
-    max-width: 100%;
+.town-image {
+    width: 70vw;
+    height: 50vh;
 }
 .rounded {
     border-radius: 9px;
 }
 #preston-events, #sodasprings-events, #fishhaven-events {
     color: #22007C;
+    width: 85%;
 }
 .grey {
     text-align: center;
@@ -70,7 +72,7 @@ main {
     border: 2px solid #F5FBEF;
     background-color: #22007C;
     width: 33%;
-    margin: 0 33%;
+    margin: 8%;
 }
 .container {
     display: inline;
@@ -80,6 +82,7 @@ main {
     align-items: center;
     justify-content: center;
     justify-items: center;
+    width: 85%;
 }
 #banner {
     display: none;
@@ -97,6 +100,7 @@ main {
 .logo {
     padding-top: .5rem;
     width: 175px;
+    height: 125px;
 }
 #banner1 {
     text-align: center;
