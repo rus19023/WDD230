@@ -1,14 +1,5 @@
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
-function sortByValue(jsObj){
-  var sortedArray = [];
-  for(var i in jsObj)
-  {
-      // Push each JSON Object entry in array by [value, key]
-      sortedArray.push([jsObj[i], i]);
-  }
-  return sortedArray.sort();
-};
 
 fetch(requestURL)
   .then(function (response) {
@@ -17,9 +8,6 @@ fetch(requestURL)
   .then(function (jsonObject) { 
     const towns = jsonObject['towns'];
 
-
-var sortedbyValueJSONArray = sortByValue(towns);
-console.table(sortedbyValueJSONArray);
     towns.forEach(town => {
       if (town.name=="Preston"||town.name=="Soda Springs"||town.name=="Fish Haven") {
         
