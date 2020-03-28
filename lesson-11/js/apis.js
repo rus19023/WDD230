@@ -17,7 +17,7 @@ function getAlerts() {
         .then(function (response) { return response.json(); })
         .then(function (jsonObject) {
             const features = jsonObject['features'];
-            console.log(features);
+            //console.log(features);
             let alertSpan = document.createElement('span');      
             if (features.length == 0) {          
                 alertSpan.textContent = "No severe weather alerts for the Bear Lake Valley area at this time"; 
