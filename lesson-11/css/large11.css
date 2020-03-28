@@ -67,7 +67,6 @@
     .noshow, noshow1 {                
         display: block;
         margin: .5rem;
-        padding-left: 20%;
     }
     iframe {
         width: 20em;
