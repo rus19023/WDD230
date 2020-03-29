@@ -2,37 +2,39 @@
 <html lang="en">
 
     <head>
-        <title>Home Page | CIT 230 Weather Site Project - Week 09</title>
+        <title>Home Page | Edge of the Cloud Weather | CIT 230 Weather Site Project - Week 11</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Home page for website project for Doris Rush-Lopez for CIT 230: Web Frontend Development at Brigham Young University, Idaho, Winter 2020 semester">
+        <meta name="description" content="Weather website project for Doris Rush-Lopez for CIT 230: Web Frontend Development at Brigham Young University, Idaho, Winter 2020 semester">
         
         <link rel="shortcut icon" href="../favicon.ico">
 
         <link rel="stylesheet" href="../css/normalize.css">
-        <link rel="stylesheet" href="css/style9.css" />
-        <link rel="stylesheet" href="css/medium9.css" />
-        <link rel="stylesheet" href="css/large9.css" /> 
+        <link rel="stylesheet" href="css/style11.css"/>
 
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
     </head>
 
-    <body onLoad="getDate();"> 
+    <body onLoad="getDate();">
+        
         <div id="banner1">
-            <div class="marquee">
-            <div>
-              <span>Weather Alert: (will pull from weather service)</span>
+
+            <div class="marquee marquee2">
+            <div id="alerts">
+              
             </div>
           </div>
-        </div> 
+        </div>      
     
-        <header id="header">
+        <header class="header">
             <div>
-                <picture class="logo">
-                    <img src="images/edgelogo75.png" alt="Edge of the Cloud logo, grey cloud and white cloud with yellow/orange thunderbolt on light blue background">
-                </picture>
+                <a href="index.html">
+                    <picture>
+                        <img class="logo" src="images/edgelogo75.png" alt="Edge of the Cloud logo, grey cloud and white cloud with yellow/orange thunderbolt on light blue background">
+                    </picture>
+                </a>
             </div>                
             <div>
                 <h1>Edge of the Cloud</h1>
@@ -45,50 +47,77 @@
                 <button onClick="toggleMenu()">&#9776; Menu</button>
             </div>
             <ul id="primaryNav" class="hide">
-                <li><a class="current" href="index.html">Home</a></li>
-                <li><a href="preston.html">Preston</a></li>
-                <li><a href="sodasprings.html">Soda Springs</a></li>
-                <li> <a href="fishhaven.html">Fish Haven</a></li>
-                <li> <a href="stormcenter.html">Storm Center</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
+                <li><a class="current rounded"  href="index.html">      Home        </a></li>
+                <li><a class="rounded"          href="preston.html">    Preston     </a></li>
+                <li><a class="rounded"          href="sodasprings.html">Soda Springs</a></li>
+                <li><a class="rounded"          href="fishhaven.html">  Fish Haven  </a></li>
+                <li><a class="rounded"          href="stormcenter.html">Storm Center</a></li>
+                <li><a class="rounded"          href="gallery.html">    Gallery     </a></li>
             </ul>
         </nav>
         <main>
-            <section class="currently">
-                <h2>Our Towns</h2>
+
+            <article>
+                <div class="towns">  
+                    <div  id="preston"> </div>
+                    <div  id="sodasprings"> </div>
+                    <div  id="fishhaven"> </div>
+                </div>
+            </article>
+
+            <article>
+                <h3> Latest Weather</h3>
+                <section class="grid2col">
+                    <div class="right-column">
+                        <br><br><br><br>
+                    <h4>
+                        Southeast Idaho Weather Hazard Briefing - March 17, 2020 <br><br>
+                        summary from the <a href="https://www.youtube.com/channel/UCDiF8czUOOgNbeJ_75KDhNQ">National Weather Service in Pocatello ID</a><br>
+                    </h4></div>
+                    
+                    <div class="left-column">
+                        <ul>
+                            <li>An area of low pressure approaches from over the coast of California, bringing the possiblity of rain, snow and/or thundershowers.
+                                Gusty winds and colder temeratures along the eastern border of the state. </li>
+                            <li>An area of low pressure approaches from over the coast of California, bringing the possiblity of rain, snow and/or thundershowers.</li>
+                            <li>An area of low pressure approaches from over the coast of California, bringing the possiblity of rain, snow and/or thundershowers.</li>
+                            <li> Gusty winds and colder temeratures along the eastern border of the state.</li>
+                            <li>Snow showers could happen through today, but chances decrease by Wednesday to Thursday.</li>
+                            <li>Eastern and southern highlands / Bear Lake area will have higher chances Thursday and Friday.</li>
+                            <li>The system becomes active again over the weekend.</li>
+                            <li>Strong storms capable of producing hail and thunderstorms.</li>
+                        </ul>                      
+                    </div>
+                     
+                  </div>
+                </section>
+            
+            <section>                
+                <h2 class="dkblue"> Contact Information</h2>
+                <article class="grey">
+                    
+                    <div class="noshow1 rounded">                    
+                        <a href="https://www.google.com/maps?ll=42.107723,-111.911652&z=16&t=m&hl=en&gl=US&mapclient=embed&cid=9251099430688056481"><img class="four00 rounded" src="images/placeholder.jpg" data-src="images/preston-map.png" loading="lazy" alt="map of Preston area"></a>
+                    </div>
+                    <div class="center-column realign">
+                        Edge of the Cloud Weather <br><br>(555) 555-5555         <br><br>fake-email@edgeofthecloud.info <br><br>
+                    </div>
+                </article> 
             </section>
 
-            <article>
-                <div class="towns"> </div>
-            </article>
-            <article>
-                <div>
-                    <h3> Breaking Weather Story</h3>
-                    Lorem ipsum dolor sit amet, cum nihil antiopam rationibus ei, ius persius aliquando tincidunt an, vis appareat accusamus at. Has perfecto euripidis in, stet latine pertinacia ad per. Falli cotidieque nam et, ut quas error sea, inani habemus has at. Pri an quis doming, mea ad odio illum, qui cu ubique indoctum dissentiet. Ad eos nulla docendi appareat, quando accumsan at cum. No sed noster suavitate accommodare. Luptatum posidonium at cum.
-                    
-                  </div>
-            </article>
         </main>
 
-       
-        <footer> <h2> Contact Information</h2>
-            <article class="grid1col grey">
-
-                <div class="noshow left-column">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2959.988058625019!2d-111.91384604968394!3d42.10772655889093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f9d6f55ca5d3%3A0x806281eaf3fae4a1!2sPreston%20Airport-U10!5e0!3m2!1sen!2sus!4v1581451554563!5m2!1sen!2sus"></iframe>
-                </div>
-                <div class="right-column"> <br><br><br><br>Edge of the Cloud Weather <br><br>(555) 555-5555 <br><br>more@edgeofthecloud.info <br><br></div>
-            </article> 
-            &copy;2020 &nbsp; | &nbsp; Doris Rush-Lopez &nbsp;| &nbsp;New Jersey &nbsp; | &nbsp; <a href="https://www.byui.edu/online" >BYU-Idaho Online Learning</a>        
+        <footer>
+            <div id="footer-top">&copy;2020 &nbsp; | &nbsp; Doris Rush-Lopez &nbsp;| &nbsp;New Jersey &nbsp; | &nbsp; <a href="https://www.byui.edu/online" >BYU-Idaho Online Learning</a> <br><br>
+                Source of live weather information on this site is <a href="https://openweathermap.org">Open Weather Map API</a>
+            </div> 
             <div id="updated"></div>
-            <div>
-                Copyright information for live weather data:
-            </div>
         </footer>
 
         
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script src="js/towns.js"></script>
-        <script src="js/my_js.js"></script>
+        <script src="js/functions.js"></script>
+        <script src="js/lazyload.js" defer></script> 
     </body>
 </html>
