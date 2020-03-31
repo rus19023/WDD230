@@ -3,9 +3,9 @@
                 max-width: 90%;
                 justify-content: center;
             }
-            #banner, #banner1 {
+            #banner {
                 color: #F5FBEF;
-                display: block;
+                display: none;
                 font-size: 1.5em;
                 justify-content: center;
                 text-align: center;
@@ -24,7 +24,7 @@
                 padding: 1.5em .5em 1.5em .5em ;
             }
             .gallery figure:hover {
-                box-shadow: 0 0  50px var(--ltblue);
+                box-shadow: 0 0  50px #CEE7E6;
                 border-radius: 9px;
             }
             .icon {
@@ -48,8 +48,8 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
                 text-align: center;
-                background: var(--x11grey);
-                color: var(--dkblue);
+                background: #B7B6C2;
+                color: #22007c;
                 border-radius: 9px;
             }
             .noshow {                
@@ -70,6 +70,7 @@
             
             nav, #banner1 {
                 font-weight: bold;
+                max-width: 100%;
                 color: #F5FBEF;
                 font-family: "Comfortaa", "Questrial", sans-serif;
                 background: #faa916;

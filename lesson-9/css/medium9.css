@@ -5,6 +5,13 @@
 	.stats {
 		font-size: .7em;
 	}
+	.noshow1 {
+		display: block;
+	}
+	.town-image {
+		width: 40vw;
+		height: 50vh;
+	}
 	.gallery {
 	  display: grid;
 	  grid-template-columns: 1fr 1fr;
@@ -16,7 +23,7 @@
 	}
 	figcaption {
 	  font-size: 1em;
-	  color:  #F5FBEF ;
+	  color: #F5FBEF;
 	  text-align: center;
 	} 
 	.right-column figure img {
@@ -34,7 +41,7 @@
 		justify-content: space-evenly;
 		width: 100%;
 	}
-	.towns section:nth-child(odd) {
+	#sodasprings section {
 		flex-direction: row-reverse;
 		align-items: center;
 	}
@@ -46,6 +53,9 @@
 	}
 	.towns section div img {
 		width: 400px;
+	}
+	footer {
+		width: 100%;
 	}
 
 }
