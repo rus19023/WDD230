@@ -32,6 +32,10 @@ function getDate() {
 
 }
 
+function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}
+
 // add WebFont Family to website
 WebFont.load({
     google: {
