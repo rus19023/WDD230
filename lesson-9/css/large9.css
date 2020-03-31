@@ -63,6 +63,7 @@
         width: 75%;
         color: #22007C;
         border: 2px solid #22007C;
+        padding: .25rem;
     }
     .noshow, noshow1 {                
         display: block;

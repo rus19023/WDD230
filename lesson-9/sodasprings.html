@@ -36,29 +36,71 @@
   <nav class="clearfix">
     <button onClick="toggleMenu()">&#9776; Menu</button>
     <ul id="primaryNav" class="hide">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="preston.html">Preston</a></li>
-      <li><a class="current" href="sodasprings.html">Soda Springs</a></li>
-      <li> <a href="fishhaven.html">Fish Haven</a></li>
-      <li> <a href="stormcenter.html">Storm Center</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
+      <li><a class="rounded" href="index.html">Home</a></li>
+      <li><a class="rounded" href="preston.html">Preston</a></li>
+      <li><a class="current rounded" href="sodasprings.html">Soda Springs</a></li>
+      <li> <a class="rounded" href="fishhaven.html">Fish Haven</a></li>
+      <li> <a class="rounded" href="stormcenter.html">Storm Center</a></li>
+      <li><a class="rounded" href="gallery.html">Gallery</a></li>
     </ul>
   </nav>
   <main>
     <section class="currently">
-            <h2>Soda Springs, Idaho</h2>
-            
-             
+        <h2>Soda Springs</h2>
+        <div id="hero">
+            <picture>
+                <source srcset="images/SMALL.jpg" media="(max-width: 400px)">
+                    <source srcset="images/MEDIUM.jpg" media="(min-width: 401px) and (max-width: 959px">
+                    <source srcset="images/LARGE.jpg" media="(min-width: 960px)">
+                    <img src="images/cit230_image_franklinOriginal.jpeg" alt="Forest at sunset">
+            </picture>                
+        <div>
+        <div class="stats rounded">                        
+            <h3>Current Conditions&nbsp;&nbsp;</h3>                        
+            <div class="grid2col">
+                <div>
+                    <span class="right-align">Temperature:&nbsp; </span><br><br>
+                    <span class="right-align">Wind Chill: </span> <br><br>
+                    <span class="right-align">Humidity: </span><br><br>
+                    <span class="right-align">Precipitation: </span><br><br>
+                    <span class="right-align">Wind Speed: </span> <br> <br>
+                </div>
+                <div>
+                    <span class="left-align"><span id="temperature">35</span> <span>&#176;F</span> <br><br>
+                    <span class="left-align"><span id="windchill"></span><span>&#176;F</span><br><br>
+                    <span class="left-align"><span id="humidity">75% </span> <span></span><br><br>
+                    <span class="left-align"><span id="precipitation">0 in.</span> <span></span><br><br>
+                    <span class="left-align"><span id="windspeed">5</span><span> mph NNE</span><br> <br>
+                </div>
+            </div>
+        </div>                
     </section>
 
-    <article class="noshow">
-      <h3> Article</h3>
-      Nec ne assueverit concludaturque. Eu enim habeo tincidunt per. Has verear pertinacia ut. Pro case quidam aeterno
-      ad, no est hinc percipit, nam debet delenit intellegebat ne. Ludus recteque salutandi ne per, eum ut enim
-      imperdiet tincidunt, nobis contentiones ea duo.
+    <section class="noshow">
+        <h2>5 Day Forecast</h2>  
+        
+            <section>
 
-    
-    </article>
+            </section>
+        
+            <div class="gridforecast rounded">
+                <span class="day1">Today<br><img class="icon" src="images/partly-cloudy.png" alt="partly cloudy icon">
+                <br>High: 39&#176;F<br>Low: 29&#176;F<br>Wind: <br>5 mph</span>
+                
+                <span>Tomorrow<br><img class="icon" src="images/windy.png" alt="partly cloudy icon">
+                <br>High: 30&#176;F<br>Low: 19&#176;F<br>Wind: <br>20 mph</span>
+                
+                <span>Day 3<br><img class="icon" src="images/sunny.png" alt="partly cloudy icon">
+                <br>High: 39&#176;F<br>Low: 31&#176;F<br>Wind: <br>2.5 mph</span>
+                
+                <span>Day 4<br><img class="icon" src="images/rainy.png" alt="partly cloudy icon">
+                <br>High: 41&#176;F<br>Low: 31&#176;F<br>Wind: <br>4.5 mph</span>
+                
+                <span>Day 5<br><img class="icon" src="images/thunder.png" alt="thunderstorm icon">
+                <br>High: 50&#176;F<br>Low: 41&#176;F<br>Wind: <br>9 mph<br></span>
+            </div>            
+
+    </section>
 
     <article class="item">
       <div>
