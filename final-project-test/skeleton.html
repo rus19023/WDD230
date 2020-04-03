@@ -1,24 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>   Salmon River Adventures  | CIT 230 Final Project</title>
+    <title>   Home | Salmon River Adventures  | CIT 230 - Final Project</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>         
     <meta name="description" content="Final Project page for website project for Doris Rush-Lopez for CIT 230: Web Frontend Development, Section 14 at Brigham Young University, Idaho, Winter 2020 semester">
         
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
 
     <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
     
     <link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Acme|Allura|Archivo|Arimo|Arizonia|Asap|Barlow|Cairo|Calligraffitti|Cantarell|Catamaran|Changa|Chilanka|Chivo|Dosis|Exo|Hind|Kanit|Karla|Neucha|Niconne|Nunito|Overpass|Oxygen|Philosopher|Play|Prompt|Quicksand|Ruda|Sacramento|Satisfy|Spartan|Sriracha|Teko|Viga|Yesteryear&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/small.css"/>
-    <link rel="stylesheet" href="css/medium.css"/>
-    <link rel="stylesheet" href="css/large.css"/>
+    <link rel="stylesheet" href="css/style.css">
+root = html
+  tag = head
+    tag = title
+      text = Home | Salmon River Adventures  | CIT 230 - Final Project
+    tag = meta
+      attribute = charset
+      data = utf-8
+    tag = meta
+      attribute = name
+      data = viewport
+      attribute = content
+      data = width=device-width, initial-scale=1
+    tag = meta
+      attribute = name
+      data = description
+      attribute = content
+      data = Final Project page for website project for Doris Rush-Lopez for CIT 230: Web Frontend Development, Section 14 at Brigham Young University, Idaho, Winter 2020 semester
+    tag = link 
+      attribute = rel
+      data = shortcut icon
+      attribute = href
+      data = favicon.ico
+    tag = link
+      attribute = rel
+      data = stylesheet
+      attribute = href
+      data = https://fonts.googleapis.com/css?family=Catamaran&display=swap
+      tag = link
+        attribute = rel
+        data = stylesheet
+        attribute = href
+        data = css/style.css
+  tag = body
+root = body
+  tag = nav
+    attribute = class
+    data = clearfix
+    tag = button
+      attribute = onClick
+      data = toggleMenu()
+      text = &#9776;
+    tag = ul
+      attribute = id
+      data = primaryNav
+      attribute = class
+      data = hide
+      tag = li
+        tag = a
+          attribute = href
+          data = index.html
+          text = Home
+      tag = li
+        attribute = class
+        data = active        ## this has to be done programmatically if stmt   ##
+      tag = li
+        attribute = 
+        data =  
+        tag = li
+          attribute = 
+          data =  
+          tag = li
+            attribute = 
+            data =  
+    tag = main
+      tag = header
+        tag = div
+          attribute = class
+          data = header
+          tag = div
+            tag = picture
+              attribute = class
+              data = logo
+              tag = img
+                attribute = src
+                data = images/logo.png
+                attribute = alt
+                data = Salmon River Adventures logo, description
+          tag = div
+            tag = h1
+              text = Salmon River Adventures
+            tag = h3
+              text = Get wild, get wet, get on cloud nine!
+
+
   </head>
-  <body onLoad="getDate();">
-    <main class="wrapper">       
+  <body onLoad="getDate();">     
     
       <header>
           <div class="header">
@@ -44,7 +124,8 @@
           <li><a href=".html" > </a></li>   
         </ul>
       </nav>
-      <main>
+      
+      <main class="wrapper">  
         <div class="normal">
           <h1>Heading 1 - Salmon River Adventures - Get wild, get wet, get on cloud nine!</h1>
           <h2>Heading 2 - Salmon River Adventures - Get wild, get wet, get on cloud nine!</h2>
