@@ -1,0 +1,15 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Calligraffitti", "Arizonia", sans-serif;
+    font-weight: bold;
+}
+ {
+    font-family: "Satisfy", "Oxygen", sans-serif;
+}
+p {   
+    font-family: "Sriracha", "Oxygen", sans-serif; 
+}
+.normal {
+    padding: .4rem;
+    text-align: center;
+    font-size: 1rem;
+}
