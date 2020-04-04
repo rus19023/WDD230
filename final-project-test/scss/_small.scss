@@ -3,11 +3,12 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 body {
-    font-family: $textFontFamily;
+    font-family: $bodyFontFamily;
 }
 p {   
-    font-family: $textFontFamily;
+    font-family: $bodyFontFamily;
 }
+
 .normal {
     padding: .4rem;
     text-align: center;
