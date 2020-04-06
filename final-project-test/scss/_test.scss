@@ -3,7 +3,6 @@
     clip-path: ellipse(60px 40px at 75px 30px);
 }
 
-
 .clip-items {
     display : flex;
     flex-wrap : wrap;
@@ -12,8 +11,8 @@
     margin: 1em;
     width: 15em;
     height: 15em;
-    border: 1px solid #ccc;
-    background: $salmon;
+    border: 1px solid ;
+    background: ;
     }
     .clip {
       width: 100%;
@@ -28,7 +27,7 @@
        clip-path: circle(5rem);
       }
       &.ellipse {
-       clip-path: ellipse(45% 30% at 50% 50%);
+       clip-path: ellipse(100% 48% at 50% 100%);
       }
       &.ellipse-1 {
        clip-path: ellipse(25% 40% at 50% 50%);
@@ -47,4 +46,3 @@
       }
     }
   }
-  

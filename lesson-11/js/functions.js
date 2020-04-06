@@ -6,7 +6,7 @@ function toggleMenu() {
 
 // add WebFont Family to website
 WebFont.load({
-    google: { families: ['Comfortaa', 'Poppins', 'Questrial'] }
+    google: { families: ['Calligraffiti', 'Sriracha'] }
   });
 
 function adjustRating(rating) {

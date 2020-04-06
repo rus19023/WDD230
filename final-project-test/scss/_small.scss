@@ -1,38 +1,31 @@
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: $headingFontFamily;
     font-weight: bold;
     color: $rocket;
 }
+
 body {
     font-family: $bodyFontFamily;
     color: $blackleather;
-    background: $tan;
+    background: $salmon;
 }
+
 .ellipse {
-  width: 100%;
-  -webkit-clip-path: circle(50% at 50%);
-  clip-path: ellipse(100% 48% at 48% 40%);
+    width: 100%;
+    -webkit-clip-path: circle(50% at 50%);
+    clip-path: ellipse(100% 50% at 48% 48%);
 }
-p {   
+
+p {
     font-family: $bodyFontFamily;
 }
 .hide {
     display: none;
-}
-.salmon {
-    color: $salmon;
-}
-.black {
-    color: $blackleather;
-}
-.tan {
-    color: $tan;
-}
-.rocket {
-    color: $rocket;
-}
-.brown {
-    color: $coconut;
 }
 .normal {
     padding: .4rem;
@@ -49,9 +42,13 @@ p {
 .reverse {
     flex-direction: row-reverse;
 }
+.logo {
+    position: absolute;
+    
+}
 nav {
     font-size: 1.5em;
-    background: $coconut;
+    background: $blackleather;
     .button {
         display: inline;
     }
@@ -63,12 +60,12 @@ nav {
             display: block;
             padding: .7em 2%;
             text-decoration: none;
-            text-align:center;           
-            color: $salmon;
+            text-align: center;
+            color: $tan;
         }
         li a:hover {
-            background: $salmon;
-            color: $coconut;
+            background: $tan;
+            color: $blackleather;
         }
         .current {
             background-color: $blackleather;

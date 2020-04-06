@@ -8,11 +8,93 @@
         
     <link rel="shortcut icon" href="favicon.ico">
 
-    <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Calligraffitti&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
     
     <link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Acme|Allura|Archivo|Arimo|Arizonia|Asap|Barlow|Cairo|Calligraffitti|Cantarell|Catamaran|Changa|Chilanka|Chivo|Dosis|Exo|Hind|Kanit|Karla|Neucha|Niconne|Nunito|Overpass|Oxygen|Philosopher|Play|Prompt|Quicksand|Ruda|Sacramento|Satisfy|Spartan|Sriracha|Teko|Viga|Yesteryear&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body onLoad="getDate();">     
+      <header> 
+
+        <nav class="clearfix">
+          <button onClick="toggleMenu()">&#9776;</button>
+          <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li  class="current"><a href="contact.html" > Contact Us </a></li>
+            <li> <a href="reservations.html" > Make Memories! </a></li>
+            <li><a href=" guides.html" > Meet our Guides  </a></li>          
+            <li> <a href="trips.html" >  Peruse our Trips   </a></li>
+            <li><a href=".html" > Get Native! </a></li>   
+          </ul>
+        </nav>
+
+        <article class="clip-items">   
+        <div class="header">
+            <picture>
+                <img src="images/logo.png" alt="Salmon River Adventures logo, salmon colored text and salmon image on super dark green background">
+            </picture>
+            <h1>Salmon River Adventures - Get native, get drenched, get happy!</h1>  <h3> </h3>
+        </div>
+            <div class="ellipse">
+              <picture>
+                  <img src="images/river1-hero.jpg" alt="person kayaking over a small waterfall">
+              </picture>
+            </div>
+        </article>
+
+      </header>
+      
+      <main class="wrapper">  
+        <div class="stats rounded">
+          <div class="lined-up">
+            <p>Currently</p>
+          </div>
+        
+          <div class="grid2col">
+            <div class="right-column">
+              <span class="right-align">Temperature:</span><br><br>
+              <span class="right-align">Wind Chill:</span> <br><br>
+              <span class="right-align">Today's High:</span> <br> <br>
+              <span class="right-align">Humidity:</span><br><br>
+              <span class="right-align">Conditions:</span><br><br>
+              <span class="right-align">Wind Speed:</span> <br> <br>
+            </div>
+            <div class="left-column">
+              <span class="left-align" id="current-temp"></span> <span> &deg;F</span> <br><br>
+              <span class="left-align" id="windchill"> </span> <span> </span> <br><br>
+              <span class="left-align" id="high"> </span> <span> &deg;F</span> <br><br>
+              <span class="left-align" id="humidity"> </span> <span>% </span> <br><br>
+              <span class="left-align" id="conditions"> </span> <span> </span> <br><br>
+              <span class="left-align" id="windspeed"> </span> <span id="wind-direction"> </span><br> <br>
+        
+            </div>
+          </div>
+        </div>
+        <div class="normal">
+          <h1>Heading 1 - Salmon River Adventures - Get wild, get wet, get on cloud nine!</h1>
+          <h2>Heading 2 - Salmon River Adventures - Get wild, get wet, get on cloud nine!</h2>
+          <h3>Heading 3 - Salmon River Adventures - Get wild, get wet, get on cloud nine!</h3>
+          <h4>Heading 4 - Salmon River Adventures - Get wild, get wet, get on cloud nine!</h4>
+          <h5>Heading 5 - Salmon River Adventures - Get wild, get wet, get on cloud nine!</h5>
+          <h6>Heading 6 - Salmon River Adventures - Get wild, get wet, get on cloud nine!</h6>
+          <p>Paragraph - Salmon River Adventures - Get wild, get wet, get on cloud nine!</p>
+        </div>
+      </main>
+      <footer class="center-text">
+        &copy;2020 &nbsp; | &nbsp; Doris Rush-Lopez &nbsp; | &nbsp; Brigham Young University-Idaho
+        <div id="updated"></div>
+      </footer>
+    </main>
+      <script src="js/apis.js"></script>
+      <script src="js/functions.js"></script>
+      <script src="js/towns.js"></script>
+  </body>
+</html>
+
+
+<br>
 root = html
   tag = head
     tag = title
@@ -95,69 +177,3 @@ root = body
               text = Salmon River Adventures
             tag = h3
               text = Get wild, get wet, get on cloud nine!
-
-
-  </head>
-  <body onLoad="getDate();">   
-    
-    <article class="clip-items">
-      <section class="clip-item">
-        <div class="ellipse">
-          <picture>
-              <img src="images/river1-hero.jpg" alt="person kayaking over a small waterfall">
-          </picture>
-
-        </div>
-      </section>
-    </article>  
-    
-      <header>
-          <div class="header">
-              <div>
-                  <picture>
-                      <img src="images/logo.png" alt="Salmon River Adventures logo, salmon colored text and salmon image on super dark green background">
-                  </picture>
-              </div>
-              <div>
-                  <h1>Salmon River Adventures</h1>
-                  <h3>Get native, get drenched, get happy! </h3>
-              </div>
-          </div>
-      </header>
-      <nav class="clearfix">
-        <button onClick="toggleMenu()">&#9776;</button>
-        <ul id="primaryNav" class="hide">
-          <li><a href="index.html">Home</a></li>
-          <li  class="current"><a href=".html" > Contact </a></li>
-          <li> <a href=" .html" > Registrations </a></li>
-          <li><a href=" .html" > Guides  </a></li>          
-          <li> <a href=".html" >  Misc   </a></li>
-          <li><a href=".html" > Get Wild! </a></li>   
-        </ul>
-      </nav>
-      
-      <main class="wrapper">  
-        <div class="normal">
-          <h1>Heading 1 - Salmon River Adventures - Get wild, get wet, get on cloud nine!</h1>
-          <h2>Heading 2 - Salmon River Adventures - Get wild, get wet, get on cloud nine!</h2>
-          <h3>Heading 3 - Salmon River Adventures - Get wild, get wet, get on cloud nine!</h3>
-          <h4>Heading 4 - Salmon River Adventures - Get wild, get wet, get on cloud nine!</h4>
-          <h5>Heading 5 - Salmon River Adventures - Get wild, get wet, get on cloud nine!</h5>
-          <h6>Heading 6 - Salmon River Adventures - Get wild, get wet, get on cloud nine!</h6>
-          <p>Paragraph - Salmon River Adventures - Get wild, get wet, get on cloud nine!</p>
-        </div>
-      </main>
-      <footer class="center-text">
-        &copy;2020 &nbsp; | &nbsp; Doris Rush-Lopez &nbsp; | &nbsp; Brigham Young University-Idaho
-        <div id="updated"></div>
-      </footer>
-    </main>
-    <script src="js/functions.js"></script>
-  </body>
-</html>
-
-
-
-
-
-
