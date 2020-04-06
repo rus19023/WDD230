@@ -98,18 +98,29 @@ root = body
 
 
   </head>
-  <body onLoad="getDate();">     
+  <body onLoad="getDate();">   
+    
+    <article class="clip-items">
+      <section class="clip-item">
+        <div class="ellipse">
+          <picture>
+              <img src="images/river1-hero.jpg" alt="person kayaking over a small waterfall">
+          </picture>
+
+        </div>
+      </section>
+    </article>  
     
       <header>
           <div class="header">
               <div>
-                  <picture class="logo">
-                      <img src="images/edgelogo75.png" alt="Edge of the Cloud logo, grey cloud and white cloud with yellow/orange thunderbolt on light blue background">
+                  <picture>
+                      <img src="images/logo.png" alt="Salmon River Adventures logo, salmon colored text and salmon image on super dark green background">
                   </picture>
               </div>
               <div>
                   <h1>Salmon River Adventures</h1>
-                  <h3>Get wild, get wet, get on cloud nine! </h3>
+                  <h3>Get native, get drenched, get happy! </h3>
               </div>
           </div>
       </header>
@@ -117,11 +128,11 @@ root = body
         <button onClick="toggleMenu()">&#9776;</button>
         <ul id="primaryNav" class="hide">
           <li><a href="index.html">Home</a></li>
-          <li  class="active"><a href=".html" >  </a></li>
-          <li> <a href=" .html" >  </a></li>
-          <li><a href=" .html" >   </a></li>          
-          <li> <a href=".html" >     </a></li>
-          <li><a href=".html" > </a></li>   
+          <li  class="current"><a href=".html" > Contact </a></li>
+          <li> <a href=" .html" > Registrations </a></li>
+          <li><a href=" .html" > Guides  </a></li>          
+          <li> <a href=".html" >  Misc   </a></li>
+          <li><a href=".html" > Get Wild! </a></li>   
         </ul>
       </nav>
       
@@ -136,7 +147,7 @@ root = body
           <p>Paragraph - Salmon River Adventures - Get wild, get wet, get on cloud nine!</p>
         </div>
       </main>
-      <footer>
+      <footer class="center-text">
         &copy;2020 &nbsp; | &nbsp; Doris Rush-Lopez &nbsp; | &nbsp; Brigham Young University-Idaho
         <div id="updated"></div>
       </footer>

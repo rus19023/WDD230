@@ -237,43 +237,43 @@ nav, #banner1 {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#faa916', endColorstr='#22007c',GradientType=0 );
 }
 nav {
-}
-.button {
-    display: inline;
-}
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-nav button {
-    margin: .2rem 2%;
-    background-color: transparent;
-    border: none;
-    font-size: 1.6rem;
-    color: #F5FBEF;
-}
-nav ul li a {
-    display: block;
-    padding: .7em 2%;
-    text-decoration: none;
-    color: #F5FBEF;
-    text-align:center;
-}
-nav ul .current {
-    background-color: #CEE7E6;
-    color: #22007C;
-}
-nav ul .current:hover {
-    background-color: #22007C;
-    color: #F5FBEF;
-}
-nav ul li a:hover {
-    background-color: #F5FBEF;
-    color: #22007C;
-}
-nav ul.hide {
-    display: none;
+    .button {
+        display: inline;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    button {
+        margin: .2rem 2%;
+        background-color: transparent;
+        border: none;
+        font-size: 1.6rem;
+        color: #F5FBEF;
+    }
+    ul li a {
+        display: block;
+        padding: .7em 2%;
+        text-decoration: none;
+        color: #F5FBEF;
+        text-align:center;
+    }
+    ul .current {
+        background-color: #CEE7E6;
+        color: #22007C;
+    }
+    ul .current:hover {
+        background-color: #22007C;
+        color: #F5FBEF;
+    }
+    ul li a:hover {
+        background-color: #F5FBEF;
+        color: #22007C;
+    }
+    ul.hide {
+        display: none;
+    }
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
@@ -296,81 +296,84 @@ footer,
     font-weight: bold;
     line-height: 1.5rem;
 }
-form fieldset {
-    border: 2px solid #F5FBEF;
-    margin: 2rem .25rem;
-    border-radius: 10px;
-    margin: 4%;
-    padding: 1% 4%;
-}
-form legend {
-    color: #22007C;
-    margin: 0 1rem;
-    padding: 0 .5rem;
-}
-form label.top, form div {
-    display: block;
-    padding-top: 1rem;
-    padding-left: 4%;
-    color: #F5FBEF;
-    font-size: 1rem;
-    max-width: 92%;
-    text-align: left;
-}
-form label input {
-    color: #F5FBEF;
-    border:none;
-}
-form label.top input, 
-form label.sbs select,
-textarea {
-    display: block;
-    font-size: 1rem;
-    border: 1px solid #F5FBEF;
-    border-radius: 4px;
-    padding: .75rem;
-    color: #22007C;
-    width: 92%;
-    max-width: 20rem;
-    background-color: #CEE7E6;
-}
-form label.top input:required:valid {
-    background-color: #CEE7E6;
-    color: #22007C;
-}
-form label.top input:required:invalid {
-    color: #22007C;
-    box-shadow: 0 0 20px #F5FBEF;
-    background-color: #FAA916;
-    color: #22007C;
-}
-form label.sbs {
-    display: block;
-    padding-left: 4%;
-    padding-top: .75rem;
-    color: #F5FBEF;
-}
-form h4 {
-    text-align: left;
-    padding-left: 4%;
-    padding-top: .4rem;
-}
-form input.submitBtn {
-    border: none;
-    margin-top: .75rem;
-    background-color: #FAA916;
-    color: #22007C;
-    border-radius: 1rem;
-    padding: .75rem ;
-    margin: 0 4%;
-    width: 96%;
-    max-width: 20rem;
-}
-form label.severity {
-    align-content: center;
-    display: flex;
-    flex-direction: column;
-    max-width: 20rem;
+form { 
+    background-color: transparent;
+    fieldset {
+        border: 2px solid #F5FBEF;
+        margin: 2rem .25rem;
+        border-radius: 10px;
+        margin: 4%;
+        padding: 1% 4%;
+    }
+    legend {
+        color: #22007C;
+        margin: 0 1rem;
+        padding: 0 .5rem;
+    }
+    label.top, div {
+        display: block;
+        padding-top: 1rem;
+        padding-left: 4%;
+        color: #F5FBEF;
+        font-size: 1rem;
+        max-width: 92%;
+        text-align: left;
+    }
+    label input {
+        color: #F5FBEF;
+        border:none;
+    }
+    label.top input, 
+    label.sbs select,
+    textarea {
+        display: block;
+        font-size: 1rem;
+        border: 1px solid #F5FBEF;
+        border-radius: 4px;
+        padding: .75rem;
+        color: #22007C;
+        width: 92%;
+        max-width: 20rem;
+        background-color: #CEE7E6;
+    }
+    label.top input:required:valid {
+        background-color: #CEE7E6;
+        color: #22007C;
+    }
+    label.top input:required:invalid {
+        color: #22007C;
+        box-shadow: 0 0 20px #F5FBEF;
+        background-color: #FAA916;
+        color: #22007C;
+    }
+    label.sbs {
+        display: block;
+        padding-left: 4%;
+        padding-top: .75rem;
+        color: #F5FBEF;
+    }
+    h4 {
+        text-align: left;
+        padding-left: 4%;
+        padding-top: .4rem;
+    }
+    input.submitBtn {
+        border: none;
+        margin-top: .75rem;
+        background-color: #FAA916;
+        color: #22007C;
+        border-radius: 1rem;
+        padding: .75rem ;
+        margin: 0 4%;
+        width: 96%;
+        max-width: 20rem;
+    }
+    label.severity {
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        max-width: 20rem;
+    }
 }
 #ratingvalue {
     font-size: 1.2em;

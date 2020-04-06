@@ -1,16 +1,89 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: $headingFontFamily;
     font-weight: bold;
+    color: $rocket;
 }
 body {
     font-family: $bodyFontFamily;
+    color: $blackleather;
+    background: $tan;
+}
+.ellipse {
+  width: 100%;
+  -webkit-clip-path: circle(50% at 50%);
+  clip-path: ellipse(100% 48% at 48% 40%);
 }
 p {   
     font-family: $bodyFontFamily;
 }
-
+.hide {
+    display: none;
+}
+.salmon {
+    color: $salmon;
+}
+.black {
+    color: $blackleather;
+}
+.tan {
+    color: $tan;
+}
+.rocket {
+    color: $rocket;
+}
+.brown {
+    color: $coconut;
+}
 .normal {
     padding: .4rem;
     text-align: center;
     font-size: 1rem;
+}
+.center-text {
+    text-align: center;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+}
+.reverse {
+    flex-direction: row-reverse;
+}
+nav {
+    font-size: 1.5em;
+    background: $coconut;
+    .button {
+        display: inline;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        li a {
+            display: block;
+            padding: .7em 2%;
+            text-decoration: none;
+            text-align:center;           
+            color: $salmon;
+        }
+        li a:hover {
+            background: $salmon;
+            color: $coconut;
+        }
+        .current {
+            background-color: $blackleather;
+            color: $salmon;
+        }
+        .current:hover {
+            color: $salmon;
+            background: $blackleather;
+        }
+    }
+    button {
+        margin: .2rem 2%;
+        background-color: transparent;
+        border: none;
+        font-size: 1.6rem;
+        color: $salmon;
+    }
 }
