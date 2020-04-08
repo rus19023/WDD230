@@ -9,7 +9,7 @@ h6 {
     color: $rocket;
 }
 body {
-    font-family: $bodyFontFamily;
+    font-family: $textFontFamily;
     color: $blackleather;
     background: $salmon;
 }
@@ -21,16 +21,54 @@ body {
     -webkit-clip-path: circle(50% at 50%);
     clip-path: ellipse(50% 48% at 50% 50%);
 }
+.overlay-weather {
+    background: $blackleather;
 
+}
+.zero {
+    margin-top: 0;
+}
+.stats {
+    position: absolute;
+    top: 9rem;
+    right: 0;
+    background: radial-gradient($tan, rgba(39, 60, 44, .9));
+    border: 1px solid #CEE7E6;
+    padding: .5rem;
+    opacity: .89;
+    font-size: .7em;
+    font-weight: bolder;
+    line-height: .7rem;
+    color: $salmon;
+}
+#logo {
+    position: absolute;    
+    top: 9rem;
+      z-index: 1;   
+}
+.overlay-title {
+    background:rgba(250, 162, 117, .8);
+    color: $blackleather;
+    padding: 2rem;
+    width: 45%;
+    text-align: center;
+    -webkit-clip-path: circle(50% at 50%);
+    clip-path: ellipse(40% 48% at 50% 48%);
+    position: absolute;
+    top: 5rem;
+    left: 25vw;
+    z-index: 1;
+
+}
 p {
-    font-family: $bodyFontFamily;
+    font-size: 1.5rem;
 }
 .hide {
     display: none;
 }
 .normal {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 .center-text {
     text-align: center;
@@ -41,11 +79,6 @@ p {
 }
 .reverse {
     flex-direction: row-reverse;
-}
-#logo {
-    position: absolute;    
-    top: 9rem;
-      z-index: 1;   
 }
 
 /* Style the navbar */

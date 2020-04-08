@@ -10,6 +10,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Calligraffitti&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Acme|Allura|Archivo|Arimo|Arizonia|Asap|Barlow|Cairo|Calligraffitti|Cantarell|Catamaran|Changa|Chilanka|Chivo|Dosis|Exo|Hind|Kanit|Karla|Neucha|Niconne|Nunito|Overpass|Oxygen|Philosopher|Play|Prompt|Quicksand|Ruda|Sacramento|Satisfy|Spartan|Sriracha|Teko|Viga|Yesteryear&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -28,10 +30,10 @@
           </ul>
         </nav>
 
-           
+        <article class="clip-items">   
         <div class="header">
             <picture>
-                <img id="logo" src="images/logo.png" alt="Salmon River Adventures logo, salmon colored text and salmon image on super dark green background">
+                <img src="images/logo.png" alt="Salmon River Adventures logo, salmon colored text and salmon image on super dark green background">
             </picture>
             <h1>Salmon River Adventures - Get native, get drenched, get happy!</h1>  <h3> </h3>
         </div>
@@ -40,11 +42,45 @@
                   <img src="images/river1-hero.jpg" alt="person kayaking over a small waterfall">
               </picture>
             </div>
-        
+        </article>
 
       </header>
       
-      <main class="wrapper">
+      <main class="wrapper">  
+        <div class="stats rounded">
+          <div class="lined-up">
+            <p>Currently</p>
+          </div>
+        
+          <div class="grid2col">
+            <div class="right-column">
+              <span class="right-align">Temperature:</span><br><br>
+              <span class="right-align">Wind Chill:</span> <br><br>
+              <span class="right-align">Today's High:</span> <br> <br>
+              <span class="right-align">Humidity:</span><br><br>
+              <span class="right-align">Conditions:</span><br><br>
+              <span class="right-align">Wind Speed:</span> <br> <br>
+            </div>
+            <div class="left-column">
+              <span class="left-align" id="current-temp"></span> <span> &deg;F</span> <br><br>
+              <span class="left-align" id="windchill"> </span> <span> </span> <br><br>
+              <span class="left-align" id="high"> </span> <span> &deg;F</span> <br><br>
+              <span class="left-align" id="humidity"> </span> <span>% </span> <br><br>
+              <span class="left-align" id="conditions"> </span> <span> </span> <br><br>
+              <span class="left-align" id="windspeed"> </span> <span id="wind-direction"> </span><br> <br>
+        
+            </div>
+          </div>
+        </div>
+        <div class="normal">
+          <h1>Heading 1 - Salmon River Adventures - Get wild, get wet, get on cloud nine!</h1>
+          <h2>Heading 2 - Salmon River Adventures - Get wild, get wet, get on cloud nine!</h2>
+          <h3>Heading 3 - Salmon River Adventures - Get wild, get wet, get on cloud nine!</h3>
+          <h4>Heading 4 - Salmon River Adventures - Get wild, get wet, get on cloud nine!</h4>
+          <h5>Heading 5 - Salmon River Adventures - Get wild, get wet, get on cloud nine!</h5>
+          <h6>Heading 6 - Salmon River Adventures - Get wild, get wet, get on cloud nine!</h6>
+          <p>Paragraph - Salmon River Adventures - Get wild, get wet, get on cloud nine!</p>
+        </div>
       </main>
       <footer class="center-text">
         &copy;2020 &nbsp; | &nbsp; Doris Rush-Lopez &nbsp; | &nbsp; Brigham Young University-Idaho
@@ -53,6 +89,91 @@
     </main>
       <script src="js/apis.js"></script>
       <script src="js/functions.js"></script>
-      <script src="js/guides.js"></script>
+      <script src="js/towns.js"></script>
   </body>
 </html>
+
+
+<br>
+root = html
+  tag = head
+    tag = title
+      text = Home | Salmon River Adventures  | CIT 230 - Final Project
+    tag = meta
+      attribute = charset
+      data = utf-8
+    tag = meta
+      attribute = name
+      data = viewport
+      attribute = content
+      data = width=device-width, initial-scale=1
+    tag = meta
+      attribute = name
+      data = description
+      attribute = content
+      data = Final Project page for website project for Doris Rush-Lopez for CIT 230: Web Frontend Development, Section 14 at Brigham Young University, Idaho, Winter 2020 semester
+    tag = link 
+      attribute = rel
+      data = shortcut icon
+      attribute = href
+      data = favicon.ico
+    tag = link
+      attribute = rel
+      data = stylesheet
+      attribute = href
+      data = https://fonts.googleapis.com/css?family=Catamaran&display=swap
+      tag = link
+        attribute = rel
+        data = stylesheet
+        attribute = href
+        data = css/style.css
+  tag = body
+root = body
+  tag = nav
+    attribute = class
+    data = clearfix
+    tag = button
+      attribute = onClick
+      data = toggleMenu()
+      text = &#9776;
+    tag = ul
+      attribute = id
+      data = primaryNav
+      attribute = class
+      data = hide
+      tag = li
+        tag = a
+          attribute = href
+          data = index.html
+          text = Home
+      tag = li
+        attribute = class
+        data = active        ## this has to be done programmatically if stmt   ##
+      tag = li
+        attribute = 
+        data =  
+        tag = li
+          attribute = 
+          data =  
+          tag = li
+            attribute = 
+            data =  
+    tag = main
+      tag = header
+        tag = div
+          attribute = class
+          data = header
+          tag = div
+            tag = picture
+              attribute = class
+              data = logo
+              tag = img
+                attribute = src
+                data = images/logo.png
+                attribute = alt
+                data = Salmon River Adventures logo, description
+          tag = div
+            tag = h1
+              text = Salmon River Adventures
+            tag = h3
+              text = Get wild, get wet, get on cloud nine!
