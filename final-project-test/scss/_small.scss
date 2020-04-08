@@ -8,6 +8,9 @@ h6 {
     font-weight: bold;
     color: $rocket;
 }
+a:hover {color: $coconut;}
+a {color: $rocket;}
+a:visited {color: $blackleather;}
 body {
     font-family: $textFontFamily;
     color: $blackleather;
@@ -88,18 +91,18 @@ p {
 
 /* Style the navbar */
 #navbar {
-    overflow: hidden;
+    overflow: hidden;/* Navbar links */
+     a {
+      float: left;
+      display: block;
+      text-align: center;
+      padding: 14px;
+      text-decoration: none;
+      z-index: $zindexMenu;
+    }
   }
   
-  /* Navbar links */
-  #navbar a {
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-    z-index: $zindexMenu;
-  }
+  
   
   /* Page content */
   .content {
@@ -107,21 +110,19 @@ p {
   }
   
   /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
+.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+}
+.sticky + .content {
     padding-top: 3.75rem;
-  }
-  #primaryNav {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-  }
+}
+#primaryNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 nav {
     font-size: 1.5em;
     background: $blackleather;
@@ -140,6 +141,12 @@ nav {
         }
         li a:hover {
             background: $tan;
+            color: $blackleather;
+        }
+        li a:visited {
+            color: $tan;
+        }
+        li a:visited:hover {
             color: $blackleather;
         }
         .current {
