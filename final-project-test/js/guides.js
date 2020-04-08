@@ -7,7 +7,7 @@ fetch(requestURL)
   })
   .then(function (jsonObject) { 
     const guides = jsonObject['guides'];
-
+    console.log(guides)
     guides.forEach(guide => {
         
         let card = document.createElement('section'); 
@@ -50,7 +50,7 @@ fetch(requestURL)
         // set up cards for each guide in order of menu
 
         if (guide.name == "Hans Mansson") {
-          document.querySelector('#hans').appendChild(card);  //  set the card div into the html page
+        document.querySelector('#hans').appendChild(card);  //  set the card div into the html page
 
         } else if (guide_name == "Gina George") {
         document.querySelector('#gina').appendChild(card);  //  set the card div into the html page

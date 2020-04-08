@@ -8,13 +8,14 @@ h6 {
     font-weight: bold;
     color: $rocket;
 }
-
 body {
     font-family: $bodyFontFamily;
     color: $blackleather;
     background: $salmon;
 }
-
+.tan {
+    color: $tan;
+}
 .ellipse {
     width: 100%;
     -webkit-clip-path: circle(50% at 50%);
@@ -41,10 +42,47 @@ p {
 .reverse {
     flex-direction: row-reverse;
 }
-.logo {
-    position: absolute;
-    
+#logo {
+    position: absolute;    
+    top: 9rem;
+      z-index: 1;   
 }
+
+/* Style the navbar */
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  /* Page content */
+  .content {
+    padding: .7rem;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 3.75rem;
+  }
+
+
+
 nav {
     font-size: 1.5em;
     background: $blackleather;

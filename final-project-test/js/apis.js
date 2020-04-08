@@ -69,14 +69,13 @@ function windDirection(data) {
 getCurrentWeather();
 
 function getCurrentWeather() {
-  const apiURL = `https://api.openweathermap.org/data/2.5/weather?lat=45.4221lon=116.3154&appid=5013c3a4f5ead239b175bb0335026653&units=imperial`;
+  const apiURL = `https://api.openweathermap.org/data/2.5/weather?zip=83549,US&appid=5013c3a4f5ead239b175bb0335026653&units=imperial`;
 
   fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => 
   
   {
-    var imagesrc = 'images/' + jsObject.weather[0].icon + '.png';
     var desc = jsObject.weather[0].description;  
     var windspeed = jsObject.wind.speed.toFixed(0); 
     var windDegree = jsObject.wind.deg;
@@ -84,20 +83,8 @@ function getCurrentWeather() {
     var windchill = calcWindChill(temperature, windspeed); 
     windDegree = 'MPH ' + windDirection(windDegree);
 
-    
-    let icon1 = document.createElement('img');
-
-    icon1.setAttribute('src', imagesrc);
-    icon1.setAttribute('alt', desc);
-    icon1.setAttribute('width', '80px');
-    icon1.setAttribute('height', '65px');
-
-    //document.querySelector('.icon').appendChild(icon1);  
-
     document.getElementById('current-temp').textContent = temperature.toFixed(0);
-
     document.getElementById('high').textContent = jsObject.main.temp_max.toFixed(0);
-
     document.getElementById('humidity').textContent = jsObject.main.humidity;
     document.getElementById('conditions').textContent = desc;
     document.getElementById('windspeed').textContent = windspeed;
@@ -105,87 +92,4 @@ function getCurrentWeather() {
     document.getElementById('windchill').textContent = windchill;
 
   });
-
-}
-
-getForecast();
-
-function getForecast() {
-  const requestURL = `https://api.openweathermap.org/data/2.5/forecast?id=${cityId}&appid=5013c3a4f5ead239b175bb0335026653&units=imperial`;
-
-    fetch(requestURL)
-    .then(function (response) {
-    return response.json();
-    })
-    .then(function (jsObject) { 
-    const items = jsObject.list['items'];    
-    let i = 0;
-
-    let card = document.createElement('div');  
-    card.setAttribute('class', 'gridforecast rounded');
-
-    jsObject.list.forEach(item => {
-        let datetime = jsObject.list[i].dt_txt;
-
-        if (datetime.includes("18:00:00")) {
-        var newdate = new Date(datetime);
-        var shortdate = newdate.toLocaleDateString( 'en-US', { weekday: 'short' }); 
-
-        var divdate = document.createElement('h4'); 
-        var divtemp = document.createElement('div');  
-        divdate.textContent = shortdate
-        divdate.setAttribute('class', 'forecast-item');
-        divtemp.setAttribute('class', 'forecast-item');
-        let temp = `${jsObject.list[i].main.temp.toFixed(0)}°F`;
-        divtemp.textContent = temp; 
-
-        let imgURL = `images/${jsObject.list[i].weather[0].icon}.png`;
-        let desc = `${jsObject.list[i].weather[0].description}`;  
-        let icon1 = document.createElement('img');
-
-        icon1.setAttribute('src', imgURL);
-        icon1.setAttribute('alt', desc);
-        icon1.setAttribute('height', '65px');
-        icon1.setAttribute('width', '80px');
-        
-        divdate.appendChild(icon1);
-        divdate.appendChild(divtemp);
-        card.appendChild(divdate);
-        document.querySelector('.noshow').appendChild(card);      
-        
-        i++;        
-        } else {
-        i++;
-        }    
-    });
-  });
-}
-
-getEvents();  
-
-function getEvents() {
-    const eventsURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-    fetch(eventsURL)
-        .then(function (response) { return response.json(); })
-        .then(function (jsonObject) {
-            const towns = jsonObject['towns'];
-            towns.forEach(town => {
-                if (town.name == "Preston" || town.name == "Soda Springs" || town.name == "Fish Haven") {
-                    var div1 = document.createElement('div');
-                    eventNo = town.events.length;
-                    for (var i = 0; i < eventNo; i++) {
-                        let h5 = document.createElement('h4');
-                        h5.textContent = `${town.events[i]}`;
-                        //  build the html code for the cards
-                        div1.appendChild(h5);
-                        //div1.setAttribute('class', 'rounded');
-                    townDivSelect = `#${townDiv}-events`;
-                    // set up cards for each town in order of menu
-                    if(town.name==townName) {
-                      document.querySelector(`${townDivSelect}`).appendChild(div1); //  set the Preston div into the html page
-                    }
-                }
-              }
-            });
-        });
 }
