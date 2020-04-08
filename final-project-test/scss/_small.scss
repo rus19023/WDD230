@@ -16,14 +16,22 @@ body {
 .tan {
     color: $tan;
 }
-.ellipse {
+#hero {
     width: 100%;
+    margin-top: 0;
+}
+#logo {
+    position: absolute;    
+    top: 9rem;
+      z-index: 1;   
+}
+.ellipse {
     -webkit-clip-path: circle(50% at 50%);
-    clip-path: ellipse(50% 48% at 50% 50%);
+    clip-path: ellipse(50% 28% at 50% 40%);
 }
 .overlay-weather {
-    background: $blackleather;
-
+    -webkit-clip-path: circle(50% at 50%);
+    clip-path: ellipse(50% 28% at 50% 40%);
 }
 .zero {
     margin-top: 0;
@@ -32,7 +40,7 @@ body {
     position: absolute;
     top: 9rem;
     right: 0;
-    background: radial-gradient($tan, rgba(39, 60, 44, .9));
+    background: radial-gradient(rgba(208, 205, 148, .5), rgba(39, 60, 44, 1));
     border: 1px solid #CEE7E6;
     padding: .5rem;
     opacity: .89;
@@ -40,11 +48,6 @@ body {
     font-weight: bolder;
     line-height: .7rem;
     color: $salmon;
-}
-#logo {
-    position: absolute;    
-    top: 9rem;
-      z-index: 1;   
 }
 .overlay-title {
     background:rgba(250, 162, 117, .8);
@@ -73,7 +76,7 @@ p {
 .center-text {
     text-align: center;
 }
-.header {
+.flex-row {
     display: flex;
     flex-direction: row;
 }
@@ -95,6 +98,7 @@ p {
     text-align: center;
     padding: 14px;
     text-decoration: none;
+    z-index: 1;
   }
   
   /* Page content */

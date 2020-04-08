@@ -1,18 +1,11 @@
   
-    nav {
-        button {
-            display: none;
-        }
-        ul {
-            margin: 0 auto;
-        }
-        #primaryNav {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
-        ul li a {
-            border: none;
-            padding: .6rem 1rem;
-        }
-    }
+.ellipse {
+    clip-path: ellipse(50% 48% at 50% 50%);
+}
+
+.overlay-weather {
+    clip-path: ellipse(50% 28% at 50% 40%);
+}
+.hide {
+    display: block;
+}
