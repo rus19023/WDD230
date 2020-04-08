@@ -18,7 +18,7 @@ body {
 .ellipse {
     width: 100%;
     -webkit-clip-path: circle(50% at 50%);
-    clip-path: ellipse(100% 50% at 48% 48%);
+    clip-path: ellipse(50% 48% at 50% 50%);
 }
 
 p {
@@ -28,7 +28,6 @@ p {
     display: none;
 }
 .normal {
-    padding: .4rem;
     text-align: center;
     font-size: 1rem;
 }
@@ -58,7 +57,6 @@ nav {
         margin: 0;
         li a {
             display: block;
-            padding: .7em 2%;
             text-decoration: none;
             text-align: center;
             color: $tan;

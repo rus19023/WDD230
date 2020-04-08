@@ -69,11 +69,12 @@ function windDirection(data) {
 getCurrentWeather();
 
 function getCurrentWeather() {
-  const apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&appid=5013c3a4f5ead239b175bb0335026653&units=imperial`;
+  const apiURL = `https://api.openweathermap.org/data/2.5/weather?lat=45.4221lon=116.3154&appid=5013c3a4f5ead239b175bb0335026653&units=imperial`;
 
   fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => 
+  
   {
     var imagesrc = 'images/' + jsObject.weather[0].icon + '.png';
     var desc = jsObject.weather[0].description;  

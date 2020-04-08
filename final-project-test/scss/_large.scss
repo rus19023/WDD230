@@ -1,18 +1,18 @@
   
     nav {
-    }
-    nav button {
-        display: none;
-    }
-    nav ul {
-        margin: 0 auto;
-    }
-    #primaryNav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    nav ul li a {
-        border: none;
-        padding: .6rem 1rem;
+        button {
+            display: none;
+        }
+        ul {
+            margin: 0 auto;
+        }
+        #primaryNav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        ul li a {
+            border: none;
+            padding: .6rem 1rem;
+        }
     }
