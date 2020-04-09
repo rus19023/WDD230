@@ -10,40 +10,41 @@ body {
     font-family: $textFontFamily;
     color: $blackleather;
     background: $salmon;
+    width: 100%;
 }
 #hero {
+    position: absolute;
+    clip-path: ellipse(50% 25%);
     width: 100%;
-    top: 0;
-    margin: 0;
-    clip-path: ellipse(50% 26% at 50% 38%);
+    top: 1rem;
 }
 #logo {
-    width: 45%;
+    width: 40%;
     position: absolute; 
-    left: 0;       
-    top: 20vh;   
+    left: 0;   
+    clip-path: ellipse(50% 35%);
+}
+.closed-menu {           
+    top: 1rem;
+}
+.open-menu {
+    top: 13rem;
 }
 .overlay-weather {
-    clip-path: ellipse(47% 33% at 48% 48%);
+    clip-path: ellipse(50% 35%);
+    width: 100%;
     z-index: $zindexOverlay;
-}
-.tall-pic {
-    width: 50%;
-    clip-path: ellipse(50% 20% at 50% 20%);
-}
-.zero {
-    margin-top: 0;
+    background:  rgb(39, 60, 44);
 }
 .stats {
     position: absolute;
     top: 20rem;
-    width: 45%;
     right: 0;
-    clip-path: ellipse(47% 33% at 50% 60%);
-    background:  rgb(39, 60, 44);
-    font-size: .5em;
+    width: 40%;
+    height: 30vh;
+    font-size: .6rem;
     font-weight: bolder;
-    line-height: .6rem;
+    line-height: .4rem;
     color: $salmon;
 }
 .overlay-title {
@@ -54,11 +55,23 @@ body {
     width: 39%;
     text-align: center;
     clip-path: ellipse(50% 38% at 50% 44%);
-    position: absolute;
+    position: relative;
     top: 20vh;
     font-weight: bold;
     left: 25vw;
     z-index: $zindexOverlay;
+}
+.tall-pic {
+    max-width: 100%;
+    clip-path: ellipse(50% 20%);
+}
+.wide-pic {
+    max-width: 100%;
+    clip-path: ellipse(50% 20% at 50% 20%);
+
+}
+.zero {
+    margin-top: 0;
 }
 p {
     font-size: 1.5rem;
@@ -66,9 +79,13 @@ p {
 .hide {
     display: none;
 }
+.unhide {
+    display: block
+}
 .normal {
     text-align: center;
     font-size: 1.2rem;
+    padding: .5rem;
 }
 .center-text {
     text-align: center;
@@ -81,10 +98,12 @@ p {
     flex-direction: row-reverse;
 }
 nav {
-    font-size: 1em;
+    font-weight: bold;
+    font-size: 1.2rem;
     background: $blackleather;
     .button {
         display: inline;
+        border: none;
     }
     ul {
         list-style-type: none;
@@ -94,6 +113,7 @@ nav {
             display: block;
             text-decoration: none;
             color: $tan;
+            padding: .5rem;
         }
         li a:hover {
             background: $tan;
@@ -121,13 +141,55 @@ nav {
         color: $tan;
     }
 }
+.grid2col {
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+    margin:0;
+    .right-align {
+        text-align: right;
+    }
+    .left-align {
+        text-align: left;
+    }
+}
+.grid1col {
+    text-align: center;
+    padding: 1rem;
+    max-width: 100%;
+}
+.grid-auto-row {
+    display: grid;
+    grid-template-rows: auto;
+}
+.left-column{
+    margin-top: 2rem;
+    max-width: 33%;
+    padding: .25rem;  
+    text-align: left;   
+}
+.right-column {
+    margin-top: 2rem;
+    max-width: 33%;
+    padding: .25rem;  
+    text-align: left;  
+}
+.center-column {
+    max-width: 33%;
+    padding: 1rem;  
+    text-align: center; 
+}
+#gmap {
+    margin: .25rem;
+    max-width: 100%;
+    height: 40vh;
+    padding: .25rem
+}
 form { 
     background-color: transparent;
     fieldset {
         border: 2px solid $blackleather;
-        margin: 2rem .25rem;
-        margin: 4%;
-        padding: 1% 4%;
+        margin: 2%;
+        max-width: 96%;
     }
     legend {
         color: $blackleather;
@@ -137,10 +199,10 @@ form {
     label.top, div {
         display: block;
         padding-top: 1rem;
-        padding-left: 4%;
+        margin: 2%;
         color: $blackleather;
         font-size: 1rem;
-        max-width: 92%;
+        width: 96%;
         text-align: left;
     }
     label input {
@@ -153,14 +215,14 @@ form {
         display: block;
         font-size: 1rem;
         border: 1px solid $blackleather;
-        padding: .75rem;
+        padding: .5rem;
         color: $blackleather;
-        width: 92%;
-        max-width: 20rem;
+        max-width: 96%;
+        margin: 2%;
         background-color: $tan;
     }
     label.top input:required:invalid {
-        box-shadow: 0 0 20px $rocket;
+        box-shadow: 0 0 20px $blackleather;
         background-color: $rocket;
         color: $tan;
     }
@@ -172,36 +234,18 @@ form {
         display: block;
         padding-left: 4%;
         padding-top: .75rem;
-        color: $rocket;
-    }
-    #gmap {
-        margin: .25rem;
-        max-width: 100%;
-        height: 40vh;
-        padding: .25rem
-    }
-    h4 {
-        text-align: left;
-        padding-left: 4%;
-        padding-top: .4rem;
+        color: $blackleather;
     }
     input.submitBtn {
         border: none;
         margin-top: .75rem;
         background-color: $coconut;
         color: $tan;
-        font-size: 1.5rem;
-        border-radius: 1rem;
+        font-size: 1.5rem;     
+        box-shadow: 0 0 18px $blackleather;
         padding: .75rem ;
-        margin: 0 4%;
-        width: 96%;
-        max-width: 20rem;
-    }
-    label.severity {
-        align-content: center;
-        display: flex;
-        flex-direction: column;
-        max-width: 20rem;
+        margin: 2%;
+        max-width: 96%;
     }
     input,
     textarea,
@@ -214,24 +258,4 @@ form {
     textarea {
         resize: none;
     }
-}
-.grid2col {
-    display: grid;
-    grid-template-columns: 4fr 4fr;
-    margin:0;
-}
-.grid1col {
-    text-align: center;
-    padding: 1rem;
-    max-width: 100%;
-}
-.grid-auto-row {
-    display: grid;
-    grid-template-rows: auto;
-}
-span.right-align {
-    text-align: right;
-}
-span.left-align {
-    text-align: left;
 }

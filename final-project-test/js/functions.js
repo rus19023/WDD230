@@ -1,7 +1,7 @@
 // toggles hamburger menu on small view, navbar on large/medium views
 function toggleMenu() {
-    console.log(document.getElementById("primaryNav").classList);
     document.getElementById("primaryNav").classList.toggle("hide");
+    document.getElementById("logo").classList.toggle("open-menu");
 }
 
 

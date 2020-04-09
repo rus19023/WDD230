@@ -1,27 +1,46 @@
 #hero {
-    top: 7rem;
-    clip-path: ellipse(50% 48% at 48% 40%);
+    margin: 0;
+    top: 4rem;
+    clip-path: ellipse(50% 38%);
+    width: 100%;
+}
+#logo {
+    width: 33%;
 }
 .overlay-weather {
     width: 33%;
-    clip-path: ellipse(50% 36% at 50% 38%);
+    clip-path: ellipse(50% 36%);
 }
 .overlay-title {
     padding: 2rem;
     width: 45%;
     text-align: center;
-    -webkit-clip-path: circle(50% at 50%);
-    clip-path: ellipse(50% 48% at 50% 48%);
+    clip-path: ellipse(50% 48%);
     position: absolute;
     top: 15rem;
     left: 25vw;
-    z-index: $zindexOverlay;
+    font-size: 1.5rem;
 }
 .hide {
-    display: block;
+    display: none;
+}
+.unhide {
+    display: none;
 }
 #primaryNav {
+    font-size: 1.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+.tall-pic {
+    width: 33%;
+    clip-path: ellipse(50% 45% at 50% 48%);
+}
+.wide-pic {
+    width: 33%;
+    clip-path: ellipse(50% 20% at 50% 20%);
+}
+form {
+    width: 50%;
 }

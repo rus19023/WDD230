@@ -9,64 +9,68 @@
     <link rel="shortcut icon" href="favicon.ico">
 
     <link href="https://fonts.googleapis.com/css?family=Calligraffitti&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">    
     <script src="https://use.fontawesome.com/395b7c434b.js"></script>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>    
   <body onLoad="getDate();">
+    <nav class="clearfix">
+      <div class="right-align">
+        <button class="unhide" onClick="toggleMenu()">&#9776;</button>
+      </div>
+      <ul id="primaryNav" class="hide">
+        <li class="current"><a href="index.html">Home</a></li>
+        <li ><a href="contact.html" > Contact Us </a></li>
+        <li><a href="guides.html" > Meet our Guides  </a></li>          
+        <li> <a href="trips.html" > Our Adventures   </a></li>
+        <li> <a href="reservations.html" > Make Memories!  <i class="fa fa-calendar"></i></a></li>
+      </ul>
+    </nav>
     <header>
-      <nav class="clearfix">
-        <div class="right-align">
-          <button onClick="toggleMenu()">&#9776;</button>
-        </div>
-        <ul id="primaryNav" class="hide">
-          <li class="current"><a href="index.html">Home</a></li>
-          <li ><a href="contact.html" > Contact Us </a></li>
-          <li> <a href="reservations.html" > <i class="fa fa-calendar"></i> Make Memories! </a></li>
-          <li><a href="guides.html" > Meet our Guides  </a></li>          
-          <li> <a href="trips.html" > Our Adventures   </a></li>
-        </ul>
-      </nav>   
-      <div class="flex-row">
-          <picture>
-              <img id="logo" class="overlay-weather" src="images/logo.resized.png" alt="Salmon River Adventures logo, salmon colored text and salmon image on super dark green background">
+      
+
+        <div id="hero" class="closed-menu">
+          <picture>           
+              <source srcset="images/river1-sm.jpg" media="(max-width: 400px)" >
+              <source srcset="images/river1-med.jpg" media="(min-width: 401px) and (max-width: 959px)">
+              <source srcset="images/river1-lg.jpg" media="(min-width: 960px)">
+              <img src="images/river1-hero.jpg" alt="person kayaking over a small waterfall">
           </picture>
-          <h1 class="overlay-title">Get native, get drenched, get happy!</h1>  
-      </div>
-      <div id="hero" class="ellipse">
-        <picture>           
-            <source srcset="images/river1-sm.jpg" media="(max-width: 400px)" >
-            <source srcset="images/river1-med.jpg" media="(min-width: 401px) and (max-width: 959px)">
-            <source srcset="images/river1-lg.jpg" media="(min-width: 960px)">
-            <img src="images/river1-hero.jpg" alt="person kayaking over a small waterfall">
-        </picture>
-      </div> 
-      <div class="stats overlay-weather">
-        <div class="lined-up">
-          <p>Currently</p>
+        </div> 
+        <div>
+            <picture>
+                <img id="logo" class="closed-menu" src="images/logo.resized.jpg" alt="Salmon River Adventures logo, salmon colored text and salmon image on super dark green background">
+            </picture>
+            <h1 class="overlay-title">Get native, get drenched, get happy!</h1>  
         </div>
-      
-        <div class="grid2col">
-          <div class="right-column">
-            <span class="right-align">Temperature:</span><br><br>
-            <span class="right-align">Wind Chill:</span> <br><br>
-            <span class="right-align">Today's High:</span> <br> <br>
-            <span class="right-align">Humidity:</span><br><br>
-            <span class="right-align">Conditions:</span><br><br>
-            <span class="right-align">Wind Speed:</span> <br> <br>
+        <div class="stats overlay-weather">
+            Currently
+        
+          <div class="grid2col">
+
+            <div>
+              <span class="right-align">Temperature:</span><br><br>
+              <span class="right-align">Wind Chill:</span> <br><br>
+              <span class="right-align">Today's High:</span> <br> <br>
+              <span class="right-align">Humidity:</span><br><br>
+              <span class="right-align">Conditions:</span><br><br>
+              <span class="right-align">Wind Speed:</span> <br> <br>
+            </div>
+
+            <div>
+              <span class="left-align" id="current-temp"></span> <span> &deg;F</span> <br><br>
+              <span class="left-align" id="windchill"> </span> <span> </span> <br><br>
+              <span class="left-align" id="high"> </span> <span> &deg;F</span> <br><br>
+              <span class="left-align" id="humidity"> </span> <span>% </span> <br><br>
+              <span class="left-align" id="conditions"> </span> <span> </span> <br><br>
+              <span class="left-align" id="windspeed"> </span> <span id="wind-direction"> </span><br> <br>        
+            </div>
+
           </div>
-          <div class="left-column">
-            <span class="left-align" id="current-temp"></span> <span> &deg;F</span> <br><br>
-            <span class="left-align" id="windchill"> </span> <span> </span> <br><br>
-            <span class="left-align" id="high"> </span> <span> &deg;F</span> <br><br>
-            <span class="left-align" id="humidity"> </span> <span>% </span> <br><br>
-            <span class="left-align" id="conditions"> </span> <span> </span> <br><br>
-            <span class="left-align" id="windspeed"> </span> <span id="wind-direction"> </span><br> <br>
-      
-          </div>
-        </div>
-      </div>
+        </div>  
+    
 
     </header>
     <main>
@@ -78,24 +82,21 @@
         <div class="normal">
         
           <div class="flex-row">
-            <div>
+            <div class="center-column">
               Located in the middle of Idaho, the Salmon River, also known as <a href="https://en.wikipedia.org/wiki/Salmon_River_(Idaho)"></a> "The River of No Return", flows from Galena Summit in the Boulder Mountains for approximately 425 miles to meet with the Snake River, which flows into the Columbia River. The Columbia empties into the Pacific Ocean, where sockeye salmon start their spawning cycle each year.
+          
+              <br><br>
+              Riggins is one of the small towns located along the seasonally salmon-filled waters of the Salmon River. You can imagine how it was named, but that's not why we exist...
+              <br><br>
+              Whitewater! That is why we exist! Feel the rush, the spray, the excitement when you run our Salmon River Adventures!
+    
+              <br><br>
+              We use state-of-the-art equipment and happily comply with all U.S. Forest Service and all other government agency regulations.
             </div>
-            <picture class="tall-pic">           
-              <source srcset="images/river9-sm.jpg" media="(max-width: 400px)" >
-              <source srcset="images/river9-med.jpg" media="(min-width: 401px) and (max-width: 959px)">
-              <source srcset="images/river9-lg.jpg" media="(min-width: 960px)">
-              <img src="images/river9-hero.jpg" alt="person kayaking over a small waterfall">
+            <picture class="tall-pic">
+              <img src="images/river9-med.jpg" alt="person kayaking over a small waterfall">
           </picture>
           </div>
-          
-          <br><br>
-          Riggins is one of the small towns located along the seasonally salmon-filled waters of the Salmon River. You can imagine how it was named, but that's not why we exist...
-          <br><br>
-          Whitewater! That is why we exist! Feel the rush, the spray, the excitement when you run our Salmon River Adventures!
-
-          <br><br>
-          We use state-of-the-art equipment and happily comply with all U.S. Forest Service and all other government agency regulations.
         </div>
       </article>
     </main>
@@ -111,167 +112,3 @@
   </body>
     
 </html>
-
-**************************
-
-Class A - Lake water. Still. No perceptible movement. 
-
-Class II - Moderate. Medium-quick water; rapids with regular waves; clear and open passages between rocks and ledges. Maneuvering required. Best handled by intermediates who can maneuver canoes and read water.
-
-Class IV - Difficult. Long and powerful rapids and standing waves; souse holes and boiling eddies. Powerful and precise maneuvering required. Visual inspection mandatory. Cannot be run in canoes unless the craft is decked or properlyequipped with flotation bags. Advance preparations for possible rescue work important.
-
-https://paddling.com/learn/classification-of-rapids-water-level-and-canoeists/
-
-
-SOURCES:
-*****************************************
-https://codepen.io/tutsplus/pen/MmMGdM   slider, css only, no keyframes
-
-https://codepen.io/Aishadujour/pen/XbNJWw  scroll/parallax css only
-
-https://codepen.io/wizardlowski/pen/JRkwgx    slider, css only, no js
-
-Playspots, freestyle kayak, 
-
-https://en.wikipedia.org/wiki/Canoe_freestyle#Etiquette_and_culture
-
-@misc{ wiki:xxx,
-    author = "{Wikipedia contributors}",
-    title = "Canoe freestyle --- {Wikipedia}{,} The Free Encyclopedia",
-    year = "2020",
-    howpublished = "\url{https://en.wikipedia.org/w/index.php?title=Canoe_freestyle&oldid=947935813}",
-    note = "[Online; accessed 3-April-2020]"
-  }
-
-  
-  IMAGES:
-  *****************************************
-
-  logos:   https://publicdomainvectors.org/
-
-  Sockeye Salmon in spawning phase
-
-  https://commons.wikimedia.org/wiki/File:Oncorhynchus_nerka.jpg
-
-  by Timothy Knepp of the US Fish and Wildlife Service
-
-  license: Public domain
- 
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  
-
-
-  River bend with large rocks    river11.jpg
-
-  https://unsplash.com/photos/3B7Swp2UPrI
-
-
-  River scene with trees and Mountains   river12.jpg
-
-  https://unsplash.com/photos/bxR3YoNcbj4
-
-
-  
-  Photo by Danny Grizzle on Unsplash  https://unsplash.com/@dgrizzle
- 
-
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  
-
-  Kayaker performing a cartwheel     river10.jpg
-  
-  https://commons.wikimedia.org/wiki/File:2015-08_playboating_Durance_09.jpg   
-  
-  by user https://commons.wikimedia.org/wiki/User:0x010C
-
-license: https://creativecommons.org/licenses/by-sa/4.0
-
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Unknown paddler Front surfing    river9.jpg
-
-https://commons.wikimedia.org/wiki/File:Kayak_Playboat_ManchesterNH.jpg
-
-by user  https://en.wikipedia.org/wiki/User:Mikespenard
-
-license:  https://creativecommons.org/licenses/by/3.0
-
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Kayaker performing an air loop   river8.jpg
-
-https://upload.wikimedia.org/wikipedia/commons/4/4d/Kayaker_Air_Loop_Reno.JPG
-
-by user https://commons.wikimedia.org/wiki/User:Seek_writ_awe_there
-
-license:  https://creativecommons.org/licenses/by-sa/3.0
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-whitewater rafting (Norway)    river7.jpg
-
-https://unsplash.com/photos/qNe4XPYDnSY
-
-Photo by Rune Haugseng  https://unsplash.com/@runehaugseng
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-kayaking down falls    river6.jpg
-
-https://unsplash.com/photos/KiQbRJzeRaU
-
-https://unsplash.com/@j_wedge   Photo by Josh Wedgwood on Unsplash
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-group rafting on river    river5.jpg
-
-https://unsplash.com/photos/hN7jhC_YWk0
-
-Photo by Jonatan Lewczuk on Unsplash  https://unsplash.com/@jonny_lew
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Whitewater kayak  river4.jpg
-
-https://unsplash.com/photos/ojG9qrU_blw
-
-Photo by roya ann miller on Unsplash  https://unsplash.com/@royaannmiller 
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-splashes and fun whitewater rafting   river3.jpg
-
-https://unsplash.com/photos/UWdgTvf3m8g
-
-Photo by Julie Thornton on Unsplash  https://unsplash.com/@raftnjules
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-whitewater fun    river2.jpg
-
-https://unsplash.com/photos/0DiBKEADw8A
-
-Photo by Cynthia Andres on Unsplash   https://unsplash.com/@enchang
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-kayaking on river    river1.jpg 
-
-https://unsplash.com/photos/9LQTT02LYaE
-
-Photo by Josh Wedgwood on Unsplash  https://unsplash.com/@j_wedge
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
-/*  from instructions page
-
-The Salmon River Adventures river rafting tour company is located in Riggins, Idaho and offers world-class, whitewater rafting experiences on the Salmon River in the middle of an Idaho wilderness. 
-
-The owner-operated company offers day and overnight trips for groups and individuals using state-of-the-art equipment and complies with all U.S. Forest Service regulations. 
-
-They are looking for a contemporary, inviting website build that reflects their core business values of high-end adventures, professional and experienced service, safety, and fun. 
-
-
-The home page is a contemporary, exciting landing page providing images of the river, whitewater rafting, kayaking, and/or related activities and including a call to action and readily available navigation and contact information. The home page should also display the current local weather conditions in Riggins, Idaho.
-
-
-Include three distinct adventure trip / activities that are described by length, skill level, cost, and services provided by the company. Of course, you can organize this required information as you see fit.
-
-cards from json? ^ */

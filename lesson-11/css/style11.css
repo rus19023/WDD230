@@ -46,7 +46,7 @@ h4 {    font-size: 1.1em;}
 h5 {    font-size: .9em;}
 h6 {    font-size: .7em;}
 
-.stats,
+
 header,
 footer,
 main,
@@ -224,8 +224,8 @@ figure {
 nav, #banner1 {
     font-weight: bold;
     font-size: 1.5em;
-    color: #F5FBEF;
     padding: .25rem;
+    color: #F5FBEF;
     font-family: "Comfortaa", "Questrial", sans-serif;
     text-align: center;
     background: #faa916;
