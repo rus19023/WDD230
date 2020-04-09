@@ -15,21 +15,18 @@ body {
     width: 100%;
     top: 0;
     margin: 0;
+    z-index: $zindexHero;
     clip-path: ellipse(50% 26% at 50% 38%);
+    box-shadow: 0 0 20px $blackleather;
 }
 #logo {
     width: 45%;
-    position: absolute; 
-    left: 0;       
+    position: absolute;    
     top: 20vh;   
 }
 .overlay-weather {
     clip-path: ellipse(47% 33% at 48% 48%);
     z-index: $zindexOverlay;
-}
-.tall-pic {
-    width: 50%;
-    clip-path: ellipse(50% 20% at 50% 20%);
 }
 .zero {
     margin-top: 0;
@@ -39,8 +36,10 @@ body {
     top: 20rem;
     width: 45%;
     right: 0;
-    clip-path: ellipse(47% 33% at 50% 60%);
-    background:  rgb(39, 60, 44);
+    clip-path: ellipse(47% 33% at 48% 48%);
+    background: radial-gradient(rgba(136, 120, 128, .8), rgba(39, 60, 44, .9));
+    border: 1px solid $tan;
+    padding: .5rem;
     font-size: .5em;
     font-weight: bolder;
     line-height: .6rem;
@@ -51,11 +50,11 @@ body {
     color: $blackleather;
     font-size: .9rem;
     padding: 2rem;
-    width: 39%;
+    width: 40%;
     text-align: center;
     clip-path: ellipse(50% 38% at 50% 44%);
     position: absolute;
-    top: 20vh;
+    top: 30vh;
     font-weight: bold;
     left: 25vw;
     z-index: $zindexOverlay;
@@ -80,8 +79,36 @@ p {
 .reverse {
     flex-direction: row-reverse;
 }
+
+#navbar {
+    overflow: hidden;
+    a {
+      float: left;
+      display: block;
+      text-align: center;
+      padding: 14px;
+      text-decoration: none;
+      z-index: $zindexMenu;
+    }
+  }
+.content {
+padding: .7rem;
+}
+.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+}
+.sticky + .content {
+    padding-top: 3.75rem;
+}
+#primaryNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 nav {
-    font-size: 1em;
+    font-size: 1.5em;
     background: $blackleather;
     .button {
         display: inline;
@@ -93,6 +120,7 @@ nav {
         li a {
             display: block;
             text-decoration: none;
+            text-align: center;
             color: $tan;
         }
         li a:hover {

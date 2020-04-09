@@ -150,7 +150,6 @@ ul, li {
     display: none;
     margin-top: 1rem;
 }
-
 .grid2col {
     display: grid;
     grid-template-columns: 4fr 4fr;

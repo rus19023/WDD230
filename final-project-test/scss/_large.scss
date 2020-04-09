@@ -1,14 +1,27 @@
-  
-.ellipse {
-    clip-path: ellipse(50% 48% at 50% 50%);
-}
 #hero {
     top: 7rem;
+    clip-path: ellipse(50% 48% at 48% 40%);
 }
-
 .overlay-weather {
+    width: 33%;
     clip-path: ellipse(50% 36% at 50% 38%);
+}
+.overlay-title {
+    padding: 2rem;
+    width: 45%;
+    text-align: center;
+    -webkit-clip-path: circle(50% at 50%);
+    clip-path: ellipse(50% 48% at 50% 48%);
+    position: absolute;
+    top: 15rem;
+    left: 25vw;
+    z-index: $zindexOverlay;
 }
 .hide {
     display: block;
+}
+#primaryNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
