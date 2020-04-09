@@ -16,9 +16,6 @@ body {
     color: $blackleather;
     background: $salmon;
 }
-.tan {
-    color: $tan;
-}
 #hero {
     width: 100%;
     position: relative;
@@ -26,18 +23,17 @@ body {
     z-index: $zindexHero;
 }
 #logo {
+    width: 33%;
     position: absolute;    
-    top: 9rem;
-    z-index: $zindexOverlay;   
+    top: 7rem;   
 }
 .ellipse {
-    -webkit-clip-path: circle(50% at 50%);
-    clip-path: ellipse(50% 28% at 50% 40%);
+    clip-path: ellipse(49% 30% at 50% 40%);
     box-shadow: 0 0 20px $blackleather;
 }
 .overlay-weather {
-    -webkit-clip-path: circle(50% at 50%);
-    clip-path: ellipse(50% 28% at 50% 40%);
+    clip-path: ellipse(49% 33% at 48% 48%);
+    z-index: $zindexOverlay;
 }
 .zero {
     margin-top: 0;
@@ -89,10 +85,9 @@ p {
     flex-direction: row-reverse;
 }
 
-/* Style the navbar */
 #navbar {
-    overflow: hidden;/* Navbar links */
-     a {
+    overflow: hidden;
+    a {
       float: left;
       display: block;
       text-align: center;
@@ -101,15 +96,9 @@ p {
       z-index: $zindexMenu;
     }
   }
-  
-  
-  
-  /* Page content */
-  .content {
-    padding: .7rem;
-  }
-  
-  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.content {
+padding: .7rem;
+}
 .sticky {
 position: fixed;
 top: 0;
@@ -163,5 +152,99 @@ nav {
         border: none;
         font-size: 1.6rem;
         color: $tan;
+    }
+}
+form { 
+    background-color: transparent;
+    fieldset {
+        border: 2px solid $blackleather;
+        margin: 2rem .25rem;
+        margin: 4%;
+        padding: 1% 4%;
+    }
+    legend {
+        color: $blackleather;
+        margin: 0 1rem;
+        padding: 0 .5rem;
+    }
+    label.top, div {
+        display: block;
+        padding-top: 1rem;
+        padding-left: 4%;
+        color: $blackleather;
+        font-size: 1rem;
+        max-width: 92%;
+        text-align: left;
+    }
+    label input {
+        color: $tan;
+        border:none;
+    }
+    label.top input, 
+    label.sbs select,
+    textarea {
+        display: block;
+        font-size: 1rem;
+        border: 1px solid $blackleather;
+        padding: .75rem;
+        color: $blackleather;
+        width: 92%;
+        max-width: 20rem;
+        background-color: $tan;
+    }
+    label.top input:required:invalid {
+        box-shadow: 0 0 20px $rocket;
+        background-color: $rocket;
+        color: $tan;
+    }
+    label.top input:required:valid {
+        background-color: $coconut;
+        color: $salmon;
+    }
+    label.sbs {
+        display: block;
+        padding-left: 4%;
+        padding-top: .75rem;
+        color: $rocket;
+    }
+    #gmap {
+        margin: .25rem;
+        max-width: 100%;
+        height: 40vh;
+        padding: .25rem
+    }
+    h4 {
+        text-align: left;
+        padding-left: 4%;
+        padding-top: .4rem;
+    }
+    input.submitBtn {
+        border: none;
+        margin-top: .75rem;
+        background-color: $coconut;
+        color: $tan;
+        font-size: 1.5rem;
+        border-radius: 1rem;
+        padding: .75rem ;
+        margin: 0 4%;
+        width: 96%;
+        max-width: 20rem;
+    }
+    label.severity {
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        max-width: 20rem;
+    }
+    input,
+    textarea,
+    select {
+        padding: .5rem;
+    }
+    label {
+        display: block;
+    }
+    textarea {
+        resize: none;
     }
 }

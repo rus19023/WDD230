@@ -1,5 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+      <title>   Home | Salmon River Adventures  | CIT 230 - Final Project</title>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>         
+      <meta name="description" content="Final Project page for website project for Doris Rush-Lopez for CIT 230: Web Frontend Development, Section 14 at Brigham Young University, Idaho, Winter 2020 semester">
+          
+      <link rel="shortcut icon" href="favicon.ico">
+  
+      <link href="https://fonts.googleapis.com/css?family=Calligraffitti&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
+  
+      <link rel="stylesheet" href="css/style.css">
+    </head>    
+
+    <body>
+        <main>            
+            <h1>Contact Us</h1>
+
+            <form action="thanks.html" method="GET">
+            <fieldset>
+                <legend>
+                <h3>Sender Information</h3>
+                </legend>
+
+                <label class="top">
+                    Please enter your full name (Required, 5 characters minimum)
+                <input id="name" type="text" name="name" required pattern="[A-Z a-z -_]{5,30}">
+                </label>
+                
+                <label class="top">
+                Please enter your email (Required so we can reply)
+                <input id="email" type="email" name="email" placeholder="someone@gmail.com" required>
+                </label>
+                
+                <label class="top">
+                Please enter your phone number
+                <input id="phone" type="tel" name="phone" placeholder="5551239876">
+                </label>
+                
+                <label class="top">
+                Please enter your zipcode 
+                <input id="zipcode" type="text" name="zip" placeholder="99999"pattern="[0-9]">
+                </label>
+
+                <label class="top">
+                    My questions and/or comments
+                    <textarea id="comments" name="comments" rows="12" cols="20">Comments or additional information</textarea>
+                </label>
+                    
+                <input class="submitBtn rounded" type="submit" name="submit" value=" Send my Message">
+            </fieldset>
+            </form>
+
+            <div class="flex-row">
+                <div id="gmap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.5750810773243!2d-116.31988428563284!3d45.41790754455417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54a6c5695ed5fae5%3A0x837cd0558ffd520c!2s1000%20S%20Main%20St%2C%20Riggins%2C%20ID%2083549!5e0!3m2!1sen!2sus!4v1586379654361!5m2!1sen!2sus" allowfullscreen="" aria-hidden="false" tabindex="0">
+                    </iframe>
+                </div>
+            </div>
+        </main>
+
+    </body>
+
+
+
+   
     
 </html>
 
