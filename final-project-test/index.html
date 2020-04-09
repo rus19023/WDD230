@@ -28,46 +28,51 @@
         <li> <a href="reservations.html" > Make Memories!  <i class="fa fa-calendar"></i></a></li>
       </ul>
     </nav>
-    <header id="header">
-      <div id="hero" class="closed-menu">
-        <picture>           
-            <source srcset="images/river1-sm.jpg" media="(max-width: 400px)" >
-            <source srcset="images/river1-med.jpg" media="(min-width: 401px) and (max-width: 959px)">
-            <source srcset="images/river1-lg.jpg" media="(min-width: 960px)">
-            <img src="images/river1-hero.jpg" alt="person kayaking over a small waterfall">
-        </picture>
-      </div> 
-      <div>
-        <picture>
-            <img id="logo" class="closed-menu" src="images/logo.resized.jpg" alt="Salmon River Adventures logo, salmon colored text and salmon image on super dark green background">
-        </picture>
-        <h1 class="overlay-title">Get native, get drenched, get happy!
-        </h1>  
-      </div>
-      <div class="stats">
-          Currently      
-        <div class="grid2col">
+    <header>
+      <div class="closed-menu">
 
-            <div>
-              <span class="right-align">Temperature:</span><br><br>
-              <span class="right-align">Wind Chill:</span> <br><br>
-              <span class="right-align">Today's High:</span> <br> <br>
-              <span class="right-align">Humidity:</span><br><br>
-              <span class="right-align">Conditions:</span><br><br>
-              <span class="right-align">Wind Speed:</span> <br> <br>
+        <div id="hero">
+          <picture>           
+              <source srcset="images/river1-sm.jpg" media="(max-width: 400px)" >
+              <source srcset="images/river1-med.jpg" media="(min-width: 401px) and (max-width: 959px)">
+              <source srcset="images/river1-lg.jpg" media="(min-width: 960px)">
+              <img src="images/river1-hero.jpg" alt="person kayaking over a small waterfall">
+          </picture>
+        </div> 
+        <div>
+          <picture>
+              <img id="logo" class="closed-menu" src="images/logo.resized.jpg" alt="Salmon River Adventures logo, salmon colored text and salmon image on super dark green background">
+          </picture>
+          <h1 class="overlay-title">Get native! Get drenched! Get happy!
+          </h1>  
+        </div>
+        <div class="stats overlay-weather">
+            <h4 class="salmon">
+              Currently
+            </h4>      
+          <div class="grid2col">
+  
+              <div>
+                <span class="right-align">Temperature:</span><br><br>
+                <span class="right-align">Wind Chill:</span> <br><br>
+                <span class="right-align">Today's High:</span> <br> <br>
+                <span class="right-align">Humidity:</span><br><br>
+                <span class="right-align">Conditions:</span><br><br>
+                <span class="right-align">Wind Speed:</span> <br> <br>
+              </div>
+  
+              <div>
+                <span class="left-align" id="current-temp"></span> <span> &deg;F</span> <br><br>
+                <span class="left-align" id="windchill"> </span> <span> </span> <br><br>
+                <span class="left-align" id="high"> </span> <span> &deg;F</span> <br><br>
+                <span class="left-align" id="humidity"> </span> <span>% </span> <br><br>
+                <span class="left-align" id="conditions"> </span> <span> </span> <br><br>
+                <span class="left-align" id="windspeed"> </span> <span id="wind-direction"> </span><br> <br>        
+              </div>
+  
             </div>
-
-            <div>
-              <span class="left-align" id="current-temp"></span> <span> &deg;F</span> <br><br>
-              <span class="left-align" id="windchill"> </span> <span> </span> <br><br>
-              <span class="left-align" id="high"> </span> <span> &deg;F</span> <br><br>
-              <span class="left-align" id="humidity"> </span> <span>% </span> <br><br>
-              <span class="left-align" id="conditions"> </span> <span> </span> <br><br>
-              <span class="left-align" id="windspeed"> </span> <span id="wind-direction"> </span><br> <br>        
-            </div>
-
           </div>
-        </div>  
+      </div>  
     
 
     </header>

@@ -15,6 +15,8 @@ body {
 #hero {
     clip-path: ellipse(50% 40%);
     width: 100%;
+    position: absolute;
+    top: 0;
     img {
         width: 100vw;
     }
@@ -22,38 +24,42 @@ body {
 #logo {
     position: absolute; 
     left: 0;   
-    width: 40%;
+    width: 33%;
     clip-path: ellipse(50% 35%);
 }
 .overlay-weather {
-    clip-path: ellipse(50% 35%);
+    clip-path: ellipse(40% 35%);
     width: 100%;
-    height: 30vh;
-    background:  rgb(39, 60, 44);
+    right: 0;
+}
+.salmon {
+    color: $salmon;
 }
 .stats {
     position: absolute;
-    top: 20rem;
+    top: 12.5rem;
     right: 0;
-    width: 40%;
-    height: 30vh;
+    width: 33%;
+    height: 25vh;
     font-size: .6rem;
     font-weight: bolder;
     line-height: .4rem;
     color: $salmon;
+    background: $blackleather;
 }
 .overlay-title {
     background:rgba(250, 162, 117, .8);
     color: $blackleather;
     font-size: .9rem;
     font-weight: bolder;
-    padding: 2rem;
-    width: 39%;
+    padding: 1rem;
+    width: 35%;
     text-align: center;
-    clip-path: ellipse(50% 38% at 50% 44%);
+    clip-path: ellipse(48% 45%);
     position: absolute;
-    top: 20vh;
-    left: 22.5vw;
+    top: 5vh;
+    line-height: 1.4rem;
+    left: 28vw;
     z-index: $zindexOverlay;
 }
 .closed-menu {           
@@ -65,10 +71,16 @@ body {
 .tall-pic {
     max-width: 100%;
     clip-path: ellipse(50% 20%);
+    img {
+        width: 100vw;
+    }
 }
 .wide-pic {
     max-width: 100%;
     clip-path: ellipse(50% 20% at 50% 20%);
+    img {
+        width: 100vw;
+    }
 
 }
 .zero {
