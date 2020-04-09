@@ -13,27 +13,22 @@ body {
     width: 100%;
 }
 #hero {
-    position: absolute;
-    clip-path: ellipse(50% 25%);
+    clip-path: ellipse(50% 40%);
     width: 100%;
-    top: 1rem;
+    img {
+        width: 100vw;
+    }
 }
 #logo {
-    width: 40%;
     position: absolute; 
     left: 0;   
+    width: 40%;
     clip-path: ellipse(50% 35%);
-}
-.closed-menu {           
-    top: 1rem;
-}
-.open-menu {
-    top: 13rem;
 }
 .overlay-weather {
     clip-path: ellipse(50% 35%);
     width: 100%;
-    z-index: $zindexOverlay;
+    height: 30vh;
     background:  rgb(39, 60, 44);
 }
 .stats {
@@ -51,15 +46,21 @@ body {
     background:rgba(250, 162, 117, .8);
     color: $blackleather;
     font-size: .9rem;
+    font-weight: bolder;
     padding: 2rem;
     width: 39%;
     text-align: center;
     clip-path: ellipse(50% 38% at 50% 44%);
-    position: relative;
+    position: absolute;
     top: 20vh;
-    font-weight: bold;
-    left: 25vw;
+    left: 22.5vw;
     z-index: $zindexOverlay;
+}
+.closed-menu {           
+    top: 1rem;
+}
+.open-menu {
+    top: 13rem;
 }
 .tall-pic {
     max-width: 100%;

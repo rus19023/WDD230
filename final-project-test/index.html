@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>   Home | Salmon River Adventures  | CIT 230 - Final Project</title>
+    <title>   Home | Salmon River Adventures  | CIT 230 - Final Project
+    </title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>         
     <meta name="description" content="Final Project page for website project for Doris Rush-Lopez for CIT 230: Web Frontend Development, Section 14 at Brigham Young University, Idaho, Winter 2020 semester">
@@ -12,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">    
     <script src="https://use.fontawesome.com/395b7c434b.js"></script>
 
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>    
   <body onLoad="getDate();">
@@ -28,27 +28,25 @@
         <li> <a href="reservations.html" > Make Memories!  <i class="fa fa-calendar"></i></a></li>
       </ul>
     </nav>
-    <header>
-      
-
-        <div id="hero" class="closed-menu">
-          <picture>           
-              <source srcset="images/river1-sm.jpg" media="(max-width: 400px)" >
-              <source srcset="images/river1-med.jpg" media="(min-width: 401px) and (max-width: 959px)">
-              <source srcset="images/river1-lg.jpg" media="(min-width: 960px)">
-              <img src="images/river1-hero.jpg" alt="person kayaking over a small waterfall">
-          </picture>
-        </div> 
-        <div>
-            <picture>
-                <img id="logo" class="closed-menu" src="images/logo.resized.jpg" alt="Salmon River Adventures logo, salmon colored text and salmon image on super dark green background">
-            </picture>
-            <h1 class="overlay-title">Get native, get drenched, get happy!</h1>  
-        </div>
-        <div class="stats overlay-weather">
-            Currently
-        
-          <div class="grid2col">
+    <header id="header">
+      <div id="hero" class="closed-menu">
+        <picture>           
+            <source srcset="images/river1-sm.jpg" media="(max-width: 400px)" >
+            <source srcset="images/river1-med.jpg" media="(min-width: 401px) and (max-width: 959px)">
+            <source srcset="images/river1-lg.jpg" media="(min-width: 960px)">
+            <img src="images/river1-hero.jpg" alt="person kayaking over a small waterfall">
+        </picture>
+      </div> 
+      <div>
+        <picture>
+            <img id="logo" class="closed-menu" src="images/logo.resized.jpg" alt="Salmon River Adventures logo, salmon colored text and salmon image on super dark green background">
+        </picture>
+        <h1 class="overlay-title">Get native, get drenched, get happy!
+        </h1>  
+      </div>
+      <div class="stats">
+          Currently      
+        <div class="grid2col">
 
             <div>
               <span class="right-align">Temperature:</span><br><br>
