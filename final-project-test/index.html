@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>    
   <body onLoad="getDate();">
+
     <nav class="clearfix">
       <div class="right-align">
         <button class="unhide" onClick="toggleMenu()">&#9776;</button>
@@ -26,85 +27,87 @@
         <li><a href="guides.html" > Meet our Guides  </a></li>          
         <li> <a href="trips.html" > Our Adventures   </a></li>
         <li> <a href="reservations.html"> Make Memories!  
-              <i class="fa fa-calendar"></i></a></li>
+        <i class="fa fa-calendar"></i></a></li>
       </ul>
     </nav>
+
     <header>
-      <div class="flex-row">
+        
+      <div class="gridcols col3">
          
-        <div>
-          <picture>
+        <div class="">  <!-- LOGO -->
+          <picture class="text-center">
               <img id="logo" src="images/logo.resized.png" alt="Salmon River Adventures logo, salmon colored text and salmon image on super dark green background">
           </picture>
-        </div>
-        <div>
+        </div>   
 
-          <h2 class="overlay-title">Get native! <br> Get drenched! <br> Get happy!
-          </h2>  
+        <div class="center-text">   <!-- TAGLINE -->  
+
+          <h1 class="overlay-title">Salmon River Adventures</h1>
+          <h2> Get native! <br> Get drenched! <br> Get happy!</h2>  
         </div>
-        </div>
-        <div class="stats">
-            <h4 class="salmon">
-              Currently
-            </h4>      
-          <div class="grid2col">
+
+        
+        <div class="stats center-text">  <!-- WEATHER SUMMARY -->
+            <h3 class="salmon">Current conditions in Riggins ID</h3>      
+        <div class="gridcols col2">
   
-              <div>
-                <span class="right-align">Temperature:</span><br><br>
-                <span class="right-align">Wind Chill:</span> <br><br>
-                <span class="right-align">Today's High:</span> <br> <br>
-                <span class="right-align">Humidity:</span><br><br>
-                <span class="right-align">Conditions:</span><br><br>
-                <span class="right-align">Wind Speed:</span> <br> <br>
+              <div class="right-align">  <!-- LABELS -->
+                <span>Temperature:</span><br>
+                <span>Wind Chill:</span> <br> 
+                <span>Today's High:</span> <br> 
+                <span>Humidity:</span><br> 
+                <span>Conditions:</span><br> 
+                <span>Wind Speed:</span> <br> 
               </div>
   
-              <div>
-                <span class="left-align" id="current-temp"></span> <span> &deg;F</span> <br><br>
-                <span class="left-align" id="windchill"> </span> <span> </span> <br><br>
-                <span class="left-align" id="high"> </span> <span> &deg;F</span> <br><br>
-                <span class="left-align" id="humidity"> </span> <span>% </span> <br><br>
-                <span class="left-align" id="conditions"> </span> <span> </span> <br><br>
-                <span class="left-align" id="windspeed"> </span> <span id="wind-direction"> </span><br> <br>        
+              <div class="left-align"> <!-- WEATHER DATA -->
+                <span id="current-temp"></span> <span> &deg;F</span> <br> 
+                <span id="windchill"> </span> <span> </span> <br> 
+                <span id="high"> </span> <span> &deg;F</span> <br> 
+                <span id="humidity"> </span> <span>% </span> <br> 
+                <span id="conditions"> </span> <span> </span> <br> 
+                <span id="windspeed"> </span> <span id="wind-direction"> </span><br>       
               </div>
   
           </div>
-      </div>  
-    
+      </div>    
 
     </header>
     <main>
       
       <article>
-        <div>
-          <h2> About Us </h2>         
-        </div>
-        <div class="normal">
+            <div class="center-text">
+            <h2> About Us </h2>         
+            </div>
+            
+            <div class="gridcols col1 center-items">
+                <div class="left-column">
+                    <picture class="tall-pic">
+                        <img src="images/river9-med.png" alt="person kayaking over a small waterfall">
+                    </picture>
+                </div>
+
+                <div class="center-column">
+                Located in the middle of Idaho, the Salmon River, also known as <a href="https://en.wikipedia.org/wiki/Salmon_River_(Idaho)"></a> "The River of No Return", flows from Galena Summit in the Boulder Mountains for approximately 425 miles to meet with the Snake River, which flows into the Columbia River. The Columbia empties into the Pacific Ocean, where sockeye salmon start their spawning cycle each year.
+            
+                <br><br>
+                Riggins is one of the small towns located along the seasonally salmon-filled waters of the Salmon River. You can imagine how it was named, but that's not why we exist...
+                <br><br>
+                Whitewater! That is why we exist! Feel the rush, the spray, the excitement when you run our Salmon River Adventures!
         
-          <div class="flex-column">
-            <div class="left-column">
-              <picture class="tall-pic">
-                <img src="images/river9-med.png" alt="person kayaking over a small waterfall">
-            </picture>
+                <br><br>
+                We use state-of-the-art equipment and happily comply with all U.S. Forest Service and all other government agency regulations.
+                </div>
+                <div class="right-column">
+                <picture class="tall-pic">
+                    <img src="images/river9-med.png" alt="person kayaking over a small waterfall">
+                </picture>
+                </div>
+
             </div>
-            <div class="center-column">
-              Located in the middle of Idaho, the Salmon River, also known as <a href="https://en.wikipedia.org/wiki/Salmon_River_(Idaho)"></a> "The River of No Return", flows from Galena Summit in the Boulder Mountains for approximately 425 miles to meet with the Snake River, which flows into the Columbia River. The Columbia empties into the Pacific Ocean, where sockeye salmon start their spawning cycle each year.
-          
-              <br><br>
-              Riggins is one of the small towns located along the seasonally salmon-filled waters of the Salmon River. You can imagine how it was named, but that's not why we exist...
-              <br><br>
-              Whitewater! That is why we exist! Feel the rush, the spray, the excitement when you run our Salmon River Adventures!
-    
-              <br><br>
-              We use state-of-the-art equipment and happily comply with all U.S. Forest Service and all other government agency regulations.
-            </div>
-            <div class="right-column">
-              <picture class="tall-pic">
-                <img src="images/river9-med.jpg" alt="person kayaking over a small waterfall">
-            </picture>
-            </div>
-          </div>
-        </div>
-      </article>
+        
+        </article>
     </main>
     <footer>
       <br><br>
