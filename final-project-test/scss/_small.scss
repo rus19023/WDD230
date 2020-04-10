@@ -14,14 +14,9 @@ body {
     font-size: 1rem;
     width: 100%;
 }
-.container {
-    display: grid;
-    grid-template-columns: 30% 36% 32%;
-    grid-template-rows: 15vh ;
-    grid-gap: .1rem;
-}
 #box {
-    background-image: url('/images/river1-orig.png');
+    position: relative;
+    background-image: url('images/river1-orig.png');
 }
 .flex-row {
     display: flex;
@@ -31,28 +26,31 @@ body {
 .reverse {
     flex-direction: row-reverse;
 }
+#logo {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: grid;
+    grid-template-columns: 33% 30% 36%;
+    grid-template-rows: 25vh;
+    grid-gap: .1rem;
+}
 #hero {
     width: 100%;
 }
-#logo {  
-    margin-top: 0; 
-    width: 100%;
-}
 .salmon {
+    padding-top: .8rem;
     color: $salmon;
     font-size: .8rem;
 }
-.overlay-title {
-    width: 100%;
-    padding: .5rem;
-    line-height: 1.6rem;
-    font-family: $headingFontFamily;
-}
 .overlay-weather {
-    clip-path: ellipse(50% 50%);
+    height: 18vh;
+    border-radius: 90px / 50px;
+    background: $blackleather;
 }
 .stats {
-    font-size: .6rem;
+    font-size: .65rem;
     padding: .2rem;
     line-height: .9rem;
     color: $salmon;
@@ -112,6 +110,23 @@ p {
     font-size: 1.2rem;
     padding: .5rem;
 }
+.grid {
+    max-width: 100%;
+    margin: 10px auto;	
+    padding: 10px;
+}
+.title {
+    color: $blackleather;
+    margin-bottom: 2rem;
+}
+.posts {
+    display: flex;
+    flex-wrap: wrap;	
+}
+.post {
+    font-size: .5rem;
+}
+
 nav {
     font-size: 1.2rem;
     background: $blackleather;

@@ -1,4 +1,4 @@
-const requestURL = 'guides.json';
+const requestURL = 'js/guides.json';
 
 
 fetch(requestURL)
@@ -7,14 +7,11 @@ fetch(requestURL)
   })
   .then(function (jsonObject) { 
     const guides = jsonObject['guides'];
-    console.log(guides)
     guides.forEach(guide => {
         
-        let card = document.createElement('section'); 
-        let div1 = document.createElement('div')
-        let div2 = document.createElement('div')
-        let h2 = document.createElement('h2');
-        let h6 = document.createElement('h6');
+        let div1 = document.createElement('div');
+        let p5 = document.createElement('p');
+        let p6 = document.createElement('p');
         let p1 = document.createElement('p');
         let p2 = document.createElement('p');
         let p3 = document.createElement('p');
@@ -26,37 +23,34 @@ fetch(requestURL)
         let email = `Email: ${guide.email}`;
         let bio = `Bio: ${guide.bio}`;
 
-        h2.textContent = guide_name;
-        image.setAttribute('class', 'rounded guide-image realign');
-        image.setAttribute('src', imgURL); 
-        //image.setAttribute('src', 'images/placeholder.jpg'); 
+        p5.textContent = guide_name;
+        image.setAttribute('src', imgURL);
         image.setAttribute('alt', guide_name);
-        h6.textContent = cert;
+        p6.textContent = cert;
         p1.textContent = exp;
         p2.textContent =email;
-        p3.textContent =bio;
+        p3.textContent =bio; 
+        div1.setAttribute('class', 'post');
+
         
         //  build the html code for the cards
-        //h2.appendChild(guide_a);  //  add the guide name heading to the text div
-        div1.appendChild(h2);
-        div1.appendChild(h6);  //  add the motto heading to the text div
-        div1.appendChild(p1);  //  add the founding year to the text div
-        div1.appendChild(p2);  //  add the population to the text div
-        div1.appendChild(p3);  //  add the rainfall to the text div
-        div2.appendChild(image);  //  add the photo to the image div
-        card.appendChild(div1);  // add the text div to the card div
-        card.appendChild(div2);  //  add the image div to the card div
+        div1.appendChild(image);  //  add the photo to the div
+        div1.appendChild(p5);  //  add the guide's name to the div
+        div1.appendChild(p6);  //  add the cert level to the div
+        div1.appendChild(p1);  //  add the experience to the div
+        div1.appendChild(p2);  //  add the email to the div
+        div1.appendChild(p3);  //  add the bio to the div
 
         // set up cards for each guide in order of menu
 
         if (guide.name == "Hans Mansson") {
-        document.querySelector('#hans').appendChild(card);  //  set the card div into the html page
+        document.querySelector('#hans').appendChild(div1);  //  set the div1 into the html page
 
         } else if (guide_name == "Gina George") {
-        document.querySelector('#gina').appendChild(card);  //  set the card div into the html page
+        document.querySelector('#gina').appendChild(div1);  //  set the div1 into the html page
 
         } else if (guide_name == "Marc Parcher") {
-        document.querySelector('#marc').appendChild(card);  //  set the card div into the html page
+        document.querySelector('#marc').appendChild(div1);  //  set the div1 into the html page
         }
       
     });
