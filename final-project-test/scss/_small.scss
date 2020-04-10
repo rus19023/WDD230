@@ -1,7 +1,9 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: $headingFontFamily;
-    font-weight: bold;
+    font-weight: bolder;
     color: $rocket;
+    padding: .5rem;
+    text-shadow: rgba(208, 205, 148, .7);
 }
 a:hover {color: $coconut;}
 a {color: $rocket;}
@@ -10,11 +12,8 @@ body {
     font-family: $textFontFamily;
     color: $blackleather;
     background: $salmon;
+    font-size: 1rem;
     width: 100%;
-}
-.lined-up {
-    display: flex;
-    flex-direction: column;
 }
 #box {
     position: relative;
@@ -32,52 +31,49 @@ body {
     width: 100%;
 }
 #logo {   
-    width: 33%;
+    width: 100%;
 }
 .salmon {
     color: $salmon;
     font-weight: bold;
 }
 .stats {
-    width: 33%;
-    font-size: .6rem;
-    font-weight: bold;
-    line-height: .4rem;
-    padding: .4rem;
+    font-size: .8rem;
+    padding: .25rem;
+    line-height: .9rem;
     border: 1px solid $tan;
     color: $salmon;
     background: $blackleather;
-    span.right-align {
-        text-align: right;
-    }
-    span.left-align {
-        text-align: left;
-    }
 }
 .right-align {
-    text-align: right;
+  text-align: right;
+  padding: 0 .4rem;
+}
+.center-text {
+    text-align: center;
+}
+.center-items {
+    justify-items: center;
 }
 .left-align {
-    text-align: left;
+  text-align: left;
 }
 .gridcols {
     display: grid;
-    margin:0;
-    .col1 {
-        grid-template-columns: 1fr;
-    }
-    .col2 {
-        grid-template-columns: 1fr 1fr;
-    }
-    .col3 {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+}
+.col1 {
+    grid-template-columns: 1fr;
+}
+.col2 {
+    grid-template-columns: 1fr 1fr;
+}
+.col3 {
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .overlay-title {
-    width: 33%;
+    width: 100%;
     padding: .5rem;
-    text-align: center;
-    line-height: 1.4rem;
+    line-height: 1.5rem;
     font-family: $headingFontFamily;
 }
 .closed-menu {           
@@ -102,9 +98,6 @@ p {
     text-align: center;
     font-size: 1.2rem;
     padding: .5rem;
-}
-.center-text {
-    text-align: center;
 }
 nav {
     font-size: 1.2rem;
