@@ -296,7 +296,6 @@ footer,
     line-height: 1.5rem;
 }
 form { 
-    background-color: transparent;
     fieldset {
         border: 2px solid #F5FBEF;
         margin: 2rem .25rem;

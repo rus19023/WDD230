@@ -12,6 +12,10 @@ body {
     background: $salmon;
     width: 100%;
 }
+.lined-up {
+    display: flex;
+    flex-direction: column;
+}
 #box {
     position: relative;
     background-image: url('/images/river1-orig.png');
@@ -32,14 +36,42 @@ body {
 }
 .salmon {
     color: $salmon;
+    font-weight: bold;
 }
 .stats {
     width: 33%;
-    font-size: 1.2rem;
+    font-size: .6rem;
     font-weight: bold;
     line-height: .4rem;
+    padding: .4rem;
+    border: 1px solid $tan;
     color: $salmon;
     background: $blackleather;
+    span.right-align {
+        text-align: right;
+    }
+    span.left-align {
+        text-align: left;
+    }
+}
+.right-align {
+    text-align: right;
+}
+.left-align {
+    text-align: left;
+}
+.gridcols {
+    display: grid;
+    margin:0;
+    .col1 {
+        grid-template-columns: 1fr;
+    }
+    .col2 {
+        grid-template-columns: 1fr 1fr;
+    }
+    .col3 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 .overlay-title {
     width: 33%;
@@ -115,17 +147,6 @@ nav {
         border: none;
         font-size: 1.6rem;
         color: $tan;
-    }
-}
-.grid2col {
-    display: grid;
-    grid-template-columns: 4fr 4fr;
-    margin:0;
-    .right-align {
-        text-align: right;
-    }
-    .left-align {
-        text-align: left;
     }
 }
 .tall-pic {
