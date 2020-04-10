@@ -3,7 +3,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bolder;
     color: $rocket;
     padding: .5rem;
-    text-shadow: rgba(208, 205, 148, .7);
 }
 a:hover {color: $coconut;}
 a {color: $rocket;}
@@ -17,8 +16,8 @@ body {
 }
 .container {
     display: grid;
-    grid-template-columns: 32% 36% 32%;
-    grid-template-rows: 35vh ;
+    grid-template-columns: 30% 36% 32%;
+    grid-template-rows: 15vh ;
     grid-gap: .1rem;
 }
 #box {
@@ -35,33 +34,45 @@ body {
 #hero {
     width: 100%;
 }
-#logo {   
+#logo {  
+    margin-top: 0; 
     width: 100%;
 }
 .salmon {
     color: $salmon;
-    font-weight: bold;
+    font-size: .8rem;
+}
+.overlay-title {
+    width: 100%;
+    padding: .5rem;
+    line-height: 1.6rem;
+    font-family: $headingFontFamily;
+}
+.overlay-weather {
+    clip-path: ellipse(50% 50%);
 }
 .stats {
-    font-size: .8rem;
-    padding: .25rem;
+    font-size: .6rem;
+    padding: .2rem;
     line-height: .9rem;
-    border: 1px solid $tan;
     color: $salmon;
     background: $blackleather;
 }
 .right-align {
   text-align: right;
-  padding: 0 .4rem;
+  padding: .3rem;
 }
 .center-text {
     text-align: center;
+    padding: .3rem;
 }
 .center-items {
     justify-items: center;
+    padding: .3rem;
 }
 .left-align {
   text-align: left;
+  padding: .3rem;
 }
 .gridcols {
     display: grid;
@@ -77,15 +88,6 @@ body {
 }
 .header {
     grid-template-columns: 32% 36% 32%;    
-}
-.overlay-weather {
-    clip-path: ellipse(50% 28%);
-}
-.overlay-title {
-    width: 100%;
-    padding: .5rem;
-    line-height: 1.5rem;
-    font-family: $headingFontFamily;
 }
 .closed-menu {           
     top: 1rem;

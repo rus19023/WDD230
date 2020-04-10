@@ -84,11 +84,8 @@ function getCurrentWeather() {
     windDegree = 'MPH ' + windDirection(windDegree);
 
     document.getElementById('current-temp').textContent = temperature.toFixed(0);
-    document.getElementById('high').textContent = jsObject.main.temp_max.toFixed(0);
-    document.getElementById('humidity').textContent = jsObject.main.humidity;
     document.getElementById('conditions').textContent = desc;
     document.getElementById('windspeed').textContent = windspeed;
-    document.getElementById('wind-direction').textContent = windDegree;
     document.getElementById('windchill').textContent = windchill;
 
   });
