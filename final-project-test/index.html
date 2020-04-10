@@ -25,28 +25,25 @@
         <li ><a href="contact.html" > Contact Us </a></li>
         <li><a href="guides.html" > Meet our Guides  </a></li>          
         <li> <a href="trips.html" > Our Adventures   </a></li>
-        <li> <a href="reservations.html" > Make Memories!  <i class="fa fa-calendar"></i></a></li>
+        <li> <a href="reservations.html"> Make Memories!  
+              <i class="fa fa-calendar"></i></a></li>
       </ul>
     </nav>
     <header>
-      <div class="closed-menu">
-
-        <div id="hero">
-          <picture>           
-              <source srcset="images/river1-sm.jpg" media="(max-width: 400px)" >
-              <source srcset="images/river1-med.jpg" media="(min-width: 401px) and (max-width: 959px)">
-              <source srcset="images/river1-lg.jpg" media="(min-width: 960px)">
-              <img src="images/river1-hero.jpg" alt="person kayaking over a small waterfall">
-          </picture>
-        </div> 
+      <div class="flex-row">
+         
         <div>
           <picture>
-              <img id="logo" class="closed-menu" src="images/logo.resized.jpg" alt="Salmon River Adventures logo, salmon colored text and salmon image on super dark green background">
+              <img id="logo" src="images/logo.resized.png" alt="Salmon River Adventures logo, salmon colored text and salmon image on super dark green background">
           </picture>
-          <h1 class="overlay-title">Get native! Get drenched! Get happy!
-          </h1>  
         </div>
-        <div class="stats overlay-weather">
+        <div>
+
+          <h2 class="overlay-title">Get native! <br> Get drenched! <br> Get happy!
+          </h2>  
+        </div>
+        </div>
+        <div class="stats">
             <h4 class="salmon">
               Currently
             </h4>      
@@ -70,7 +67,6 @@
                 <span class="left-align" id="windspeed"> </span> <span id="wind-direction"> </span><br> <br>        
               </div>
   
-            </div>
           </div>
       </div>  
     
@@ -84,7 +80,12 @@
         </div>
         <div class="normal">
         
-          <div class="flex-row">
+          <div class="flex-column">
+            <div class="left-column">
+              <picture class="tall-pic">
+                <img src="images/river9-med.png" alt="person kayaking over a small waterfall">
+            </picture>
+            </div>
             <div class="center-column">
               Located in the middle of Idaho, the Salmon River, also known as <a href="https://en.wikipedia.org/wiki/Salmon_River_(Idaho)"></a> "The River of No Return", flows from Galena Summit in the Boulder Mountains for approximately 425 miles to meet with the Snake River, which flows into the Columbia River. The Columbia empties into the Pacific Ocean, where sockeye salmon start their spawning cycle each year.
           
@@ -96,9 +97,11 @@
               <br><br>
               We use state-of-the-art equipment and happily comply with all U.S. Forest Service and all other government agency regulations.
             </div>
-            <picture class="tall-pic">
-              <img src="images/river9-med.jpg" alt="person kayaking over a small waterfall">
-          </picture>
+            <div class="right-column">
+              <picture class="tall-pic">
+                <img src="images/river9-med.jpg" alt="person kayaking over a small waterfall">
+            </picture>
+            </div>
           </div>
         </div>
       </article>

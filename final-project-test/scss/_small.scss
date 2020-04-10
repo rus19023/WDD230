@@ -12,76 +12,47 @@ body {
     background: $salmon;
     width: 100%;
 }
+#box {
+    position: relative;
+    background-image: url('/images/river1-orig.png');
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.reverse {
+    flex-direction: row-reverse;
+}
 #hero {
-    clip-path: ellipse(50% 40%);
     width: 100%;
-    position: absolute;
-    top: 0;
-    img {
-        width: 100vw;
-    }
 }
-#logo {
-    position: absolute; 
-    left: 0;   
+#logo {   
     width: 33%;
-    clip-path: ellipse(50% 35%);
-}
-.overlay-weather {
-    clip-path: ellipse(40% 35%);
-    width: 100%;
-    right: 0;
 }
 .salmon {
     color: $salmon;
 }
 .stats {
-    position: absolute;
-    top: 12.5rem;
-    right: 0;
     width: 33%;
-    height: 25vh;
-    font-size: .6rem;
-    font-weight: bolder;
+    font-size: 1.2rem;
+    font-weight: bold;
     line-height: .4rem;
     color: $salmon;
     background: $blackleather;
 }
 .overlay-title {
-    background:rgba(250, 162, 117, .8);
-    color: $blackleather;
-    font-size: .9rem;
-    font-weight: bolder;
-    padding: 1rem;
-    width: 35%;
+    width: 33%;
+    padding: .5rem;
     text-align: center;
-    clip-path: ellipse(48% 45%);
-    position: absolute;
-    top: 5vh;
     line-height: 1.4rem;
-    left: 28vw;
-    z-index: $zindexOverlay;
+    font-family: $headingFontFamily;
 }
 .closed-menu {           
     top: 1rem;
 }
 .open-menu {
     top: 13rem;
-}
-.tall-pic {
-    max-width: 100%;
-    clip-path: ellipse(50% 20%);
-    img {
-        width: 100vw;
-    }
-}
-.wide-pic {
-    max-width: 100%;
-    clip-path: ellipse(50% 20% at 50% 20%);
-    img {
-        width: 100vw;
-    }
-
 }
 .zero {
     margin-top: 0;
@@ -103,15 +74,7 @@ p {
 .center-text {
     text-align: center;
 }
-.flex-row {
-    display: flex;
-    flex-direction: row;
-}
-.reverse {
-    flex-direction: row-reverse;
-}
 nav {
-    font-weight: bold;
     font-size: 1.2rem;
     background: $blackleather;
     .button {
@@ -165,10 +128,19 @@ nav {
         text-align: left;
     }
 }
+.tall-pic {
+    max-width: 100%;
+}
+.wide-pic {
+    max-width: 100%;
+    img {
+        width: 100vw;
+    }
+}
 .grid1col {
     text-align: center;
     padding: 1rem;
-    max-width: 100%;
+    width: 98%;
 }
 .grid-auto-row {
     display: grid;
@@ -176,20 +148,20 @@ nav {
 }
 .left-column{
     margin-top: 2rem;
-    max-width: 33%;
+    max-width: 100%;
     padding: .25rem;  
     text-align: left;   
 }
 .right-column {
     margin-top: 2rem;
-    max-width: 33%;
+    max-width: 100%;
     padding: .25rem;  
     text-align: left;  
 }
 .center-column {
-    max-width: 33%;
+    max-width: 100%;
     padding: 1rem;  
-    text-align: center; 
+    text-align: left; 
 }
 #gmap {
     margin: .25rem;
