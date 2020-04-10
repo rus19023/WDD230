@@ -15,6 +15,12 @@ body {
     font-size: 1rem;
     width: 100%;
 }
+.container {
+    display: grid;
+    grid-template-columns: 32% 36% 32%;
+    grid-template-rows: 35vh ;
+    grid-gap: .1rem;
+}
 #box {
     background-image: url('/images/river1-orig.png');
 }
@@ -68,6 +74,12 @@ body {
 }
 .col3 {
     grid-template-columns: 1fr 1fr 1fr;
+}
+.header {
+    grid-template-columns: 32% 36% 32%;    
+}
+.overlay-weather {
+    clip-path: ellipse(50% 28%);
 }
 .overlay-title {
     width: 100%;
