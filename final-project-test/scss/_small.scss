@@ -27,17 +27,20 @@ body {
     flex-direction: row-reverse;
 }
 #logo {
+    text-align: center;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 .container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 25vh;
+    grid-template-rows: 35vh;
     grid-gap: .1rem;
 }
 #hero {
     width: 100%;
+    justify-content: center;
 }
 .salmon {
     padding-top: .8rem;
@@ -45,9 +48,6 @@ body {
     font-size: .8rem;
 }
 .overlay-weather {
-    height: 18vh;
-    border-radius: 90px / 50px;
-    background: $blackleather;
 }
 .stats {
     font-size: .65rem;
@@ -131,7 +131,7 @@ nav {
     font-size: 1.2rem;
     background: $blackleather;
     .button {
-        display: inline;
+        display: block;;
         border: none;
     }
     ul {
@@ -285,4 +285,9 @@ form {
     textarea {
         resize: none;
     }
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }

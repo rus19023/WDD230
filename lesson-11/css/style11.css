@@ -233,12 +233,9 @@ nav, #banner1 {
     background: -moz-linear-gradient(top, #faa916 0%, #faa916 0%, #22007c 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, #faa916 0%,#faa916 0%,#22007c 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, rgba(250, 169, 22) ,rgba(34, 0, 124) ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#faa916', endColorstr='#22007c',GradientType=0 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#faa916', endColorstr='#22007c',GradientType=0);
 }
 nav {
-    .button {
-        display: inline;
-    }
     ul {
         list-style-type: none;
         padding: 0;
