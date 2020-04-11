@@ -228,12 +228,12 @@ nav {
             background-color: $rocket;
             color: $blackleather;
         }
-        #current:hover {
-            color: $rocket;
+        li#current a:hover {
+            color: white;
             background: $blackleather;
         }
-        #current:visited {
-            color: $blackleather;
+        li#current a:visited {
+            color: white;
         }
     }
     button {
