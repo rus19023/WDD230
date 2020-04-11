@@ -1,6 +1,15 @@
 html {
     font-size: 1.5vw;
 }
+.stats {
+    padding-left: 1.5rem;
+}
+.hide {
+    display: none;
+}
+.unhide {
+    display: none;
+}
 .container {
     display: grid;
     grid-template-columns: 33% 33% 33%;
