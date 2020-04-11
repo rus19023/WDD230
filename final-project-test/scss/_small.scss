@@ -14,6 +14,9 @@ body {
     font-size: 1rem;
     width: 100%;
 }
+html {
+    font-size: 4vw;
+}
 #box {
     position: relative;
     background-image: url('..images/river1-orig.png');
@@ -35,7 +38,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 35vh;
+    grid-template-rows: auto;
     grid-gap: .1rem;
 }
 #hero {
@@ -45,16 +48,21 @@ body {
 .salmon {
     padding-top: .8rem;
     color: $salmon;
-    font-size: .8rem;
+    font-size: 1.2rem;
 }
-.overlay-weather {
+.background {
+    position: relative;
+    z-index: 10;
 }
 .stats {
-    font-size: .65rem;
-    padding: .2rem;
-    line-height: .9rem;
+    position: absolute;
+    top: 2.5rem;
+    left: 5rem;
+    z-index: 20;
+    font-size: 1rem;
+    padding: .7rem;
+    line-height: 1rem;
     color: $salmon;
-    background: $blackleather;
 }
 .right-align {
   text-align: right;
@@ -126,10 +134,51 @@ p {
 .post {
     font-size: .5rem;
 }
-
+.tall-pic {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.wide-pic {
+    width: 100%;
+}
+.grid1col {
+    text-align: center;
+    padding: 1rem;
+    width: 98%;
+}
+.grid-auto-row {
+    display: grid;
+    grid-template-rows: auto;
+}
+.left-column{
+    margin-top: 2rem;
+    max-width: 100%;
+    padding: .25rem;  
+    text-align: left;   
+}
+.right-column {
+    margin-top: 2rem;
+    max-width: 100%;
+    padding: .25rem;  
+    text-align: left;  
+}
+.center-column {
+    max-width: 100%;
+    padding: 1rem;  
+    text-align: left; 
+}
+#gmap {
+    margin: .25rem;
+    max-width: 100%;
+    height: 40vh;
+    padding: .25rem
+}
 nav {
     font-size: 1.2rem;
     background: $blackleather;
+    width: 100%;
     .button {
         display: block;;
         border: none;
@@ -169,47 +218,6 @@ nav {
         font-size: 1.6rem;
         color: $tan;
     }
-}
-.tall-pic {
-    max-width: 100%;
-}
-.wide-pic {
-    max-width: 100%;
-    img {
-        width: 100vw;
-    }
-}
-.grid1col {
-    text-align: center;
-    padding: 1rem;
-    width: 98%;
-}
-.grid-auto-row {
-    display: grid;
-    grid-template-rows: auto;
-}
-.left-column{
-    margin-top: 2rem;
-    max-width: 100%;
-    padding: .25rem;  
-    text-align: left;   
-}
-.right-column {
-    margin-top: 2rem;
-    max-width: 100%;
-    padding: .25rem;  
-    text-align: left;  
-}
-.center-column {
-    max-width: 100%;
-    padding: 1rem;  
-    text-align: left; 
-}
-#gmap {
-    margin: .25rem;
-    max-width: 100%;
-    height: 40vh;
-    padding: .25rem
 }
 form { 
     background-color: transparent;
