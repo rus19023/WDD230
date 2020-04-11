@@ -266,10 +266,6 @@ form {
         width: 96%;
         text-align: left;
     }
-    label input {
-        color: $tan;
-        border:none;
-    }
     label.top input, 
     label.sbs select,
     textarea {
@@ -288,8 +284,8 @@ form {
         color: $blackleather;
     }
     label.top input:required:valid {
-        background-color: $coconut;
-        color: $salmon;
+        background-color: $tan;
+        color: $blackleather;
     }
     label.sbs {
         display: block;
@@ -318,7 +314,18 @@ form {
     }
     textarea {
         resize: none;
-    }
+    }::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color:  rgba(39,  60,  44, .6);
+        opacity: 1; /* Firefox */
+      }
+      
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: rgba(39,  60,  44, .6);
+      }
+      
+      ::-ms-input-placeholder { /* Microsoft Edge */
+        color: rgba(39,  60,  44, .6);
+      }
 }
 .clearfix:after {
     content: "";
