@@ -5,7 +5,8 @@ h1, h2, h3, h4, h5, h6 {
     padding: .5rem;
 }
 a:hover {color: $coconut;}
-a {color: $tan;}
+a {color: $tan;
+    background: $blackleather;}
 a:visited {color: $blackleather;}
 body {
     font-family: $textFontFamily;
@@ -218,6 +219,7 @@ nav {
         }
         li a:visited {
             color: $tan;
+            background: $blackleather;
         }
         li a:visited:hover {
             color: $blackleather;
@@ -228,7 +230,7 @@ nav {
         }
         li#current a:hover {
             color: white;
-            background: $blackleather;
+            background: $tan;
         }
         li#current a:visited {
             color: white;
