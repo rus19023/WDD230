@@ -1,5 +1,5 @@
 html {
-    font-size: 2.2vw;
+    font-size: 2vw;
 }
 .container {
     display: grid;
@@ -8,7 +8,10 @@ html {
     grid-gap: .5rem;
 }
 .pad-top {
-    padding-top: 5rem;
+    padding-top: 2rem;
+}
+.left-align {
+    padding-left: 2rem;
 }
 #primaryNav {
     font-size: 1.5rem;

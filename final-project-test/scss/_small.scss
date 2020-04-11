@@ -29,7 +29,7 @@ html {
 .reverse {
     flex-direction: row-reverse;
 }
-#logo, #background {
+#logo, #background, .tall-pic, .wide-pic {
     position: relative;
     text-align: center;
     margin: 0;
@@ -41,12 +41,6 @@ html {
     padding-top: .8rem;
     color: $salmon;
     font-size: 1.2rem;
-}
-#background {
-    text-align: center;
-    position: relative;
-    z-index: 10;
-    width: 100%;
 }
 .stats {
     position: absolute;
@@ -136,15 +130,6 @@ p {
 }
 .post {
     font-size: .5rem;
-}
-.tall-pic {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-.wide-pic {
-    width: 100%;
 }
 .grid1col {
     text-align: center;
