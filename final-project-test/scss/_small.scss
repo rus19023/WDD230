@@ -331,3 +331,29 @@ form {
     display: table;
     clear: both;
 }
+table {
+    table-layout: auto;
+    border-collapse: collapse;
+    width: 100%;
+    align-items: left;
+  }
+  td, th {
+    border: 1px solid $blackleather;
+    text-align: center;
+    padding: 8px;
+  }
+  thead tr th { 
+    align-content: center; 
+    padding: 10px;
+  }
+  tr:nth-child(even) {
+      width: 25%;
+      background-color: $tan;
+      font-style: italic;
+    } 
+  th {
+    font-size: 1.2em;
+    padding: 5px;
+    font-weight: bold;
+  }
+  
