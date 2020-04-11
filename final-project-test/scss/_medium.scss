@@ -1,8 +1,5 @@
 html {
-    font-size: 1.5vw;
-}
-.stats {
-    padding-left: 1.5rem;
+    font-size: 1.8vw;
 }
 .hide {
     display: none;
@@ -15,20 +12,31 @@ html {
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: auto ;
 }
+.container-head {
+    display: grid;
+    grid-template-columns: 30% 60%;
+}
+.container-reserve {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto ;
+}
+p {
+    font-size: 2vw;
+}
+.salmon {
+    padding-right: 2rem;
+}
+.stats {
+    top: 1rem;
+    left: 2rem;
+    font-size: 2vw;
+}
 #hans, #gina, #marc {
     border: 1px solid $blackleather;
     img {
         height: 260px;
     }
-    p {
-        font-size: 2vw;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-    h1 {
-        font-size: 3vw;
-    }
-
 }
 h2 {
     font-size: 2rem;

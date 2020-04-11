@@ -21,7 +21,7 @@
         <button class="unhide" onClick="toggleMenu()">&#9776;</button>
       </div>
       <ul id="primaryNav" class="hide">
-        <li class="current"><a href="index.html">Home</a></li>
+        <li id="current"><a href="index.html">Home</a></li>
         <li ><a href="contact-us.html" > Contact Us </a></li>
         <li><a href="meet-our-guides.html" > Meet our Guides  </a></li>          
         <li> <a href="our-adventures.html" > Our Adventures   </a></li>
@@ -35,14 +35,22 @@
       <div class="container">
          
         <div>  <!-- LOGO -->
-          <picture>
+          <picture>            
               <img id="logo" class="text-center" src="images/logo.resized.png" alt="Salmon River Adventures logo, salmon colored text and salmon image on super dark green background">
           </picture>
         </div> 
+
         
-        <div class="center-text">   <!-- TAGLINE --> 
-          <h2> Get native! <br> Get drenched! <br> Get happy!</h2>  
-        </div>
+          <div class="center-text">   <!-- TAGLINE -->
+                <h2> Get native! <br> Get drenched! <br> Get happy!</h2>   
+                
+                  <div id="box">
+                    <a class="cta" href="make-memories-reservations.html">
+                      <h2> Reserve Now!</h2>
+                    </a> 
+                  </div>      
+          </div>
+        </section>
          
         <div>  <!-- WEATHER SUMMARY BACKGROUND -->
           <div class="tall-pic">
@@ -51,10 +59,10 @@
             </picture>
         
           <div class="stats center-text">  <!-- WEATHER SUMMARY -->
-            <div class="salmon">Current conditions <br> in Riggins ID </div>      
+            <div class="salmon">Current conditions <br> in Riggins ID <br><br></div>      
             <div class="gridcols col2 center-text">
     
-                <div class="right-align">  <!-- LABELS -->
+                <div class="pad-left right-align">  <!-- LABELS -->
                   <span>Temperature:</span><br>
                   <span>Wind Chill:</span> <br>
                   <span>Conditions:</span><br> 
@@ -81,14 +89,13 @@
             <div class="center-text">
             <h1> About Us </h1>         
             </div>
-
-
             
             <section class="container center-items">
 
               <div class="left-column">
-
-                Located in the middle of Idaho, the Salmon River, also known as <a href="https://en.wikipedia.org/wiki/Salmon_River_(Idaho)"></a> "The River of No Return", flows from Galena Summit in the Boulder Mountains for approximately 425 miles to meet with the Snake River, which flows into the Columbia River.
+                <p>
+                  Located in the middle of Idaho, the Salmon River, also known as <a href="https://en.wikipedia.org/wiki/Salmon_River_(Idaho)"></a> "The River of No Return", flows from Galena Summit in the Boulder Mountains for approximately 425 miles to meet with the Snake River, which flows into the Columbia River.
+                </p>
               </div>
 
               <div class="center-column">
@@ -98,8 +105,10 @@
               </div>
 
               <div class="right-column">  
-
-                Then the Columbia empties into the Pacific Ocean, where sockeye salmon start their spawning cycle each year. Riggins is one of the small towns located along the seasonally salmon-filled waters of the Salmon River. You can imagine how it was named, but that's not why we exist...
+                <p>
+                  Then the Columbia empties into the Pacific Ocean, where sockeye salmon start their spawning cycle each year. Riggins is one of the small towns located along the seasonally salmon-filled waters of the Salmon River. You can imagine how it was named, but that's not why we exist...
+                </p>
+                
                 <br><br>
               </div>
             </section>
@@ -111,11 +120,13 @@
                     </picture>
                 </div>
 
-                <div class="center-column pad-top">
-                
+                <div class="center-column">
+                <p class="pad-top">
                   Whitewater! That is why we exist! Feel the rush, the spray, the excitement when you run our Salmon River Adventures!      
-                  <br><br>
+                </p>
+                <p class="pad-top">
                   We use state-of-the-art equipment and happily comply with all U.S. Forest Service and all other government agency regulations.
+                </p>                 
             
                 <br><br>
                 </div>

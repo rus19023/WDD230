@@ -1,25 +1,36 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: $headingFontFamily;
     font-weight: bolder;
-    color: $rocket;
+    color: $blackleather;
     padding: .5rem;
 }
 a:hover {color: $coconut;}
-a {color: $rocket;}
+a {color: $tan;}
 a:visited {color: $blackleather;}
 body {
     font-family: $textFontFamily;
     color: $blackleather;
     background: $salmon;
-    font-size: 1rem;
     width: 100%;
 }
 html {
     font-size: 4vw;
 }
+.cta {
+    text-decoration: none;
+    a {
+       color: $tan;
+    }
+    a:visited {
+       color: $tan;
+    }
+}
 #box {
-    position: relative;
-    background-image: url('..images/river1-orig.png');
+    width: 100%;
+    text-align: center;
+    border: 2px solid $rocket;
+    object-fit: cover;
+    box-shadow: 5px 5px rgba(136, 120, 128, .7);
 }
 .flex-row {
     display: flex;
@@ -36,6 +47,7 @@ html {
     padding: 0;
     width: 100%;
     z-index: 10;
+    object-fit: cover;
 }
 .salmon {
     padding-top: .8rem;
@@ -44,31 +56,31 @@ html {
 .stats {
     position: absolute;
     top: 2rem;
-    left: 4rem;
+    left: 4.5rem;
     z-index: 20;
     padding: .7rem;
     line-height: 1rem;
     color: $salmon;
 }
 .pad-left {
-    padding-left: .25rem;
+    padding-left: 1rem;
 }
 #hans, #gina, #marc {
     border: 1px solid $blackleather;
+    justify-content: space-evenly;
     img {
-        height: 60vh;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
     p {
-        font-size: 3.5vw;
         padding-left: 1rem;
         padding-right: 1rem;
     }
     h1 {
-        font-size: 5.5vw;
         font-weight: bold;
         text-align: center;
     }
-
 }
 .container {
     display: grid;
@@ -78,6 +90,7 @@ html {
 #hero {
     width: 100%;
     justify-content: center;
+    object-fit: cover;
 }
 .right-align {
   text-align: right;
@@ -87,7 +100,8 @@ html {
     text-align: center;
 }
 .center-items {
-    justify-items: center;
+    justify-content: space-around;
+    text-align: center;
     padding: .3rem;
 }
 .left-align {
@@ -107,7 +121,8 @@ html {
     grid-template-columns: 1fr 1fr 1fr;
 }
 .header {
-    grid-template-columns: 32% 36% 32%;    
+    grid-template-columns: 32% 36% 32%;
+    justify-content: space-around;    
 }
 .closed-menu {           
     top: 1rem;
@@ -126,7 +141,6 @@ html {
 }
 .normal {
     text-align: center;
-    font-size: 1.2rem;
     padding: .5rem;
 }
 .grid {
@@ -137,13 +151,6 @@ html {
 .title {
     color: $blackleather;
     margin-bottom: 2rem;
-}
-.posts {
-    display: flex;
-    flex-wrap: wrap;	
-}
-.post {
-    font-size: .5rem;
 }
 .grid1col {
     text-align: center;
@@ -159,30 +166,25 @@ html {
     margin-top: 2rem;
     max-width: 100%;
     padding: .25rem;  
-    text-align: left;   
+    text-align: left;
 }
 .right-column {
     position: relative;
     margin-top: 2rem;
     max-width: 100%;
     padding: .25rem;  
-    text-align: left;  
+    text-align: right;  
 }
 .center-column {
     position: relative;
     max-width: 100%;
     padding: 1rem;  
-    text-align: left;
-    padding: .25rem;   
+    text-align: center;
 }
 #gmap {
     margin: .25rem;
     width: 40vw;
     padding: 5%;
-}
-.contact {
-    padding: 6%;
-    font-size: 2vw;
 }
 footer {
     font-size: 2.5vw;
@@ -195,7 +197,6 @@ footer {
     }
 }
 nav {
-    font-size: 1.2rem;
     background: $blackleather;
     width: 100%;
     .button {
@@ -222,28 +223,34 @@ nav {
         li a:visited:hover {
             color: $blackleather;
         }
-        .current {
-            background-color: $coconut;
+        #current {
+            background-color: $rocket;
+            color: $blackleather;
         }
-        .current:hover {
-            color: $tan;
-            background: $coconut;
+        #current:hover {
+            color: $rocket;
+            background: $blackleather;
+        }
+        #current:visited {
+            color: $blackleather;
         }
     }
     button {
         margin: .2rem 2%;
         background-color: transparent;
         border: none;
-        font-size: 1.6rem;
+        font-size: 5vw;
         color: $tan;
+        padding-top: 1.5vh;
     }
 }
 form { 
-    background-color: transparent;
+    border: none;
     fieldset {
         border: 2px solid $blackleather;
-        margin: 2%;
-        max-width: 96%;
+        margin: 6%;
+        padding: 2%;
+        width: 75%;
     }
     legend {
         color: $blackleather;
@@ -276,9 +283,9 @@ form {
         background-color: $tan;
     }
     label.top input:required:invalid {
-        box-shadow: 0 0 20px $blackleather;
-        background-color: $rocket;
-        color: $tan;
+        box-shadow: 0 0 10px $tan;
+        background-color: rgba(136, 120, 128, .4);
+        color: $blackleather;
     }
     label.top input:required:valid {
         background-color: $coconut;
@@ -291,15 +298,15 @@ form {
         color: $blackleather;
     }
     input.submitBtn {
-        border: none;
         margin-top: .75rem;
-        background-color: $coconut;
+        background-color: $blackleather;
         color: $tan;
         font-size: 1.5rem;     
-        box-shadow: 0 0 18px $blackleather;
-        padding: .75rem ;
+        box-shadow: 0 0 10px $tan;
+        padding: 4% ;
         margin: 2%;
-        max-width: 96%;
+        max-width: 92%;
+        border-radius: 15px;
     }
     input,
     textarea,

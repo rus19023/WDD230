@@ -26,14 +26,14 @@
         <li ><a href="contact-us.html" > Contact Us </a></li>
         <li><a href="meet-our-guides.html" > Meet our Guides  </a></li>          
         <li> <a href="our-adventures.html" > Our Adventures   </a></li>
-        <li class="current"> <a href="make-memories-reservations.html"> Make Memories!  
+        <li id="current"> <a href="make-memories-reservations.html"> Make Memories!  
         </a></li>
       </ul>
     </nav>
 
     <header>
         
-      <div class="container">
+      <div class="container-head">
          
         <div>  <!-- LOGO -->
           <picture>
@@ -42,17 +42,18 @@
         </div> 
         
         <div class="center-text container">   <!-- TAGLINE --> 
-          <div> <h2> Get native!</h2></div> 
-          <div><h2> Get drenched!</h2> </div>
-          <div> <h2> Get happy!</h2></div>   
+          <div> <h1> Get native!</h1></div> 
+          <div><h1> Get drenched!</h1> </div>
+          <div> <h1> Get happy!</h1></div>   
         </div>
          
         
     </header>
     <main>
-           <div class="container">
-            <h1 class=" text-center"> </h1>
-            <h1 class=" text-center">Reservations - Make Your Adventure Memories!</h1>
+           <div class="container-reserve">
+            <div class="center-items">
+              <h1>Reservations <br><br> Make Your Adventure Memories!</h1>
+            </div>
            </div>
   
         <form action="thanks-reservation.html" method="GET">
@@ -68,8 +69,8 @@
           </label>
           
           <label class="top">
-            Please enter your email
-            <input id="email" type="email" name="email" placeholder="someone@gmail.com">
+            Please enter your email (Required)
+            <input id="email" type="email" name="email" placeholder="someone@gmail.com" required>
           </label>    
           
           <label class="top">
