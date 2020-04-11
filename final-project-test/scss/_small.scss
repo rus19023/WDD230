@@ -35,6 +35,8 @@ a, a:visited, a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    font-size: 2vw;
+    text-decoration: underline;
 }
 .reverse {
     flex-direction: row-reverse;
@@ -160,6 +162,9 @@ a, a:visited, a:hover {
 .grid-auto-row {
     display: grid;
     grid-template-rows: auto;
+}
+.bigger {
+    font-size: 5vw;
 }
 .left-column{
     position: relative;
