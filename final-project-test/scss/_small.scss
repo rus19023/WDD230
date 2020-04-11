@@ -16,14 +16,11 @@ body {
 html {
     font-size: 4vw;
 }
-.cta {
-    text-decoration: none;
-    a {
-       color: $tan;
-    }
-    a:visited {
-       color: $tan;
-    }
+a.cta h2, a:visited.cta {
+    color: white;
+}
+a, a:visited, a:hover {
+    text-decoration: none !important;
 }
 #box {
     width: 100%;
