@@ -335,7 +335,6 @@ table {
     table-layout: auto;
     border-collapse: collapse;
     width: 100%;
-    align-items: left;
   }
   td, th {
     border: 1px solid $blackleather;
@@ -349,7 +348,6 @@ table {
   tr:nth-child(even) {
       width: 25%;
       background-color: $tan;
-      font-style: italic;
     } 
   th {
     font-size: 1.2em;
