@@ -29,11 +29,34 @@ html {
 .reverse {
     flex-direction: row-reverse;
 }
-#logo {
+#logo, #background {
+    position: relative;
     text-align: center;
     margin: 0;
     padding: 0;
     width: 100%;
+    z-index: 10;
+}
+.salmon {
+    padding-top: .8rem;
+    color: $salmon;
+    font-size: 1.2rem;
+}
+#background {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+}
+.stats {
+    position: absolute;
+    top: 2.5rem;
+    left: 5.5rem;
+    z-index: 20;
+    font-size: 1rem;
+    padding: .7rem;
+    line-height: 1rem;
+    color: $salmon;
 }
 .container {
     display: grid;
@@ -44,25 +67,6 @@ html {
 #hero {
     width: 100%;
     justify-content: center;
-}
-.salmon {
-    padding-top: .8rem;
-    color: $salmon;
-    font-size: 1.2rem;
-}
-.background {
-    position: relative;
-    z-index: 10;
-}
-.stats {
-    position: absolute;
-    top: 2.5rem;
-    left: 5rem;
-    z-index: 20;
-    font-size: 1rem;
-    padding: .7rem;
-    line-height: 1rem;
-    color: $salmon;
 }
 .right-align {
   text-align: right;
