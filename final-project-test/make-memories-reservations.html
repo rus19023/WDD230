@@ -17,6 +17,20 @@
     
 <body>
 
+    <nav class="clearfix">
+      <div>
+        <button class="unhide" onClick="toggleMenu()">&#9776;</button>
+      </div>
+      <ul id="primaryNav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li ><a href="contact-us.html" > Contact Us </a></li>
+        <li><a href="meet-our-guides.html" > Meet our Guides  </a></li>          
+        <li> <a href="our-adventures.html" > Our Adventures   </a></li>
+        <li class="current"> <a href="make-memories-reservations.html"> Make Memories!  
+        </a></li>
+      </ul>
+    </nav>
+
     <header>
         
       <div class="container">
@@ -61,6 +75,28 @@
             <input id="phone" type="tel" name="phone" placeholder="5551239876" required>
           </label>
           
+          <label class="top">
+            Please enter name on card (Required)
+            <input id="card" type="cc-name" name="ccname" placeholder="9999999999999999" required>
+          </label>
+          
+          <label class="top">
+            Please enter your card type (Required)
+            <input id="card" type="cc-type" name="card-type" placeholder="9999999999999999" required>
+          </label>
+
+          
+          <label class="top">
+            Please enter your card number (Required)
+            <input id="card" type="cc-number" name="cardnumber" placeholder="9999999999999999" required>
+          </label>
+          
+          <label class="top">
+            Please enter your card expiration date (Required)
+            <input id="card" type="cc-exp" name="exp-date" placeholder="9999999999999999" required>
+          </label>
+
+                     
           <label class="top">
             Please enter your zipcode (Required)
             <input id="zipcode" type="number" name="zip" required placeholder="99999">
