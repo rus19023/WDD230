@@ -1,21 +1,24 @@
 html {
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 .container {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: auto ;
     grid-gap: .5rem;
-}
-.pad-top {
-    padding-top: 2rem;
-}
-.left-align {
-    padding-left: 2rem;
+}h2 {
+    font-size: 2rem;
 }
 #primaryNav {
     font-size: 1.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+form {
+    padding-left: 25%;
+    width: 50%;
+    fieldset {
+        padding-left: 10%;
+    }
 }

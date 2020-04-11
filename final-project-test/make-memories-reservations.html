@@ -1,13 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <title>   Home | Salmon River Adventures  | CIT 230 - Final Project
+    </title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>         
+    <meta name="description" content="Final Project page for website project for Doris Rush-Lopez for CIT 230: Web Frontend Development, Section 14 at Brigham Young University, Idaho, Winter 2020 semester">
+        
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Calligraffitti&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="css/style.css">
+</head>    
+    
+<body>
+
+    <header>
+        
+      <div class="container">
+         
+        <div>  <!-- LOGO -->
+          <picture>
+              <img id="logo" class="text-center" src="images/logo.resized.png" alt="Salmon River Adventures logo, salmon colored text and salmon image on super dark green background">
+          </picture>
+        </div> 
+        
+        <div class="center-text container">   <!-- TAGLINE --> 
+          <div> <h2> Get native!</h2></div> 
+          <div><h2> Get drenched!</h2> </div>
+          <div> <h2> Get happy!</h2></div>   
+        </div>
+         
+        
+    </header>
+    <main>
+           
+        <h1>Reservations</h1>
+        <h3>Make Your Adventure Memories</h3>
+  
+        <form action="thanks-reservation.html" method="GET">
+        <fieldset class="rounded">
+          <legend>
+            <h3>Reservation Information</h3>
+          </legend>
+  
+          <label class="top">
+              Please enter your full name (Required, 5 characters minimum)
+            <input id="name" type="text" name="name" required pattern="[A-Z a-z -_]{5,50}">
+          </label>
+          
+          <label class="top">
+            Please enter your email
+            <input id="email" type="email" name="email" placeholder="someone@gmail.com">
+          </label>
+          
+          <label class="top">
+            Please enter your phone number (Required)
+            <input id="phone" type="tel" name="phone" placeholder="5551239876" required>
+          </label>
+          
+          <label class="top">
+            Please enter your zipcode (Required)
+            <input id="zipcode" type="number" name="zip" required placeholder="99999">
+          </label>   
+        </fieldset>
+        
+        <fieldset class="rounded">
+          <legend>
+            <h3>Adventure Information</h3>
+          </legend> 
+  
+          <label class="top">
+            Requested Trip Date
+            <input id="stormdate" type="date" name="stormdate">
+            
+          </label>
+  
+          <label class="top">
+            Adventure Packages
+            <input name="stormtype" id="stormtype" list="packages"/></label>
+          
+            <datalist id="packages">
+                <option value="Flash Flood">
+                <option value="Hail">
+                <option value="Hurricane">
+                <option value="Pea Soup Fog">
+                <option value="Sand Storm">
+                <option value="Thunderstorm">
+                <option value="Tornado">
+              </datalist>
+        
+                   
+          <label class="top">
+              More information or comments
+              <textarea id="comments" name="comments" rows="12" cols="20">Comments or additional information</textarea>
+            </label>          
+  
+        </fieldset>
+                
+            <input class="submitBtn " type="submit" name="submit" value=" Send my Reservation">
+        </form> 
+        SPECIFICS
+            
+            Visa and MasterCard are accepted.
+            All prices are per person and include a shuttle. 
+            Single day trips include lunch.
+            Multi-day trips include meals, tent, sleeping bag and pad.
+            
+            RESERVATIONS: A per person deposit of 50% for any trip is required to confirm your reservation. 
+            Trip itineraries, recommended reading sources, and a preparation/equipment list will be sent to you upon receipt of your deposit.
+            
+            BALANCE DUE: 30 days before launch date.
+            
+            CANCELLATIONS: Full refund available until 30 days prior to launch date. Deposits & Final Payments are not refundable after 30 days prior to trip departure date unless you (or we) can fill your vacancy space.  However, these payments are transferable for other time frames and/or river trips, if so desired.
+
+    </main>
+    <footer>
+        <div>&copy;2020 &nbsp; | &nbsp; Doris Rush-Lopez &nbsp;| &nbsp;New Jersey &nbsp; | &nbsp; 
+            <a href="https://www.byui.edu/online" >BYU-Idaho Online Learning</a> <br><br>
+            <br> Source of live weather information on this site is <a href="https://openweathermap.org">Open Weather Map API</a> <br>
+            <a href="sources-acknowledgements.html">List of sources and acknowledgements of information and photos</a>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/lazyload.js" defer></script>
+</body>
+
+
+
     
 </html>
-
-
-
-/*
-
-
 
 making memories--
 
@@ -15,9 +140,7 @@ codepen for clip ellipse
 https://codepen.io/smohan/pen/BdOoyP
 https://codepen.io/jamesingmire/pen/PKgWwr
 
-svg morphing with convex/concave curves https://codepen.io/lentilz/pen/PENeyq
 
-codepen star wars rolling bot:  https://codepen.io/rajatkantinandi/pen/WBemGx
 
 https://www.rowadventures.com/middle-fork-salmon-rafting
 
@@ -25,38 +148,6 @@ https://www.idahoriveradventures.com/
 
 http://www.arta.org/rivers/idaho-rafting-trips/
 
-https://www.salmonriverchallenge.com/salmon-river-rafting-one-day
 
-PRICES
-Whitewater
-1/2 Day
-$59
-1 Day
-$97
-2 Days
-$359
-3 Days
-$849
-4 Days
-$1009
-5 Days
-$1299
-6 Days
-$1499
-
-SPECIFICS
-
-Visa and MasterCard are accepted.
-All prices are per person and include a 3% special use fee and shuttle. Additionally:
-Day trips include lunch.
-Multi-day trips include meals, tent, sleeping bag and pad.
-Fishing and hunting trips include all gear except for fly fishing equipment, shotgun, shells, tag, and license. Heaters and umbrellas for poor weather and padded seats with backrests are also provided.
-RESERVATIONS: A per person deposit of 50% for any Idaho trip and $99 for any Oregon trip is required to confirm your reservation. Trip itineraries, recommended reading sources, and a preparation/equipment list will be sent to you upon receipt of your deposit.
-
-BALANCE DUE: 30 days before launch date.
-
-CANCELLATIONS: Full refund available until 30 days prior to launch date. Deposits & Final Payments are not refundable after 30 days prior to trip departure date unless you (or we) can fill your vacancy space.  However, these payments are transferable for other time frames and/or river trips, if so desired.
-
-© Copyright 2016. Wapiti River Guides. All Rights Reserved. -
 */
 
