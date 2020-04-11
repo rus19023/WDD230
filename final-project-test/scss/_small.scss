@@ -50,11 +50,22 @@ html {
     line-height: 1rem;
     color: $salmon;
 }
+.pad-left {
+    padding-left: .25rem;
+}
+#hans, #gina, #marc {
+    border: 1px solid $blackleather;
+    padding: .25rem;
+    h1 {
+        font-size: 2.5vw;
+        font-weight: bold;
+    }
+
+}
 .container {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-gap: .1rem;
 }
 #hero {
     width: 100%;

@@ -10,7 +10,7 @@ fetch(requestURL)
     guides.forEach(guide => {
         
         let div1 = document.createElement('div');
-        let p5 = document.createElement('p');
+        let p5 = document.createElement('h1');
         let p6 = document.createElement('p');
         let p1 = document.createElement('p');
         let p2 = document.createElement('p');
@@ -26,6 +26,8 @@ fetch(requestURL)
         p5.textContent = guide_name;
         image.setAttribute('src', imgURL);
         image.setAttribute('alt', guide_name);
+        image.setAttribute('width', '100%');
+        image.setAttribute('height', '260px');
         p6.textContent = cert;
         p1.textContent = exp;
         p2.textContent =email;
