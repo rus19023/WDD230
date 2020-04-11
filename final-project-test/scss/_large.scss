@@ -1,11 +1,17 @@
 html {
-    font-size: 1.1vw;
+    font-size: 1.3vw;
 }
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto ;
     grid-gap: .5rem;
+}
+h2 {
+    font-size: 2rem;
+}
+#logo, #background {
+    width: 100%;
 }
 .hide {
     display: none;
