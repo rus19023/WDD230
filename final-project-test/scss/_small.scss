@@ -56,9 +56,11 @@ a, a:visited, a:hover {
     top: 2rem;
     left: 4.5rem;
     z-index: 20;
-    padding: .7rem;
+    padding: 1.3rem;
     line-height: 1rem;
     color: $tan;
+    background: $blackleather;
+    clip-path: ellipse(50% 48%);
 }
 .pad-left {
     padding-left: 1rem;

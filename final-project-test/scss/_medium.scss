@@ -12,6 +12,11 @@ html {
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: auto ;
 }
+.container1 {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: auto ;
+}
 .container-head {
     display: grid;
     grid-template-columns: 30% 60%;
@@ -34,7 +39,7 @@ p {
 .stats {
     top: 1rem;
     left: 2rem;
-    font-size: 2vw;
+    font-size: 1.8vw;
 }
 #hans, #gina, #marc {
     border: 1px solid $blackleather;
