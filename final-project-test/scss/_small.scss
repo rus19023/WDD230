@@ -16,7 +16,7 @@ body {
 }
 #box {
     position: relative;
-    background-image: url('images/river1-orig.png');
+    background-image: url('..images/river1-orig.png');
 }
 .flex-row {
     display: flex;
@@ -32,7 +32,7 @@ body {
 }
 .container {
     display: grid;
-    grid-template-columns: 33% 30% 36%;
+    grid-template-columns: 100%;
     grid-template-rows: 25vh;
     grid-gap: .1rem;
 }
