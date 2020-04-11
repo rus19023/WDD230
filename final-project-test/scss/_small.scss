@@ -49,15 +49,14 @@ a, a:visited, a:hover {
     object-fit: cover;
 }
 .salmon {
-    padding-top: .8rem;
     color: $tan;
 }
 .stats {
     position: absolute;
-    top: 2rem;
-    left: 4.5rem;
+    top: 2.5rem;
+    left: 4rem;
     z-index: 20;
-    padding: 1.3rem;
+    padding: 1.1rem;
     line-height: 1rem;
     color: $tan;
     background: $blackleather;
