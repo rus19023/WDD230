@@ -28,9 +28,10 @@ html {
 #box {
     width: 100%;
     text-align: center;
+    background: $rocket;
     border: 2px solid $rocket;
     object-fit: cover;
-    box-shadow: 5px 5px rgba(136, 120, 128, .7);
+    box-shadow: 0 0 10px  rgba(39,  60,  44,  .7);
 }
 .flex-row {
     display: flex;
@@ -187,7 +188,7 @@ html {
     padding: 5%;
 }
 footer {
-    font-size: 2.5vw;
+    font-size: 3vw;
     text-align: center;
     background: $blackleather;
     color: $salmon;

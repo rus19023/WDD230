@@ -1,0 +1,41 @@
+.white {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+table {
+  table-layout: auto;
+  border-collapse: collapse;
+  width: 300px;
+  box-shadow: 8px 8px 10px #628ca6;
+  margin: 2rem;
+  align-items: center;
+}
+td, th {
+  border: 1px solid $blackleather;
+  text-align: center;
+  padding: 8px;
+}
+thead tr th { 
+  align-content: center; 
+  padding: 10px;
+}
+tr:nth-child(odd) {
+    width: 25%;
+    background-color: $rocket;
+    font-style: italic;
+  } 
+th {
+  font-size: 1.2em;
+  padding: 5px;
+  font-weight: bold;
+}
+
+tfoot tr td {
+  font-size: .8rem;
+  background-color: #7fb9c2;  
+  color: black;
+  padding: 10px;
+}
