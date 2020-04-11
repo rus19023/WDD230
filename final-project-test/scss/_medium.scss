@@ -15,6 +15,21 @@ html {
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: auto ;
 }
+#hans, #gina, #marc {
+    border: 1px solid $blackleather;
+    img {
+        height: 260px;
+    }
+    p {
+        font-size: 2vw;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    h1 {
+        font-size: 3vw;
+    }
+
+}
 h2 {
     font-size: 2rem;
 }
