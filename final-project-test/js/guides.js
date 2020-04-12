@@ -24,8 +24,8 @@ fetch(requestURL)
         let bio = `Bio: ${guide.bio}`;
 
         p5.textContent = guide_name;
-        image.setAttribute('data-src', imgURL);
-        image.setAttribute('src', "images/placeholder.jpg");
+        image.setAttribute('src', imgURL);
+        image.setAttribute('data-src', "images/placeholder.jpg");
         
         image.setAttribute('alt', guide_name);
         image.setAttribute('width', '100%');
