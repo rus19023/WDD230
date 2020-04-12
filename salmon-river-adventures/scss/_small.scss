@@ -6,8 +6,8 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 a:hover {color: $rocket;}
-a {color: $blackleather;}
-a:visited {color: black;}
+a {color: white;}
+a:visited {color: $tan;}
 body {
     font-family: $textFontFamily;
     color: $blackleather;
@@ -52,7 +52,7 @@ a, a:visited, a:hover {
 }
 .salmon {
     color: $tan;
-    
+
 }
 .stats {
     position: absolute;
