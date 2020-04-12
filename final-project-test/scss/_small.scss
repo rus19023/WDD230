@@ -84,6 +84,10 @@ a, a:visited, a:hover {
         text-align: center;
     }
 }
+.contact {
+    margin: 5%;
+    padding: 5%;
+}
 .container {
     display: grid;
     grid-template-columns: auto;
@@ -186,9 +190,7 @@ a, a:visited, a:hover {
     text-align: center;
 }
 #gmap {
-    margin: .25rem;
-    width: 40vw;
-    padding: 5%;
+    width: 50vw;
 }
 footer {
     font-size: 3vw;
@@ -250,6 +252,8 @@ nav {
 }
 form { 
     border: none;
+    padding: 7%;
+    justify-items: center;
     fieldset {
         border: 2px solid $blackleather;
         margin: 6%;

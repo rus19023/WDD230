@@ -9,6 +9,12 @@ html {
 .bigger {
     font-size: 2vw;
 }
+.col1 {
+    grid-template-columns: 1fr 1fr;
+}
+#gmap {
+    width: 40vw;
+}
 .stats {
     top: .5rem;
     left: 2rem;
