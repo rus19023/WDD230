@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title> Home | Salmon River Adventures | CIT 230 - Final Project</title>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>         
+      <meta name="description" content="Final Project page for website project for Doris Rush-Lopez for CIT 230: Web Frontend Development, Section 14 at Brigham Young University, Idaho, Winter 2020 semester">
+          
+      <link rel="shortcut icon" href="favicon.ico">
+  
+      <link href="https://fonts.googleapis.com/css?family=Calligraffitti&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
+  
+      <link rel="stylesheet" href="css/style.css">
+    </head>   
+    <nav class="clearfix">
+      <div>
+        <button class="unhide" onClick="toggleMenu()">&#9776;</button>
+      </div>
+      <ul id="primaryNav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li id="current"><a href="contact-us.html" > Contact Us </a></li>
+        <li><a href="meet-our-guides.html" > Meet our Guides  </a></li> 
+        <li> <a href="make-memories-reservations.html"> Make Memories!</a></li>
+      </ul>
+    </nav>
+
+    <header>
+        
+      <section class="container-head">
+         
+        <div>  <!-- LOGO -->
+          <picture>
+              <img id="logo" class="text-center" src="images/logo.resized.png" alt="Salmon River Adventures logo, salmon colored text and salmon image on super dark green background">
+          </picture>
+        </div> 
+        
+        <div class="center-text container">   <!-- TAGLINE --> 
+          <div> <h1> Get native!</h1></div> 
+          <div><h2> Get drenched!</h2> </div>
+          <div> <h2> Get happy!</h2></div>   
+        </div>
+         
+       </section> 
+    </header>
+        <main>
+          <div class="center-column">
+          <h1> Contact Us </h1>         
+          </div>
+
+            <form action="thank-you.html" method="GET">
+            <fieldset>
+                <legend>
+                <h3>Sender Information</h3>
+                </legend>
+
+                <label class="top">
+                    Please enter your full name (Required, 5 characters minimum)
+                <input id="name" type="text" name="name" required pattern="[A-Z a-z -_]{5,30}">
+                </label>
+                
+                <label class="top">
+                Please enter your email (Required so we can reply)
+                <input id="email" type="email" name="email" placeholder="someone@gmail.com" required>
+                </label>
+                
+                <label class="top">
+                Please enter your phone number
+                <input id="phone" type="tel" name="phone" placeholder="5551239876">
+                </label>
+                
+                <label class="top">
+                Please enter your zipcode 
+                <input id="zipcode" type="text" name="zip" placeholder="99999">
+                </label>
+
+                <label class="top">
+                    My questions and/or comments
+                    <textarea id="comments" name="comments" rows="12" cols="20">Comments or additional information</textarea>
+                </label>
+                    
+                <input class="submitBtn rounded" type="submit" name="submit" value=" Send my Message">
+            </fieldset>
+            </form>
+
+            <div class="gridcols col1">
+                <div id="gmap" class="contact">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.575267834578!2d-116.31988428444407!3d45.41790377910047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54a6c5695ed5fae5%3A0x837cd0558ffd520c!2s1000%20S%20Main%20St%2C%20Riggins%2C%20ID%2083549!5e0!3m2!1sen!2sus!4v1586439434352!5m2!1sen!2sus" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                    </iframe>
+                </div>
+                <div class="contact">
+                    Salmon River Adventures <br>
+                    1000 S Main St <br>
+                    Riggins ID 83549 <br>
+                    (555) 555-1234 <br>
+                    fake-email@sra.com
+                </div>
+            </div>
+        
+    </main>
+    <footer>
+        <div>
+            &copy;2020 &nbsp; | &nbsp; Doris Rush-Lopez &nbsp;| &nbsp;New Jersey &nbsp; | &nbsp; 
+            <a href="https://www.byui.edu/online" >BYU-Idaho Online Learning</a> <br><br> 
+            
+            Source of live weather information on this site is <a href="https://openweathermap.org">Open Weather Map API</a> <br><br>
+            
+            <a href="sources-acknowledgements.html">List of sources and acknowledgements of information and photos</a>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/functions.js"></script>
+  </body>
+    
+</html>
