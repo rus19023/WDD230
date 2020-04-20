@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Gallery Page | CS 230 Weather Site Project - Week 08</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Preston page for website project for Doris Rush-Lopez for CS 230: Web Frontend Development at Brigham Young University, Idaho, Winter 2020 semester">
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="css/style8.css" />
+  <link rel="stylesheet" href="css/medium8.css" />
+  <link rel="stylesheet" href="css/large8.css" />
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+</head>
+
+<body onLoad="getDate();">
+  <header>
+    <div class="header">
+      <div>
+        <picture class="logomd">
+          <img src="images/edgelogo75.png"
+            alt="Edge of the Cloud logo, grey cloud and white cloud with yellow/orange thunderbolt">
+        </picture>
+      </div>
+      <div>
+        <h1>Edge of the Cloud</h1>
+        <h3>Your weather, from sunrise to sunrise!</h3>
+      </div>
+    </div>
+  </header>
+  <nav class="clearfix">
+    <button onClick="toggleMenu()">&#9776; Menu</button>
+    <ul id="primaryNav" class="hide">
+      <li><a href="../index.html">Assignment Portal</a></li>
+      <li><a href="../lesson4/preston-4.html">Edge of the Cloud Home</a></li>
+      <li><a href="preston.html">Preston Idaho</a></li>
+      <li> <a href="fishhaven.html">Fish Haven</a></li>
+      <li><a href="sodasprings.html">Soda Springs</a></li>
+      <li> <a href="stormcenter.html">Storm Center</a></li>
+      <li><a class="current" href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+  <h2 class="simple">Weather Gallery</h2>
+  <main class="gallery">
+
+      <figure>
+        <img src="images/placeholder.jpg" data-src="images/stormy.jpg" alt="Photo of dark clouds over city with white buildings">
+        <figcaption><a href="https://unsplash.com/photos/8-rupxYbUFs">Photo of dark clouds over white buildings by Andrea Ang</a></figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/placeholder.jpg" data-src="images/lightning.jpg" alt="Photo of lightning in a dark purple sky">
+        <figcaption><a href="https://unsplash.com/photos/wwzLVOvzy6w">Photo  of lightning in a dark purple sky by Ali Arif Soydaş</a>    </figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/placeholder.jpg" data-src="images/fog.jpg" alt="Photo of mountain background with fog and palm trees">
+        <figcaption><a href="">Photo of mountain with fog and palm trees by Yogesh Pedamkar</a></figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/placeholder.jpg" data-src="images/tornado.jpg" alt="Photo of tornado dust storm lighting hitting the desert">
+        <figcaption><a href="https://unsplash.com/photos/LYq7W1lRal4">Photo of storm and lightning hitting the desert by Lucy Chian</a> </figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/placeholder.jpg" data-src="images/sunset-clouds.jpg" alt="Photo of turquoise and purple sunset cloudy sky">
+        <figcaption><a href="https://unsplash.com/photos/z_xqbJgzFBo">Photo of turquoise and purple cloudy sky by Marc Mintel</a>        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/placeholder.jpg" data-src="images/sunrise.jpg" alt="Photo of sunrise over mountains">
+        <figcaption><a href="https://unsplash.com/photos/TfwYIaj6vOA">Photo of sunrise over mountains by Jakub Kriz</a>        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/placeholder.jpg" data-src="images/rain.jpg" alt="Photo of people walking with colorful umbrellas in the rain">
+        <figcaption><a href="https://unsplash.com/photos/IeV07y5UK3k">Photo of people with colorful umbrellas in the rain by Ryoji Iwata</a>        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/placeholder.jpg" data-src="images/sunset.jpg" alt="Photo of red and orange cloud plume at sunset">
+        <figcaption><a href="https://unsplash.com/photos/Y7GUOQ83OMg">Photo of red and orange cloud plume at sunset by NOAA</a>        </figcaption>
+      </figure>
+      
+      <figure>
+        <img src="images/placeholder.jpg" data-src="images/ice.jpg" alt="Photo of ice droplets on branches and leaves">
+        <figcaption><a href="https://unsplash.com/photos/G7C_mtnITL4">Photo of ice droplets on branches and leaves by Sarah Cervantes</a>        </figcaption>
+      </figure>
+   
+
+  </main>
+  <footer>
+    &copy;2020 &nbsp; | &nbsp; Doris Rush-Lopez &nbsp; | &nbsp; Brigham Young University-Idaho
+    <div id="updated"></div>
+  </footer>
+  <script src="js/my_js.js"></script>
+  <script src="js/lazyload.js" defer></script>
+  <script src="js/web-fonts.js" defer></script>
+  <script src="js/friday-banner.js" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</body>
+</html>

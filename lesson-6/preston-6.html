@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Preston Page | CS 230 Assignment Week 06</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Preston page for website project for Doris Rush-Lopez for CS 230: Web Frontend Development at Brigham Young University, Idaho, Winter 2020 semester">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/style6.css" />
+    <link rel="stylesheet" href="css/medium6.css" />
+    <link rel="stylesheet" href="css/large6.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+</head>
+
+<body onLoad="getDate();">  
+       
+    <h3 id="banner"> <p>Saturday = Preston Pancakes in the Park!</p> <p>9:00 a.m. Saturday at the city park pavilion.</p> </h3>       
+  
+    <header>
+        <div class="header">
+            <div>
+                <picture class="logo">
+                    <img src="images/edgelogo75.png" alt="Edge of the Cloud logo, grey cloud and white cloud with yellow/orange thunderbolt">
+                </picture>
+            </div>
+            <div>
+                <h1>Edge of the Cloud</h1>
+                <h3>Your weather, from sunrise to sunset!</h3>
+            </div>
+        </div>
+    </header>
+    <nav class="clearfix">
+        <button onClick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="../index.html">Assignment Portal</a></li>
+            <li><a href="../lesson-4/preston-4.html">Home</a></li>
+            <li><a class="current" href="preston-6.html">Preston</a></li>
+            <li> <a href="fish-haven.html">Fish Haven</a></li>
+            <li><a href="soda-springs.html">Soda Springs</a></li>
+            <li> <a href="storm-center.html">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="currently">
+                <h2>Preston Idaho</h2>
+                <div>
+                    <picture>
+
+                        <source srcset="images/SMALL.jpg" media="(max-width: 400px)">
+                            <source srcset="images/MEDIUM.jpg" media="(min-width: 401px) and (max-width: 959px">
+                            <source srcset="images/LARGE.jpg" media="(min-width: 960px)">
+                            <img src="images/cit230_image_franklinOriginal.jpeg" alt="Forest at sunset">
+                    </picture>
+
+                    
+                <div>
+                    <div class="stats">                        
+                        <h3>Current Conditions&nbsp;&nbsp;</h3>                        
+                        <div class="grid2col">
+                            <div>
+                                <span class="right-align">Temperature:&nbsp; </span><br><br>
+                                <span class="right-align">Wind Chill: </span> <br><br>
+                                <span class="right-align">Humidity: </span><br><br>
+                                <span class="right-align">Precipitation: </span><br><br>
+                                <span class="right-align">Wind Speed: </span> <br> <br>
+                            </div>
+                            <div>
+                                <span class="left-align"><span id="temperature">35</span> <span>°F</span> <br><br>
+                                <span class="left-align"><span id="windchill"></span><span>°F</span><br><br>
+                                <span class="left-align"><span id="temperature">75% </span> <span>°F</span><br><br>
+                                <span class="left-align"><span id="temperature">0 in.</span> <span>°F</span><br><br>
+                                <span class="left-align"><span id="windspeed">5</span><span> mph NNE</span><br> <br>
+                            </div>
+                        </div>
+                    </div>
+                
+        </section>
+        <section class="noshow">
+            <h2>5 Day Forecast</h2>        
+            
+                <div class="gridforecast">
+                    <span class="day1">Today<br><img class="icon" src="images/partly-cloudy.png" alt="partly cloudy icon">
+                    <br>High: 39&#176;F<br>Low: 29&#176;F<br>Wind: <br>5 mph</span>
+                    
+                    <span>Tomorrow<br><img class="icon" src="images/windy.png" alt="partly cloudy icon">
+                    <br>High: 30&#176;F<br>Low: 19&#176;F<br>Wind: <br>20 mph</span>
+                    
+                    <span>Day 3<br><img class="icon" src="images/sunny.png" alt="partly cloudy icon">
+                    <br>High: 39&#176;F<br>Low: 31&#176;F<br>Wind: <br>2.5 mph</span>
+                    
+                    <span>Day 4<br><img class="icon" src="images/rainy.png" alt="partly cloudy icon">
+                    <br>High: 41&#176;F<br>Low: 31&#176;F<br>Wind: <br>4.5 mph</span>
+                    
+                    <span>Day 5<br><img class="icon" src="images/thunder.png" alt="thunderstorm icon">
+                    <br>High: 50&#176;F<br>Low: 41&#176;F<br>Wind: <br>9 mph<br></span>
+                </div>
+            
+
+        </section>
+            <h2>It's Ice Fishing Weather!</h2>
+            <article class="grid2col1">
+                <div>
+                    There are various lakes and reservoirs where fisherwomen and fishermen like to hang out near Preston, Idaho. Some offer camping too!
+                    <br><br>Groups that fish in the ice and snow frequent them this time of year. One popular group is <a href="https://www.facebook.com/groups/751930771552756/?ref=group_header">Ice Fishing Fools of Idaho</a>
+                    <br><br> Here are a few of the most popular fishin' holes:
+                    <br><br>
+                    <ul>
+                        <li> <a href="https://idahohighcountry.org/item/foster-reservoir/"> Foster Reservoir  </a></li>
+                        <li> <a href="https://idfg.idaho.gov/ifwis/fishingPlanner/water/1119718421938"> Twin Lakes Reservoir </a></li>
+                        <li> <a href="https://idfg.idaho.gov/ifwis/fishingplanner/water/1118157421078"> Lamont Reservoir  </a></li>
+                        <li> <a href="https://idahohighcountry.org/item/treasureton-reservoir/"> Treasureton Reservoir  </a></li>
+                        <li> <a href="https://idahohighcountry.org/item/condie-reservoir/">  Condie Reservoir </a></li>
+                        <li> <a href="https://idfg.idaho.gov/sites/default/files/seasons-rules-fish-2019-2021-southeast.pdf"> Here is a printable map of fishing spots!  </a></li>
+                    </ul>
+                </div>
+                <div class="right-column">
+                    <figure>
+                        <img src=" images/man-fishing.jpg" alt="Photo of man fishing by Greysen Johnson on Unsplash">
+                        <figcaption>Man fishing at body of water</figcaption>
+                    </figure>
+                </div>
+            </article>
+            <h2> Contact Information</h2>
+            <article class="grid2col">
+
+                <div class="noshow left-column">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2959.988058625019!2d-111.91384604968394!3d42.10772655889093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f9d6f55ca5d3%3A0x806281eaf3fae4a1!2sPreston%20Airport-U10!5e0!3m2!1sen!2sus!4v1581451554563!5m2!1sen!2sus"
+                        "></iframe>
+                </div>
+                <div class="right-column"> Edge of the Cloud Weather <br><br> Preston, Idaho <br><br>(555) 555-5555 <br><br>more@edgeofthecloud.info </div>
+            </article>
+
+
+        </main>
+        <footer>
+            &copy;2020 &nbsp; | &nbsp; Doris Rush-Lopez &nbsp; | &nbsp; Brigham Young University-Idaho
+            <div id="updated"></div>
+        </footer>
+        <script src="js/windchill.js"></script>
+        <script src="js/my_js.js"></script>
+        <script src="js/friday-banner.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    
+    </body> 
+
+</html>

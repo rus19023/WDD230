@@ -1,0 +1,148 @@
+:root {   
+    --bg-color-main:  #A4778B;      /* MOUNTBATTEN PINK  */  
+    --bg-color-contrast:  #830A48;  /*  french plum  */
+  
+    --border-color-main: #ffffff;       /*  white   */
+    --border-color-contrast: #52FFB8;   /*  medium aqua */  
+  
+    --font-family: "Dancing Script", "Pacifico", cursive;  
+    --font-family-2: "Cairo", "Questrial", sans-serif; 
+  
+    --header-color-main: #ffffff;       /* white   */
+    --header-color-contrast: #830A48;   /*  french plum  */
+
+    --hover-color-main: #FAB2EA;        /* light hot pink */
+    --hover-color-contrast: #A0B2A6;    /* QUICK SILVER   */ 
+          
+    --link-color-main:  #ffffff;        /* white    */
+    --link-color-contrast:  #FAB2EA;    /* light hot pink */  
+
+    --txt-color-main:   #830A48;    /*  french plum  */   
+    --txt-color-contrast:  #A4778B; /* MOUNTBATTEN PINK */
+
+    --visited-color-main: #FAB2EA;      /* light hot pink  */
+    --visited-color-contrast: #52FFB8;   /*  medium aqua */ 
+
+    --visited-hover-main: #ffffff;  /* white    */
+    --visited-hover-contrast: #FAB2EA;      /* light hot pink */
+  
+    --border-radius-main: 8px; 
+    --padding-main: 10px 10px 10px 10px; 
+    --margin-main: 10px 10px 10px 10px; 
+    --border-main: solid 4px var(--quicksilver);   /* QUICK SILVER  */ 
+  }
+  
+  a:link {    color: var(--link-color-main); }
+  a:hover  {    color: var(--link-color-contrast); } 
+  a:visited {    color: var(--visited-color-main); } 
+  a:visited:hover {    color: var(--visited-hover-main);} 
+  
+  
+   /* CSS GRID SETUP  */
+  
+.wrapper-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(75px, auto);
+    padding: var(--padding-main);
+    margin: var(--margin-main);
+    
+    font-family: var(--font-family-2); 
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1.4em;
+    border-radius: var(--border-radius);
+    background: var(--bg-color-main);
+    color: var(--txt-color-main);
+  }
+.header-grid {
+    grid-column: 1 / 5;
+    grid-row: 1 ;
+  }
+.menu-grid { 
+    grid-column: 1 / 5;
+    grid-row: 2;
+  }
+.footer-grid {
+  grid-column: 1 / 5;
+  grid-row: 4;
+  }
+  
+   /* end CSS GRID SETUP  */
+  
+body {  
+    max-width: 95%;
+    background: var(--bg-color-main);
+    color: var(--txt-color-main);
+  }
+  
+h1,h2 {
+  color: var(--header-color-main);
+  font-family: var(--font-family);
+}
+  
+h3,h4,h5,h6 {
+  color: var(--header-color-contrast);
+  font-family: var(--font-family-2);
+}
+  
+p {
+  max-width: 100%;
+  color: var(--txt-color-main); 
+  padding:  var(--padding-main);
+}
+  
+img {  
+  max-width: 200px;
+}
+  
+#content-wide {
+  width: 90%;
+  margin: 0 auto;
+}
+  
+#banner {   
+  max-width: 100%;
+  max-height: 5%;
+  background: var(--bg-color-contrast);
+  color: var(--header-color-main);
+  border-radius: var(--border-radius-main);
+  padding: var(--padding-main);
+  text-align: center;
+  font-family: var(--font-family);
+}
+  
+#banner, #footer a:link {    color: var(--link-color-contrast); }
+#banner, #footer  a:hover  {    color: var(--hover-color-contrast); } 
+#banner, #footer  a:visited {    color: var(--visited-color-contrast); } 
+#banner, #footer  a:visited:hover {    color: var(--visited-hover-contrast);} 
+  
+#logo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin-left: 10%;  
+  max-width: 100px;
+  z-index: 1;
+}
+  
+hr {
+  border: 1px solid var(--txt-color-main);
+}
+  
+#container-footer { 
+  margin-top: 10px;
+  display: inline block;
+  background: var(--bg-color-contrast);
+  color: var(--header-color-main);
+  text-align: center;
+  font-size: .8em;
+  border-radius: var(--border-radius-main);
+  padding: var(--padding-main);
+}
+  
+ 
+  
+  
+  

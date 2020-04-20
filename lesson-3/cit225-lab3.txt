@@ -1,0 +1,81 @@
+
+INSERT INTO common_lookup_lab
+( common_lookup_lab_id
+, common_lookup_context
+, common_lookup_type
+, common_lookup_meaning )
+VALUES
+( 1, 'SYSTEM_USER_LAB', 'SYSTEM_ADMIN', 'System Administrator')
+, (2, 'SYSTEM_USER_LAB', 'DBA', 'Database Administrator')
+, (3, 'SYSTEM_USER_LAB', 'SYSTEM_GROUP', 'Database Administrator')
+, (4, 'SYSTEM_USER_LAB', 'COST_CENTER', 'Database Administrator')
+, (5, 'SYSTEM_USER_LAB', 'INDIVIDUAL', 'Database Administrator')
+, (1001, 'CONTACT_LAB', 'EMPLOYEE', 'Employee')
+, (1002, 'CONTACT_LAB', 'CUSTOMER', 'Customer')
+, (1003, 'MEMBER_LAB', 'INDIVIDUAL', 'Individual Membership')
+, (1004, 'MEMBER_LAB', 'GROUP', 'Group Membership')
+, (1005, 'MEMBER_LAB', 'DISCOVER_CARD', 'Discover Card')
+, (1006, 'MEMBER_LAB', 'MASTER_CARD', 'Master Card')
+, (1007, 'MEMBER_LAB', 'VISA_CARD', 'VISA Card')
+, (1008, 'MULTIPLE', 'HOME', 'Home')
+, (1009, 'MULTIPLE', 'WORK', 'Work')
+, (1010, 'ITEM_LAB', 'DVD_FULL_SCREEN', 'DVD: Full Screen')
+, (1011, 'ITEM_LAB', 'DVD_WIDE_SCREEN', 'DVD: Wide Screen')
+, (1012, 'ITEM_LAB', 'NINTENDO_GAMECUBE', 'Nintendo Gamecube')
+, (1013, 'ITEM_LAB', 'PLAYSTATION2', 'PlayStation2')
+, (1014, 'ITEM_LAB', 'XBOX', 'XBox')
+, (1015, 'ITEM_LAB', 'BLU-RAY', 'Blu-ray' );
+
+
+
+INSERT INTO member
+( member_id
+, member_type
+, account_number
+, credit_card_number
+, credit_card_type
+, created_by
+, creation_date
+, last_updated_by
+, last_update_date )
+VALUES
+( member_s1.NEXTVAL                               -- member_id
+, NULL                                            -- member_type
+,'B293-71445'                                     -- account_number
+,'1111-2222-3333-4444'                            -- credit_card_number
+,(SELECT   common_lookup_id
+  FROM     common_lookup
+  WHERE    common_lookup_context = 'MEMBER'
+  AND      common_lookup_type = 'DISCOVER_CARD')  -- credit_card_type
+,(SELECT   system_user_id
+  FROM     system_user
+  WHERE    system_user_name = 'SYSADMIN')         -- created_by
+, SYSDATE                                         -- creation_date
+,(SELECT   system_user_id
+  FROM     system_user
+  WHERE    system_user_name = 'SYSADMIN')         -- last_updated_by
+, SYSDATE                                         -- last_update_date
+);
+
+SELECT common_lookup_lab_id 
+    FROM COMMON_LOOKUP_LAB
+    WHERE common_lookup_context column = UPPER('SYSTEM_USER_LAB') 
+    AND common_lookup_type = UPPER('SYSTEM_GROUP');
+
+
+
+SELECT common_lookup_id 
+    FROM COMMON_LOOKUP_LAB 
+    WHERE common_lookup_context column = UPPER('SYSTEM_USER_LAB') 
+    AND common_lookup_type column = UPPER('SYSTEM_ADMIN');
+
+
+    
+
+
+
+    
+
+
+
+

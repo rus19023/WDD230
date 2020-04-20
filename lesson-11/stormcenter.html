@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Home Page | Edge of the Cloud Weather | CIT 230 Weather Site Project - Week 11</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Weather website project for Doris Rush-Lopez for CIT 230: Web Frontend Development at Brigham Young University, Idaho, Winter 2020 semester">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/style11.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+  </head>
+
+  <body onLoad="getDate();">
+        
+    <div id="banner1">
+
+        <div class="marquee marquee2">
+        <div id="alerts">
+          
+        </div>
+      </div>
+    </div>      
+
+    <header class="header">
+        <div>
+            <a href="index.html">
+                <picture>
+                    <img class="logo" src="images/edgelogo75.png" alt="Edge of the Cloud logo, grey cloud and white cloud with yellow/orange thunderbolt on light blue background">
+                </picture>
+            </a>
+        </div>                
+        <div>
+            <h1>Edge of the Cloud</h1>
+            <h3>Your weather, from sunrise to sunrise!</h3>
+        </div>           
+    </header>
+
+    <nav class="clearfix">
+        <div class="button">
+            <button onClick="toggleMenu()">&#9776; Menu</button>
+        </div>
+        <ul id="primaryNav" class="hide">
+            <li><a class=" rounded"         href="index.html">      Home        </a></li>
+            <li><a class="rounded"          href="preston.html">    Preston     </a></li>
+            <li><a class="rounded"          href="sodasprings.html">Soda Springs</a></li>
+            <li><a class="rounded"          href="fishhaven.html">  Fish Haven  </a></li>
+            <li><a class="rounded current"  href="stormcenter.html">Storm Center</a></li>
+            <li><a class="rounded"          href="gallery.html">    Gallery     </a></li>
+        </ul>
+    </nav>
+
+    <main>
+           
+      <h1>Storm Center</h1>
+      <h3>Report a Storm <br> or <br> Unusual Weather Activity</h3>
+
+      <form action="thanks.html" method="GET">
+      <fieldset class="rounded">
+        <legend>
+          <h3>Reporter Information</h3>
+        </legend>
+
+        <label class="top">
+            Please enter your full name (Required, 5 characters minimum)
+          <input id="name" type="text" name="name" required pattern="[A-Z a-z -_]{5,50}">
+        </label>
+        
+        <label class="top">
+          Please enter your email
+          <input id="email" type="email" name="email" placeholder="someone@gmail.com">
+        </label>
+        
+        <label class="top">
+          Please enter your phone number (Required)
+          <input id="phone" type="tel" name="phone" placeholder="5551239876" required>
+        </label>
+        
+        <label class="top">
+          Please enter your zipcode (Required)
+          <input id="zipcode" type="number" name="zip" required placeholder="99999">
+        </label>   
+      </fieldset>
+      
+      <fieldset class="rounded">
+        <legend>
+          <h3>Storm Information</h3>
+        </legend> 
+
+        <label class="top">
+          Date of Weather/Storm activity
+          <input id="stormdate" type="date" name="stormdate">
+          
+        </label>
+
+        <label class="top">
+          Storm Type
+          <input name="stormtype" id="stormtype" list="stormtypes"/></label>
+        
+          <datalist id="stormtypes">
+              <option value="Flash Flood">
+              <option value="Hail">
+              <option value="Hurricane">
+              <option value="Pea Soup Fog">
+              <option value="Sand Storm">
+              <option value="Thunderstorm">
+              <option value="Tornado">
+            </datalist>
+      
+        <label class="sbs">
+          Storm Region
+          <select name="stormregion" id="stormregion">
+              <option value="Select" disabled selected>Please select storm region</option>
+              <option value="FishHaven">Fish Haven</option>
+              <option value="Preston">Preston</option>
+              <option value="SodaSprings">Soda Springs</option>
+          </select> 
+        </label> 
+
+        
+        <label class="sbs severity">Storm/Activity Severity (between 0 and 10) <br>
+          
+          <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"> <span id="ratingvalue">5</span> 
+          <datalist id="tickmarks">
+            <option value="0">
+            <option value="1">
+            <option value="2">
+            <option value="3">
+            <option value="4">
+            <option value="5">
+            <option value="6">
+            <option value="7">
+            <option value="8">
+            <option value="9">
+            <option value="10">
+          </datalist> 
+        </label>
+
+        <div class="dangerlevel">
+  
+          I am in Danger
+          <label class="sbs"><input type="radio" name="dangerlevel" value="No"> No </label>
+          <label class="sbs"><input type="radio" name="dangerlevel" value="Yes"> Yes </label>
+          <label class="sbs"><input type="radio" name="dangerlevel" value="Maybe"> Maybe </label>
+        </div> 
+
+        </fieldset>
+        
+        <fieldset class="rounded">
+          <legend>
+
+          <h3>More Information</h3>
+          </legend>
+
+          <label class="top">
+            More information or comments
+            <textarea id="comments" name="comments" rows="12" cols="20">Comments or additional information</textarea>
+          </label>
+
+        <label class="top">
+          Upload photos or video
+          <input id="media" type="file" name="media">
+        </label>
+
+      </fieldset>
+              
+          <input class="submitBtn rounded" type="submit" name="submit" value=" Send my Report">
+      </form> 
+            
+      <section>
+          
+      <h2 class="dkblue"> Contact Information</h2>
+      <article class="grey">
+          
+          <div class="noshow1 rounded">                    
+              <a href="https://www.google.com/maps?ll=42.107723,-111.911652&z=16&t=m&hl=en&gl=US&mapclient=embed&cid=9251099430688056481"><img class="four00 rounded" src="images/placeholder.jpg" data-src="images/preston-map.png" loading="lazy" alt="map of Preston area"></a>
+          </div>
+
+          <div class="center-column realign">Edge of the Cloud Weather <br><br>(555) 555-5555 <br><br>fake-email@edgeofthecloud.info <br><br></div>
+      </article> 
+      </section>
+  </main>
+
+  <footer>
+      <div id="footer-top">&copy;2020 &nbsp; | &nbsp; Doris Rush-Lopez &nbsp;| &nbsp;New Jersey &nbsp; | &nbsp; <a href="https://www.byui.edu/online" >BYU-Idaho Online Learning</a> <br><br>
+          Source of live weather information on this site is <a href="https://openweathermap.org">Open Weather Map API</a>
+      </div> 
+      <div id="updated"></div>
+  </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/apis.js"></script> 
+    <script src="js/functions.js"></script>
+    <script src="js/lazyload.js"></script>
+    </body>
+</html>
