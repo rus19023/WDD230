@@ -47,7 +47,7 @@ main {
 @media only screen and (min-width: 37.5em) {
     .cards {
         display: grid;
-        grid-template-columns: 1fr 1fr; 
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     }
 }
 @media only screen and (min-width: 60em) {
